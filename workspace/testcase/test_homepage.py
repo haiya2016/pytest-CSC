@@ -13,7 +13,7 @@ from workspace.pages.home_page import HomePage
 
 class TestHomepageCSC():
     '''
-    CSC首页case
+        CSC首页case
     '''
 
     def setup_method(self):
@@ -39,7 +39,7 @@ class TestHomepageCSC():
         """
             在每个测试用例结束后运行，关闭浏览器
         """
-        self.driver.close()
+        self.driver.quit()
         self.database.close()
 
 
