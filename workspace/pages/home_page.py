@@ -34,11 +34,13 @@ class HomePage(BasePage):
         数据中心下拉列表选择，dc_name为数据中心的名称
         '''
         select = Select(self.find_element(*self.datacenter_loc))
-        print(select.all_selected_options)
-        print(select.all_selected_options.text)
-        if dc_name in select.options.text:
+        options_list = []
+        for option in select.options:
+            print(option.text)
+            options_list.append(option.text)
+        if dc_name in options_list:
             select.select_by_visible_text(dc_name)
-        assert dc_name in select.options.text
+        assert dc_name in options_list
 
     def db_check(self, csc_db, dc_name):
         '''检查数据中心的数据与数据库是否相符'''
