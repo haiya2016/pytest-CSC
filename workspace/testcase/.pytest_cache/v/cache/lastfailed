@@ -1,0 +1,5 @@
+{
+  "test_create_vm.py": true,
+  "test_homepage.py": true,
+  "test_login.py": true
+}

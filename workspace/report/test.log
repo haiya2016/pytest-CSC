@@ -1,0 +1,1226 @@
+﻿2018-09-16 23:15:20,963 - base_page - open - 基本操作 - INFO - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-16 23:15:22,722 - login_page - input_username - 基本操作 - INFO - 输入用户名：admin
+2018-09-16 23:15:22,722 - base_page - find_element - 基本操作 - INFO - 查找元素:('name', 'username')
+2018-09-16 23:15:22,937 - login_page - input_password - 基本操作 - INFO - 输入密码：1234567890
+2018-09-16 23:15:22,938 - base_page - find_element - 基本操作 - INFO - 查找元素:('name', 'password')
+2018-09-16 23:15:23,135 - login_page - click_submit - 基本操作 - INFO - 点击登录按钮
+2018-09-16 23:15:23,136 - base_page - find_element - 基本操作 - INFO - 查找元素:('name', 'submit')
+2018-09-16 23:15:25,071 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', '//*[@id="header"]/div[2]/ul/li[5]/a/span')
+2018-09-16 23:15:25,460 - login_page - login - 登录 - INFO - 登录成功
+2018-09-16 23:15:25,462 - base_page - open - 基本操作 - INFO - 打开页面：https://192.168.219.227:8099/csc/index.html#pages/resources/instances/vms/vm_create?previousPage=1
+2018-09-16 23:15:26,387 - vm_create_page - input_item - 云主机创建 - INFO - 填写到云主机名称的值为：python01
+2018-09-16 23:15:26,389 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//label[text()='云主机名称：']//..//input")
+2018-09-16 23:15:29,323 - vm_create_page - input_item - 云主机创建 - INFO - 填写到VM Name的值为：python01
+2018-09-16 23:15:29,324 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//label[text()='VM Name：']//..//input")
+2018-09-16 23:15:31,663 - vm_create_page - input_item - 云主机创建 - INFO - 填写到Hostname的值为：python01
+2018-09-16 23:15:31,666 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', '//form/div[2]/div[3]/div/div/input')
+2018-09-16 23:15:34,073 - vm_create_page - input_item - 云主机创建 - INFO - 填写到归属服务的值为：zhh
+2018-09-16 23:15:34,074 - vm_create_page - search_for - 云主机创建 - INFO - 搜索归属服务之后进行选择
+2018-09-16 23:15:34,077 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//button[@data-bind='click: addService']")
+2018-09-16 23:15:36,421 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//span[text()='服务名称']/../input")
+2018-09-16 23:15:36,693 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//*[text()='搜索']")
+2018-09-16 23:15:36,989 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', '//table//tr[2]/td[1]//span')
+2018-09-16 23:15:37,283 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//button[text()='确定']")
+2018-09-16 23:15:39,643 - vm_create_page - input_item - 云主机创建 - INFO - 填写到归属VDC的值为：zhhvdca
+2018-09-16 23:15:39,644 - vm_create_page - search_for - 云主机创建 - INFO - 搜索归属VDC之后进行选择
+2018-09-16 23:15:39,646 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//button[@data-bind='click: addVdc']")
+2018-09-16 23:15:41,906 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//span[text()='VDC名称']/../input")
+2018-09-16 23:15:42,208 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//*[text()='搜索']")
+2018-09-16 23:15:42,392 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', '//table//tr[2]/td[1]//span')
+2018-09-16 23:15:42,638 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//button[text()='确认' and @data-bind='click: vdcSave']")
+2018-09-16 23:15:45,031 - vm_create_page - input_item - 云主机创建 - INFO - 填写到归属用户的值为：admin
+2018-09-16 23:15:45,033 - vm_create_page - search_for - 云主机创建 - INFO - 搜索归属用户之后进行选择
+2018-09-16 23:15:45,035 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//button[@data-bind='click: showUser']")
+2018-09-16 23:15:47,400 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//span[text()='账号']/../input")
+2018-09-16 23:15:47,661 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//*[text()='搜索']")
+2018-09-16 23:15:47,873 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', '//table//tr[2]/td[1]//span')
+2018-09-16 23:15:48,168 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//button[text()='确认' and @data-bind='click: saveUsers']")
+2018-09-16 23:15:50,540 - vm_create_page - input_item - 云主机创建 - INFO - 填写到业务系统的值为：
+2018-09-16 23:15:50,541 - vm_create_page - search_for - 云主机创建 - INFO - 搜索业务系统之后进行选择
+2018-09-16 23:15:52,543 - vm_create_page - input_item - 云主机创建 - INFO - 填写到应用集群的值为：
+2018-09-16 23:15:52,544 - vm_create_page - search_for - 云主机创建 - INFO - 搜索应用集群之后进行选择
+2018-09-16 23:15:54,546 - vm_create_page - input_item - 云主机创建 - INFO - 填写到到期时间的值为：2019-01-01
+2018-09-16 23:15:54,548 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//*[@id='inlineRadio3']//..//span")
+2018-09-16 23:15:54,727 - base_page - find_element - 基本操作 - INFO - 查找元素:('id', 'resource_instance_vm_limit_option3')
+2018-09-16 23:15:54,993 - base_page - find_element - 基本操作 - INFO - 查找元素:('id', 'resource_instance_vm_limit_option3')
+2018-09-16 23:15:55,451 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', '//textarea')
+2018-09-16 23:15:57,605 - vm_create_page - input_item - 云主机创建 - INFO - 填写到备注的值为：自动化创建的云主机
+2018-09-16 23:15:57,607 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', '//textarea')
+2018-09-16 23:15:59,839 - vm_create_page - input_item - 云主机创建 - INFO - 填写到可用分区的值为：AZ-Winserver 虚拟化:WinServer
+2018-09-16 23:15:59,841 - vm_create_page - item_select - 云主机创建 - INFO - 操作可用分区下拉框
+2018-09-16 23:15:59,842 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//label[text()='可用分区：']/..//select")
+2018-09-16 23:15:59,931 - vm_create_page - item_select - 云主机创建 - INFO - 根据选择值AZ-Winserver 虚拟化:WinServer对下拉框进行选择
+2018-09-16 23:16:02,160 - vm_create_page - input_item - 云主机创建 - INFO - 填写到镜像的值为：win2012
+2018-09-16 23:16:02,160 - vm_create_page - search_for - 云主机创建 - INFO - 搜索镜像之后进行选择
+2018-09-16 23:16:02,162 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//button[@data-bind='click:$root.addImage']")
+2018-09-16 23:16:04,385 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//span[text()='镜像名称']/../input")
+2018-09-16 23:16:04,714 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//*[text()='搜索']")
+2018-09-16 23:16:04,924 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', '//table//tr[2]/td[1]//span')
+2018-09-16 23:16:05,226 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//button[text()='确认' and @data-bind='click: imageSave']")
+2018-09-16 23:16:07,588 - vm_create_page - input_item - 云主机创建 - INFO - 填写到宿主机的值为：192.168.206.76
+2018-09-16 23:16:07,590 - vm_create_page - search_for - 云主机创建 - INFO - 搜索宿主机之后进行选择
+2018-09-16 23:16:07,592 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//button[@data-bind='click: $root.addHost']")
+2018-09-16 23:16:09,789 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//span[text()='IP地址']/../input")
+2018-09-16 23:16:20,326 - base_page - find_element - 基本操作 - ERROR - 定位超时：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\CSC7\pages\base_page.py", line 54, in find_element
+    WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(loc))
+  File "C:\Users\xin\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-09-16 23:30:38,387 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-16 23:30:39,862 - [INFO] - 基本操作 - input_username - 输入用户名：admin
+2018-09-16 23:30:39,964 - [INFO] - 基本操作 - find_element - 查找元素:('name', 'username') 成功！
+2018-09-16 23:30:40,132 - [INFO] - 基本操作 - input_password - 输入密码：1234567890
+2018-09-16 23:30:40,196 - [INFO] - 基本操作 - find_element - 查找元素:('name', 'password') 成功！
+2018-09-16 23:30:40,351 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-16 23:30:40,428 - [INFO] - 基本操作 - find_element - 查找元素:('name', 'submit') 成功！
+2018-09-16 23:30:42,751 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', '//*[@id="header"]/div[2]/ul/li[5]/a/span') 成功！
+2018-09-16 23:30:42,905 - [INFO] - 登录 - login - 登录成功
+2018-09-16 23:30:42,911 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html#pages/resources/instances/vms/vm_create?previousPage=1
+2018-09-16 23:30:43,956 - [INFO] - 云主机创建 - input_item - 填写到云主机名称的值为：python01
+2018-09-16 23:30:44,465 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//label[text()='云主机名称：']//..//input") 成功！
+2018-09-16 23:30:47,143 - [INFO] - 云主机创建 - input_item - 填写到VM Name的值为：python01
+2018-09-16 23:30:47,202 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//label[text()='VM Name：']//..//input") 成功！
+2018-09-16 23:30:49,574 - [INFO] - 云主机创建 - input_item - 填写到Hostname的值为：python01
+2018-09-16 23:30:49,634 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', '//form/div[2]/div[3]/div/div/input') 成功！
+2018-09-16 23:30:52,010 - [INFO] - 云主机创建 - input_item - 填写到归属服务的值为：zhh
+2018-09-16 23:30:52,012 - [INFO] - 云主机创建 - search_for - 搜索归属服务之后进行选择
+2018-09-16 23:30:52,066 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//button[@data-bind='click: addService']") 成功！
+2018-09-16 23:30:54,342 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//span[text()='服务名称']/../input") 成功！
+2018-09-16 23:30:54,614 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//*[text()='搜索']") 成功！
+2018-09-16 23:30:54,917 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', '//table//tr[2]/td[1]//span') 成功！
+2018-09-16 23:30:55,224 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//button[text()='确定']") 成功！
+2018-09-16 23:30:57,510 - [INFO] - 云主机创建 - input_item - 填写到归属VDC的值为：zhhvdca
+2018-09-16 23:30:57,511 - [INFO] - 云主机创建 - search_for - 搜索归属VDC之后进行选择
+2018-09-16 23:30:57,568 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//button[@data-bind='click: addVdc']") 成功！
+2018-09-16 23:30:59,794 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//span[text()='VDC名称']/../input") 成功！
+2018-09-16 23:31:00,119 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//*[text()='搜索']") 成功！
+2018-09-16 23:31:00,327 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', '//table//tr[2]/td[1]//span') 成功！
+2018-09-16 23:31:00,587 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//button[text()='确认' and @data-bind='click: vdcSave']") 成功！
+2018-09-16 23:31:02,883 - [INFO] - 云主机创建 - input_item - 填写到归属用户的值为：admin
+2018-09-16 23:31:02,885 - [INFO] - 云主机创建 - search_for - 搜索归属用户之后进行选择
+2018-09-16 23:31:02,952 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//button[@data-bind='click: showUser']") 成功！
+2018-09-16 23:31:05,319 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//span[text()='账号']/../input") 成功！
+2018-09-16 23:31:05,626 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//*[text()='搜索']") 成功！
+2018-09-16 23:31:05,862 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', '//table//tr[2]/td[1]//span') 成功！
+2018-09-16 23:31:06,132 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//button[text()='确认' and @data-bind='click: saveUsers']") 成功！
+2018-09-16 23:31:08,398 - [INFO] - 云主机创建 - input_item - 填写到业务系统的值为：
+2018-09-16 23:31:08,401 - [INFO] - 云主机创建 - search_for - 搜索业务系统之后进行选择
+2018-09-16 23:31:10,403 - [INFO] - 云主机创建 - input_item - 填写到应用集群的值为：
+2018-09-16 23:31:10,404 - [INFO] - 云主机创建 - search_for - 搜索应用集群之后进行选择
+2018-09-16 23:31:12,407 - [INFO] - 云主机创建 - input_item - 填写到到期时间的值为：2019-01-01
+2018-09-16 23:31:12,466 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//*[@id='inlineRadio3']//..//span") 成功！
+2018-09-16 23:31:12,688 - [INFO] - 基本操作 - find_element - 查找元素:('id', 'resource_instance_vm_limit_option3') 成功！
+2018-09-16 23:31:12,901 - [INFO] - 基本操作 - find_element - 查找元素:('id', 'resource_instance_vm_limit_option3') 成功！
+2018-09-16 23:31:13,401 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', '//textarea') 成功！
+2018-09-16 23:31:15,511 - [INFO] - 云主机创建 - input_item - 填写到备注的值为：自动化创建的云主机
+2018-09-16 23:31:15,543 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', '//textarea') 成功！
+2018-09-16 23:31:17,755 - [INFO] - 云主机创建 - input_item - 填写到可用分区的值为：AZ-Winserver 虚拟化:WinServer
+2018-09-16 23:31:17,756 - [INFO] - 云主机创建 - item_select - 操作可用分区下拉框
+2018-09-16 23:31:17,810 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//label[text()='可用分区：']/..//select") 成功！
+2018-09-16 23:31:17,848 - [INFO] - 云主机创建 - item_select - 根据选择值AZ-Winserver 虚拟化:WinServer对下拉框进行选择
+2018-09-16 23:31:20,030 - [INFO] - 云主机创建 - input_item - 填写到镜像的值为：win2012
+2018-09-16 23:31:20,033 - [INFO] - 云主机创建 - search_for - 搜索镜像之后进行选择
+2018-09-16 23:31:20,093 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//button[@data-bind='click:$root.addImage']") 成功！
+2018-09-16 23:31:22,321 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//span[text()='镜像名称']/../input") 成功！
+2018-09-16 23:31:22,638 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//*[text()='搜索']") 成功！
+2018-09-16 23:31:22,875 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', '//table//tr[2]/td[1]//span') 成功！
+2018-09-16 23:31:23,124 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//button[text()='确认' and @data-bind='click: imageSave']") 成功！
+2018-09-16 23:31:25,384 - [INFO] - 云主机创建 - input_item - 填写到宿主机的值为：192.168.206.76
+2018-09-16 23:31:25,385 - [INFO] - 云主机创建 - search_for - 搜索宿主机之后进行选择
+2018-09-16 23:31:25,457 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//button[@data-bind='click: $root.addHost']") 成功！
+2018-09-16 23:31:38,133 - [ERROR] - 基本操作 - find_element - 定位('xpath', "//span[text()='IP地址']/../input")超时：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\CSC7\pages\base_page.py", line 53, in find_element
+    WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(loc))
+  File "C:\Users\xin\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-09-16 23:40:14,502 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-16 23:40:15,899 - [INFO] - 基本操作 - input_username - 输入用户名：admin
+2018-09-16 23:40:15,978 - [INFO] - 基本操作 - find_element - 查找元素:('name', 'username') 成功！
+2018-09-16 23:40:16,115 - [INFO] - 基本操作 - input_password - 输入密码：1234567890
+2018-09-16 23:40:16,169 - [INFO] - 基本操作 - find_element - 查找元素:('name', 'password') 成功！
+2018-09-16 23:40:16,329 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-16 23:40:16,400 - [INFO] - 基本操作 - find_element - 查找元素:('name', 'submit') 成功！
+2018-09-16 23:40:18,608 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', '//*[@id="header"]/div[2]/ul/li[5]/a/span') 成功！
+2018-09-16 23:40:18,732 - [INFO] - 登录 - login - 登录成功
+2018-09-16 23:40:18,739 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html#pages/resources/instances/vms/vm_create?previousPage=1
+2018-09-16 23:40:20,519 - [INFO] - 云主机创建 - input_item - 云主机名称：python01
+2018-09-16 23:40:20,961 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//label[text()='云主机名称：']//..//input") 成功！
+2018-09-16 23:40:23,582 - [INFO] - 云主机创建 - input_item - VM Name：python01
+2018-09-16 23:40:23,682 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//label[text()='VM Name：']//..//input") 成功！
+2018-09-16 23:40:26,102 - [INFO] - 云主机创建 - input_item - Hostname：python01
+2018-09-16 23:40:26,170 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', '//form/div[2]/div[3]/div/div/input') 成功！
+2018-09-16 23:40:28,668 - [INFO] - 云主机创建 - input_item - 归属服务：zhh
+2018-09-16 23:40:28,670 - [INFO] - 云主机创建 - search_for - 搜索归属服务之后进行选择
+2018-09-16 23:40:28,722 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//button[@data-bind='click: addService']") 成功！
+2018-09-16 23:40:30,984 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//span[text()='服务名称']/../input") 成功！
+2018-09-16 23:40:31,299 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//*[text()='搜索']") 成功！
+2018-09-16 23:40:32,163 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', '//table//tr[2]/td[1]//span') 成功！
+2018-09-16 23:40:32,393 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//button[text()='确定']") 成功！
+2018-09-16 23:40:34,713 - [INFO] - 云主机创建 - input_item - 归属VDC：zhhvdca
+2018-09-16 23:40:34,714 - [INFO] - 云主机创建 - search_for - 搜索归属VDC之后进行选择
+2018-09-16 23:40:34,766 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//button[@data-bind='click: addVdc']") 成功！
+2018-09-16 23:40:37,009 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//span[text()='VDC名称']/../input") 成功！
+2018-09-16 23:40:37,352 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//*[text()='搜索']") 成功！
+2018-09-16 23:40:37,590 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', '//table//tr[2]/td[1]//span') 成功！
+2018-09-16 23:40:37,874 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//button[text()='确认' and @data-bind='click: vdcSave']") 成功！
+2018-09-16 23:40:40,154 - [INFO] - 云主机创建 - input_item - 归属用户：admin
+2018-09-16 23:40:40,156 - [INFO] - 云主机创建 - search_for - 搜索归属用户之后进行选择
+2018-09-16 23:40:40,216 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//button[@data-bind='click: showUser']") 成功！
+2018-09-16 23:40:42,581 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//span[text()='账号']/../input") 成功！
+2018-09-16 23:40:42,857 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//*[text()='搜索']") 成功！
+2018-09-16 23:40:43,598 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', '//table//tr[2]/td[1]//span') 成功！
+2018-09-16 23:40:43,781 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//button[text()='确认' and @data-bind='click: saveUsers']") 成功！
+2018-09-16 23:40:45,993 - [INFO] - 云主机创建 - input_item - 业务系统：
+2018-09-16 23:40:45,994 - [INFO] - 云主机创建 - search_for - 搜索业务系统之后进行选择
+2018-09-16 23:40:47,996 - [INFO] - 云主机创建 - input_item - 应用集群：
+2018-09-16 23:40:47,997 - [INFO] - 云主机创建 - search_for - 搜索应用集群之后进行选择
+2018-09-16 23:40:49,998 - [INFO] - 云主机创建 - input_item - 到期时间：2019-01-01
+2018-09-16 23:40:50,062 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//*[@id='inlineRadio3']//..//span") 成功！
+2018-09-16 23:40:50,333 - [INFO] - 基本操作 - find_element - 查找元素:('id', 'resource_instance_vm_limit_option3') 成功！
+2018-09-16 23:40:50,560 - [INFO] - 基本操作 - find_element - 查找元素:('id', 'resource_instance_vm_limit_option3') 成功！
+2018-09-16 23:40:51,034 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', '//textarea') 成功！
+2018-09-16 23:40:53,124 - [INFO] - 云主机创建 - input_item - 备注：自动化创建的云主机
+2018-09-16 23:40:53,156 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', '//textarea') 成功！
+2018-09-16 23:40:55,344 - [INFO] - 云主机创建 - input_item - 可用分区：AZ-Winserver 虚拟化:WinServer
+2018-09-16 23:40:55,399 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//label[text()='可用分区：']/..//select") 成功！
+2018-09-16 23:40:55,444 - [INFO] - 云主机创建 - item_select - 下拉可用分区，选择AZ-Winserver 虚拟化:WinServer
+2018-09-16 23:40:57,650 - [INFO] - 云主机创建 - input_item - 镜像：win2012
+2018-09-16 23:40:57,652 - [INFO] - 云主机创建 - search_for - 搜索镜像之后进行选择
+2018-09-16 23:40:57,724 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//button[@data-bind='click:$root.addImage']") 成功！
+2018-09-16 23:40:59,958 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//span[text()='镜像名称']/../input") 成功！
+2018-09-16 23:41:00,350 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//*[text()='搜索']") 成功！
+2018-09-16 23:41:00,573 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', '//table//tr[2]/td[1]//span') 成功！
+2018-09-16 23:41:00,824 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//button[text()='确认' and @data-bind='click: imageSave']") 成功！
+2018-09-16 23:41:03,092 - [INFO] - 云主机创建 - input_item - 宿主机：192.168.206.76
+2018-09-16 23:41:03,095 - [INFO] - 云主机创建 - search_for - 搜索宿主机之后进行选择
+2018-09-16 23:41:03,153 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//button[@data-bind='click: $root.addHost']") 成功！
+2018-09-16 23:41:15,860 - [ERROR] - 基本操作 - find_element - 定位('xpath', "//span[text()='IP地址']/../input")时发生异常：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\CSC7\pages\base_page.py", line 53, in find_element
+    WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(loc))
+  File "C:\Users\xin\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-09-17 14:26:24,046 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-17 14:26:25,500 - [INFO] - 基本操作 - input_username - 输入用户名：admin
+2018-09-17 14:26:25,724 - [INFO] - 基本操作 - input_password - 输入密码：1234567890
+2018-09-17 14:26:25,931 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-17 14:26:28,151 - [INFO] - 登录 - login - 登录成功
+2018-09-17 14:26:28,154 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html#pages/resources/instances/vms/vm_create?previousPage=1
+2018-09-17 14:26:29,483 - [INFO] - 云主机创建 - input_item - 云主机名称：python01
+2018-09-17 14:26:32,497 - [INFO] - 云主机创建 - input_item - VM Name：python01
+2018-09-17 14:26:34,853 - [INFO] - 云主机创建 - input_item - Hostname：python01
+2018-09-17 14:26:37,357 - [INFO] - 云主机创建 - input_item - 归属服务：zhh2
+2018-09-17 14:26:37,360 - [INFO] - 云主机创建 - search_for - 搜索归属服务：zhh2
+2018-09-17 14:26:39,837 - [INFO] - 云主机创建 - search_for - 点击搜索按钮
+2018-09-17 14:26:51,184 - [ERROR] - 基本操作 - find_element - 定位('xpath', '//table//tr[2]/td[1]//span')时发生异常：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\CSC7\pages\base_page.py", line 53, in find_element
+    WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(loc))
+  File "C:\Users\xin\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-09-17 14:31:30,309 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-17 14:31:31,342 - [INFO] - 基本操作 - input_username - 输入用户名：admin
+2018-09-17 14:31:31,514 - [INFO] - 基本操作 - input_password - 输入密码：1234567890
+2018-09-17 14:31:31,692 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-17 14:31:33,520 - [INFO] - 登录 - login - 登录成功
+2018-09-17 14:31:33,522 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html#pages/resources/instances/vms/vm_create?previousPage=1
+2018-09-17 14:31:34,249 - [INFO] - 云主机创建 - input_item - 云主机名称：python01
+2018-09-17 14:31:37,263 - [INFO] - 云主机创建 - input_item - VM Name：python01
+2018-09-17 14:31:39,616 - [INFO] - 云主机创建 - input_item - Hostname：python01
+2018-09-17 14:31:41,976 - [INFO] - 云主机创建 - input_item - 归属服务：zhh2
+2018-09-17 14:31:41,978 - [INFO] - 云主机创建 - search_for - 搜索归属服务：zhh2
+2018-09-17 14:31:55,365 - [ERROR] - 基本操作 - find_element - 定位('xpath', '//table//tr[2]/td[1]//span')时发生异常：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\CSC7\pages\base_page.py", line 53, in find_element
+    WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(loc))
+  File "C:\Users\xin\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-09-17 14:37:09,631 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-17 14:37:10,893 - [INFO] - 基本操作 - input_username - 输入用户名：admin
+2018-09-17 14:37:11,071 - [INFO] - 基本操作 - input_password - 输入密码：1234567890
+2018-09-17 14:37:11,226 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-17 14:37:12,997 - [INFO] - 登录 - login - 登录成功
+2018-09-17 14:37:13,002 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html#pages/resources/instances/vms/vm_create?previousPage=1
+2018-09-17 14:37:13,798 - [INFO] - 云主机创建 - input_item - 云主机名称：python01
+2018-09-17 14:37:16,845 - [INFO] - 云主机创建 - input_item - VM Name：python01
+2018-09-17 14:37:19,199 - [INFO] - 云主机创建 - input_item - Hostname：python01
+2018-09-17 14:37:21,551 - [INFO] - 云主机创建 - input_item - 归属服务：zhh2
+2018-09-17 14:37:21,555 - [INFO] - 云主机创建 - search_for - 搜索归属服务：zhh2
+2018-09-17 14:37:35,011 - [ERROR] - 基本操作 - find_element - 定位('xpath', '//table//tr[2]/td[1]//span')时发生异常：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\CSC7\pages\base_page.py", line 53, in find_element
+    WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(loc))
+  File "C:\Users\xin\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-09-17 14:37:35,013 - [WARNING] - 云主机创建 - search_for - 搜索不到对应结果
+2018-09-17 14:37:37,192 - [INFO] - 云主机创建 - input_item - 归属VDC：zhhvdca
+2018-09-17 14:37:37,194 - [INFO] - 云主机创建 - search_for - 搜索归属VDC：zhhvdca
+2018-09-17 14:50:14,657 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-17 14:50:15,707 - [INFO] - 基本操作 - input_username - 输入用户名：
+2018-09-17 14:50:15,824 - [INFO] - 基本操作 - input_password - 输入密码：password
+2018-09-17 14:50:15,996 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-17 14:50:16,348 - [INFO] - 基本操作 - show_msg - 提示信息：账号不能为空！
+2018-09-17 14:50:22,987 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-17 14:50:24,030 - [INFO] - 基本操作 - input_username - 输入用户名：admin
+2018-09-17 14:50:24,216 - [INFO] - 基本操作 - input_password - 输入密码：
+2018-09-17 14:50:24,324 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-17 14:50:24,674 - [INFO] - 基本操作 - show_msg - 提示信息：密码不能为空！
+2018-09-17 14:50:31,257 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-17 14:50:32,258 - [INFO] - 基本操作 - input_username - 输入用户名：admin
+2018-09-17 14:50:32,467 - [INFO] - 基本操作 - input_password - 输入密码：1234567890
+2018-09-17 14:50:32,651 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-17 14:50:41,404 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-17 14:50:42,541 - [INFO] - 基本操作 - input_username - 输入用户名：wjx
+2018-09-17 14:50:42,719 - [INFO] - 基本操作 - input_password - 输入密码：Admin123
+2018-09-17 14:50:42,894 - [INFO] - 基本操作 - switch_usertype - 切换为AD用户登陆
+2018-09-17 14:50:43,099 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-17 14:51:03,770 - [INFO] - 基本操作 - show_msg - 提示信息：AD域连接失败！
+2018-09-17 14:59:26,261 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-17 14:59:27,345 - [INFO] - 基本操作 - input_username - 输入用户名：admin
+2018-09-17 14:59:27,524 - [INFO] - 基本操作 - input_password - 输入密码：1234567890
+2018-09-17 14:59:27,683 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-17 14:59:29,538 - [INFO] - 登录 - login - 登录成功
+2018-09-17 14:59:29,541 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html#pages/resources/instances/vms/vm_create?previousPage=1
+2018-09-17 14:59:30,218 - [INFO] - 云主机创建 - input_item - 云主机名称：python01
+2018-09-17 14:59:33,038 - [INFO] - 云主机创建 - input_item - VM Name：python01
+2018-09-17 14:59:35,348 - [INFO] - 云主机创建 - input_item - Hostname：python01
+2018-09-17 14:59:37,678 - [INFO] - 云主机创建 - input_item - 归属服务：zhh2
+2018-09-17 14:59:37,680 - [INFO] - 云主机创建 - search_for - 搜索归属服务：zhh2
+2018-09-17 14:59:51,276 - [ERROR] - 基本操作 - click_element - 元素('xpath', '//table//tr[2]/td[1]//span')无法点击：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\CSC7\pages\base_page.py", line 70, in click_element
+    WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(loc))
+  File "C:\Users\xin\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-09-17 14:59:51,278 - [INFO] - 云主机创建 - search_for - 勾选第一个搜索结果
+2018-09-17 14:59:53,582 - [INFO] - 云主机创建 - input_item - 归属VDC：zhhvdca
+2018-09-17 14:59:53,584 - [INFO] - 云主机创建 - search_for - 搜索归属VDC：zhhvdca
+2018-09-17 15:05:16,677 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-17 15:05:17,849 - [INFO] - 基本操作 - input_username - 输入用户名：admin
+2018-09-17 15:05:18,038 - [INFO] - 基本操作 - input_password - 输入密码：1234567890
+2018-09-17 15:05:18,215 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-17 15:05:20,134 - [INFO] - 登录 - login - 登录成功
+2018-09-17 15:05:20,140 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html#pages/resources/instances/vms/vm_create?previousPage=1
+2018-09-17 15:05:20,971 - [INFO] - 云主机创建 - input_item - 云主机名称：python01
+2018-09-17 15:05:23,900 - [INFO] - 云主机创建 - input_item - VM Name：python01
+2018-09-17 15:05:26,201 - [INFO] - 云主机创建 - input_item - Hostname：python01
+2018-09-17 15:05:28,518 - [INFO] - 云主机创建 - input_item - 归属服务：zhh2
+2018-09-17 15:05:28,520 - [INFO] - 云主机创建 - search_for - 搜索归属服务：zhh2
+2018-09-17 15:05:31,120 - [INFO] - 云主机创建 - search_for - 点击搜索按钮
+2018-09-17 15:05:31,385 - [INFO] - 云主机创建 - search_for - 勾选第一个搜索结果
+2018-09-17 15:05:41,948 - [ERROR] - 基本操作 - click_element - 元素('xpath', '//table//tr[2]/td[1]//span')无法点击：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\CSC7\pages\base_page.py", line 70, in click_element
+    WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(loc))
+  File "C:\Users\xin\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-09-17 15:05:41,950 - [WARNING] - 云主机创建 - search_for - 搜索不到对应结果
+2018-09-17 15:05:44,150 - [INFO] - 云主机创建 - input_item - 归属VDC：zhhvdca
+2018-09-17 15:05:44,151 - [INFO] - 云主机创建 - search_for - 搜索归属VDC：zhhvdca
+2018-09-17 15:11:26,702 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-17 15:11:27,795 - [INFO] - 基本操作 - input_username - admin
+2018-09-17 15:11:27,993 - [INFO] - 基本操作 - input_password - 1234567890
+2018-09-17 15:11:28,169 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-17 15:11:30,158 - [INFO] - 登录 - login - 登录成功
+2018-09-17 15:11:30,161 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html#pages/resources/instances/vms/vm_create?previousPage=1
+2018-09-17 15:11:31,320 - [INFO] - 云主机创建 - input_item - 云主机名称：python01
+2018-09-17 15:11:34,596 - [INFO] - 云主机创建 - input_item - VM Name：python01
+2018-09-17 15:11:36,943 - [INFO] - 云主机创建 - input_item - Hostname：python01
+2018-09-17 15:11:39,259 - [INFO] - 云主机创建 - input_item - 归属服务：zhh2
+2018-09-17 15:11:39,260 - [INFO] - 云主机创建 - search_for - 归属服务：zhh2
+2018-09-17 15:11:41,697 - [INFO] - 云主机创建 - search_for - 点击搜索按钮
+2018-09-17 15:11:41,998 - [INFO] - 云主机创建 - search_for - 勾选第一个搜索结果
+2018-09-17 15:11:52,575 - [ERROR] - 基本操作 - click_element - 元素('xpath', '//table//tr[2]/td[1]//span')无法点击：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\CSC7\pages\base_page.py", line 70, in click_element
+    WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(loc))
+  File "C:\Users\xin\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-09-17 15:11:52,579 - [WARNING] - 云主机创建 - search_for - 搜索不到对应结果
+2018-09-17 15:11:54,789 - [INFO] - 云主机创建 - input_item - 归属VDC：zhhvdca
+2018-09-17 15:11:54,790 - [INFO] - 云主机创建 - search_for - 归属VDC：zhhvdca
+2018-09-17 15:34:16,662 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-17 15:34:17,654 - [INFO] - 基本操作 - input_username - admin
+2018-09-17 15:34:17,819 - [INFO] - 基本操作 - input_password - 1234567890
+2018-09-17 15:34:17,969 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-17 15:34:19,616 - [INFO] - 登录 - login - 登录成功
+2018-09-17 15:34:19,621 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html#pages/resources/instances/vms/vm_create?previousPage=1
+2018-09-17 15:34:20,346 - [INFO] - 云主机创建 - input_item - 云主机名称：python01
+2018-09-17 15:34:23,112 - [INFO] - 云主机创建 - input_item - VM Name：python01
+2018-09-17 15:34:25,438 - [INFO] - 云主机创建 - input_item - Hostname：python01
+2018-09-17 15:34:27,744 - [INFO] - 云主机创建 - input_item - 归属服务：zhh2
+2018-09-17 15:34:27,745 - [INFO] - 云主机创建 - search_for - 归属服务：zhh2
+2018-09-17 15:34:30,253 - [INFO] - 云主机创建 - search_for - 点击搜索按钮
+2018-09-17 15:34:30,510 - [INFO] - 云主机创建 - search_for - 勾选第一个搜索结果
+2018-09-17 15:34:41,071 - [ERROR] - 基本操作 - click_element - 元素('xpath', '//table//tr[2]/td[1]//span')无法点击：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\CSC7\pages\base_page.py", line 70, in click_element
+    WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(loc))
+  File "C:\Users\xin\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-09-17 15:34:41,073 - [WARNING] - 云主机创建 - search_for - 搜索不到对应结果
+2018-09-17 15:34:43,259 - [INFO] - 云主机创建 - input_item - 归属VDC：zhhvdca
+2018-09-17 15:34:43,260 - [INFO] - 云主机创建 - search_for - 归属VDC：zhhvdca
+2018-09-19 16:04:56,867 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-19 16:04:59,834 - [INFO] - 基本操作 - input_username - 
+2018-09-19 16:05:00,129 - [INFO] - 基本操作 - input_password - password
+2018-09-19 16:05:00,501 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-19 16:05:01,211 - [INFO] - 基本操作 - show_msg - 提示信息：账号不能为空！
+2018-09-19 16:05:01,213 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-19 16:05:02,262 - [INFO] - 基本操作 - input_username - admin
+2018-09-19 16:05:02,652 - [INFO] - 基本操作 - input_password - 
+2018-09-19 16:05:02,930 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-19 16:05:03,639 - [INFO] - 基本操作 - show_msg - 提示信息：密码不能为空！
+2018-09-19 16:05:03,641 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-19 16:05:04,688 - [INFO] - 基本操作 - input_username - admin
+2018-09-19 16:05:05,163 - [INFO] - 基本操作 - input_password - 1234567890
+2018-09-19 16:05:05,671 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-19 16:05:12,546 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-19 16:05:14,904 - [INFO] - 基本操作 - input_username - wjx
+2018-09-19 16:05:25,571 - [ERROR] - 基本操作 - find_element - 定位('name', 'username')时发生异常：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\CSC7\pages\base_page.py", line 53, in find_element
+    WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(loc))
+  File "C:\Users\xin\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-09-19 16:06:53,681 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-19 16:06:55,815 - [INFO] - 基本操作 - input_username - 
+2018-09-19 16:06:56,163 - [INFO] - 基本操作 - input_password - password
+2018-09-19 16:06:56,752 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-19 16:06:57,413 - [INFO] - 基本操作 - show_msg - 提示信息：账号不能为空！
+2018-09-19 16:07:06,184 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-19 16:07:08,348 - [INFO] - 基本操作 - input_username - admin
+2018-09-19 16:07:08,772 - [INFO] - 基本操作 - input_password - 
+2018-09-19 16:07:09,012 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-19 16:07:09,865 - [INFO] - 基本操作 - show_msg - 提示信息：密码不能为空！
+2018-09-19 16:07:21,726 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-19 16:07:24,019 - [INFO] - 基本操作 - input_username - admin
+2018-09-19 16:07:24,402 - [INFO] - 基本操作 - input_password - 1234567890
+2018-09-19 16:07:24,748 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-19 16:07:38,185 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-19 16:07:40,633 - [INFO] - 基本操作 - input_username - wjx
+2018-09-19 16:07:41,276 - [INFO] - 基本操作 - input_password - Admin123
+2018-09-19 16:07:42,091 - [INFO] - 基本操作 - switch_usertype - 切换为AD用户登陆
+2018-09-19 16:07:42,920 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-19 16:38:19,355 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-19 16:38:20,928 - [INFO] - 基本操作 - input_username - 
+2018-09-19 16:38:21,097 - [INFO] - 基本操作 - input_password - password
+2018-09-19 16:38:21,514 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-19 16:38:22,069 - [INFO] - 基本操作 - show_msg - 提示信息：账号不能为空！
+2018-09-19 16:38:30,783 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-19 16:38:32,215 - [INFO] - 基本操作 - input_username - admin
+2018-09-19 16:38:32,409 - [INFO] - 基本操作 - input_password - 
+2018-09-19 16:38:32,554 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-19 16:38:33,058 - [INFO] - 基本操作 - show_msg - 提示信息：密码不能为空！
+2018-09-19 16:38:40,033 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-19 16:38:41,580 - [INFO] - 基本操作 - input_username - admin
+2018-09-19 16:38:41,763 - [INFO] - 基本操作 - input_password - 1234567890
+2018-09-19 16:38:41,978 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-19 16:38:51,029 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-19 16:38:52,616 - [INFO] - 基本操作 - input_username - wjx
+2018-09-19 16:38:52,828 - [INFO] - 基本操作 - input_password - Admin123
+2018-09-19 16:38:53,059 - [INFO] - 基本操作 - switch_usertype - 切换为AD用户登陆
+2018-09-19 16:38:53,273 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-19 23:20:49,278 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-19 23:20:51,338 - [INFO] - 基本操作 - input_username - admin
+2018-09-19 23:20:51,603 - [INFO] - 基本操作 - input_password - 1234567890
+2018-09-19 23:20:51,898 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-19 23:20:54,586 - [INFO] - 登录 - login - 登录成功
+2018-09-19 23:20:54,587 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html#pages/resources/instances/vms/vm_create?previousPage=1
+2018-09-19 23:20:56,111 - [INFO] - 云主机创建 - input_item - 云主机名称：python01
+2018-09-19 23:20:59,596 - [INFO] - 云主机创建 - input_item - VM Name：python01
+2018-09-19 23:21:02,107 - [INFO] - 云主机创建 - input_item - Hostname：python01
+2018-09-19 23:21:04,551 - [INFO] - 云主机创建 - input_item - 归属服务：zhh2
+2018-09-19 23:21:04,551 - [INFO] - 云主机创建 - search_for - 归属服务：zhh2
+2018-09-19 23:21:07,287 - [INFO] - 云主机创建 - search_for - 点击搜索按钮
+2018-09-19 23:21:07,662 - [INFO] - 云主机创建 - search_for - 勾选第一个搜索结果
+2018-09-19 23:21:18,207 - [ERROR] - 基本操作 - click_element - 元素('xpath', '//table//tr[2]/td[1]//span')无法点击：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\CSC7.0.1\autotest\workspace\pages\base_page.py", line 70, in click_element
+    WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(loc))
+  File "c:\users\xin\appdata\local\programs\python\python36\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-09-19 23:21:18,209 - [WARNING] - 云主机创建 - search_for - 搜索不到对应结果
+2018-09-19 23:21:20,459 - [INFO] - 云主机创建 - input_item - 归属VDC：zhhvdca
+2018-09-19 23:21:20,459 - [INFO] - 云主机创建 - search_for - 归属VDC：zhhvdca
+2018-09-19 23:48:50,551 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-19 23:48:52,778 - [INFO] - 基本操作 - input_username - admin
+2018-09-19 23:48:53,045 - [INFO] - 基本操作 - input_password - 1234567890
+2018-09-19 23:48:53,264 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-19 23:48:56,025 - [INFO] - 登录 - login - 登录成功
+2018-09-19 23:48:56,025 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html#pages/resources/instances/vms/vm_create?previousPage=1
+2018-09-19 23:48:57,150 - [INFO] - 云主机创建 - input_item - 云主机名称：python01
+2018-09-19 23:49:00,546 - [INFO] - 云主机创建 - input_item - VM Name：python01
+2018-09-19 23:49:02,971 - [INFO] - 云主机创建 - input_item - Hostname：python01
+2018-09-19 23:49:05,506 - [INFO] - 云主机创建 - input_item - 归属服务：zhh2
+2018-09-19 23:49:05,506 - [INFO] - 云主机创建 - search_for - 归属服务：zhh2
+2018-09-19 23:49:08,183 - [INFO] - 云主机创建 - search_for - 点击搜索按钮
+2018-09-19 23:49:08,685 - [INFO] - 云主机创建 - search_for - 勾选第一个搜索结果
+2018-09-19 23:49:19,249 - [ERROR] - 基本操作 - click_element - 元素('xpath', '//table//tr[2]/td[1]//span')无法点击：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\CSC7.0.1\autotest\workspace\pages\base_page.py", line 70, in click_element
+    WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(loc))
+  File "c:\users\xin\appdata\local\programs\python\python36\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-09-19 23:49:19,251 - [WARNING] - 云主机创建 - search_for - 搜索不到对应结果
+2018-09-19 23:49:21,477 - [INFO] - 云主机创建 - input_item - 归属VDC：zhhvdca
+2018-09-19 23:49:21,477 - [INFO] - 云主机创建 - search_for - 归属VDC：zhhvdca
+2018-09-20 00:02:12,861 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-20 00:02:14,920 - [INFO] - 基本操作 - input_username - admin
+2018-09-20 00:02:15,321 - [INFO] - 基本操作 - input_password - 1234567890
+2018-09-20 00:02:15,762 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-20 00:02:19,088 - [INFO] - 登录 - login - 登录成功
+2018-09-20 00:02:19,090 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html#pages/resources/instances/vms/vm_create?previousPage=1
+2018-09-20 00:02:21,631 - [INFO] - 云主机创建 - input_item - 云主机名称：python01
+2018-09-20 00:02:24,995 - [INFO] - 云主机创建 - input_item - VM Name：python01
+2018-09-20 00:02:27,717 - [INFO] - 云主机创建 - input_item - Hostname：python01
+2018-09-20 00:02:30,230 - [INFO] - 云主机创建 - input_item - 归属服务：zhh2
+2018-09-20 00:02:30,230 - [INFO] - 云主机创建 - search_for - 归属服务：zhh2
+2018-09-20 00:02:32,952 - [INFO] - 云主机创建 - search_for - 点击搜索按钮
+2018-09-20 00:02:33,433 - [INFO] - 云主机创建 - search_for - 勾选第一个搜索结果
+2018-09-20 00:02:43,650 - [INFO] - 云主机创建 - input_item - 归属VDC：zhhvdca
+2018-09-20 00:02:43,650 - [INFO] - 云主机创建 - search_for - 归属VDC：zhhvdca
+2018-09-20 00:02:46,381 - [INFO] - 云主机创建 - search_for - 点击搜索按钮
+2018-09-20 00:02:46,685 - [INFO] - 云主机创建 - search_for - 勾选第一个搜索结果
+2018-09-20 00:02:49,978 - [INFO] - 云主机创建 - input_item - 归属用户：admin
+2018-09-20 00:02:49,978 - [INFO] - 云主机创建 - search_for - 归属用户：admin
+2018-09-20 00:02:52,759 - [INFO] - 云主机创建 - search_for - 点击搜索按钮
+2018-09-20 00:02:53,077 - [INFO] - 云主机创建 - search_for - 勾选第一个搜索结果
+2018-09-20 00:02:55,969 - [INFO] - 云主机创建 - input_item - 业务系统：
+2018-09-20 00:02:55,969 - [INFO] - 云主机创建 - search_for - 业务系统：
+2018-09-20 00:02:57,970 - [INFO] - 云主机创建 - input_item - 应用集群：
+2018-09-20 00:02:57,972 - [INFO] - 云主机创建 - search_for - 应用集群：
+2018-09-20 00:02:59,972 - [INFO] - 云主机创建 - input_item - 到期时间：2019-01-01
+2018-09-20 00:03:03,398 - [INFO] - 云主机创建 - input_item - 备注：自动化创建的云主机
+2018-09-20 00:03:05,643 - [INFO] - 云主机创建 - input_item - 可用分区：AZ-Winserver 虚拟化:WinServer
+2018-09-20 00:03:05,731 - [INFO] - 云主机创建 - item_select - 下拉可用分区，选择AZ-Winserver 虚拟化:WinServer
+2018-09-20 00:03:07,969 - [INFO] - 云主机创建 - input_item - 镜像：win2012
+2018-09-20 00:03:07,970 - [INFO] - 云主机创建 - search_for - 镜像：win2012
+2018-09-20 00:03:10,698 - [INFO] - 云主机创建 - search_for - 点击搜索按钮
+2018-09-20 00:03:10,999 - [INFO] - 云主机创建 - search_for - 勾选第一个搜索结果
+2018-09-20 00:03:13,880 - [INFO] - 云主机创建 - input_item - 宿主机：192.168.206.76
+2018-09-20 00:03:13,881 - [INFO] - 云主机创建 - search_for - 宿主机：192.168.206.76
+2018-09-20 00:03:16,771 - [INFO] - 云主机创建 - search_for - 点击搜索按钮
+2018-09-20 00:03:17,094 - [INFO] - 云主机创建 - search_for - 勾选第一个搜索结果
+2018-09-20 00:03:20,408 - [INFO] - 云主机创建 - input_item - 存储池：Local storage(192.168.206.76)
+2018-09-20 00:03:20,408 - [INFO] - 云主机创建 - search_for - 存储池：Local storage(192.168.206.76)
+2018-09-20 00:03:33,256 - [ERROR] - 基本操作 - find_element - 定位('xpath', "//span[text()='存储池名称']/../input")时发生异常：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\CSC7.0.1\autotest\workspace\pages\base_page.py", line 53, in find_element
+    WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(loc))
+  File "c:\users\xin\appdata\local\programs\python\python36\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-09-22 16:26:28,809 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-22 16:26:32,531 - [INFO] - 基本操作 - input_username - 
+2018-09-22 16:26:32,827 - [INFO] - 基本操作 - input_password - password
+2018-09-22 16:26:33,317 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-22 16:26:33,934 - [INFO] - 基本操作 - show_msg - 提示信息：账号不能为空！
+2018-09-22 16:26:41,493 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-22 16:26:44,237 - [INFO] - 基本操作 - input_username - admin
+2018-09-22 16:26:44,662 - [INFO] - 基本操作 - input_password - 
+2018-09-22 16:26:44,949 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-22 16:26:45,759 - [INFO] - 基本操作 - show_msg - 提示信息：密码不能为空！
+2018-09-22 16:26:53,702 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-22 16:26:56,611 - [INFO] - 基本操作 - input_username - admin
+2018-09-22 16:26:56,997 - [INFO] - 基本操作 - input_password - 1234567890
+2018-09-22 16:26:57,494 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-22 16:27:10,631 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-22 16:27:14,928 - [INFO] - 基本操作 - input_username - wjx
+2018-09-22 16:27:15,357 - [INFO] - 基本操作 - input_password - Admin123
+2018-09-22 16:27:15,835 - [INFO] - 基本操作 - switch_usertype - 切换为AD用户登陆
+2018-09-22 16:27:16,362 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-22 17:50:18,760 - [INFO] - teset - <module> - 就是这样：('By.XPATH', '//*[@id="dragDiv5"]/div[2]/div[1]/select')s
+2018-09-22 17:54:51,080 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21462/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}s
+2018-09-22 17:54:51,086 - [DEBUG] - urllib3.connectionpool - _new_conn - Starting new HTTP connection (1): 127.0.0.1:21462s
+2018-09-22 17:54:58,002 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21462 "POST /session HTTP/1.1" 200 887s
+2018-09-22 17:54:58,007 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:54:58,013 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21462/session/3a5ad09eae1ea543909ab660241191f5/timeouts/implicit_wait {"ms": 10000.0, "sessionId": "3a5ad09eae1ea543909ab660241191f5"}s
+2018-09-22 17:54:58,032 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21462 "POST /session/3a5ad09eae1ea543909ab660241191f5/timeouts/implicit_wait HTTP/1.1" 200 72s
+2018-09-22 17:54:58,039 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:54:58,041 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21462/session/3a5ad09eae1ea543909ab660241191f5/window/current/size {"width": 1366, "height": 768, "windowHandle": "current", "sessionId": "3a5ad09eae1ea543909ab660241191f5"}s
+2018-09-22 17:54:59,200 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21462 "POST /session/3a5ad09eae1ea543909ab660241191f5/window/current/size HTTP/1.1" 200 72s
+2018-09-22 17:54:59,204 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:54:59,287 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.htmls
+2018-09-22 17:54:59,300 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21462/session/3a5ad09eae1ea543909ab660241191f5/url {"url": "https://192.168.219.227:8099/csc/index.html", "sessionId": "3a5ad09eae1ea543909ab660241191f5"}s
+2018-09-22 17:55:01,721 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21462 "POST /session/3a5ad09eae1ea543909ab660241191f5/url HTTP/1.1" 200 72s
+2018-09-22 17:55:01,727 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:01,734 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21462/session/3a5ad09eae1ea543909ab660241191f5/refresh {"sessionId": "3a5ad09eae1ea543909ab660241191f5"}s
+2018-09-22 17:55:03,052 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21462 "POST /session/3a5ad09eae1ea543909ab660241191f5/refresh HTTP/1.1" 200 72s
+2018-09-22 17:55:03,060 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:03,078 - [INFO] - 基本操作 - input_username - s
+2018-09-22 17:55:03,089 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21462/session/3a5ad09eae1ea543909ab660241191f5/element {"using": "name", "value": "username", "sessionId": "3a5ad09eae1ea543909ab660241191f5"}s
+2018-09-22 17:55:03,202 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21462 "POST /session/3a5ad09eae1ea543909ab660241191f5/element HTTP/1.1" 200 102s
+2018-09-22 17:55:03,209 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:03,220 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - GET http://127.0.0.1:21462/session/3a5ad09eae1ea543909ab660241191f5/element/0.4952908826852407-1/displayed {"id": "0.4952908826852407-1", "sessionId": "3a5ad09eae1ea543909ab660241191f5"}s
+2018-09-22 17:55:03,344 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21462 "GET /session/3a5ad09eae1ea543909ab660241191f5/element/0.4952908826852407-1/displayed HTTP/1.1" 200 72s
+2018-09-22 17:55:03,350 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:03,355 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21462/session/3a5ad09eae1ea543909ab660241191f5/element {"using": "name", "value": "username", "sessionId": "3a5ad09eae1ea543909ab660241191f5"}s
+2018-09-22 17:55:03,473 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21462 "POST /session/3a5ad09eae1ea543909ab660241191f5/element HTTP/1.1" 200 102s
+2018-09-22 17:55:03,479 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:03,486 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21462/session/3a5ad09eae1ea543909ab660241191f5/element/0.4952908826852407-1/value {"text": "", "value": [], "id": "0.4952908826852407-1", "sessionId": "3a5ad09eae1ea543909ab660241191f5"}s
+2018-09-22 17:55:03,751 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21462 "POST /session/3a5ad09eae1ea543909ab660241191f5/element/0.4952908826852407-1/value HTTP/1.1" 200 72s
+2018-09-22 17:55:03,767 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:03,792 - [INFO] - 基本操作 - input_password - passwords
+2018-09-22 17:55:03,798 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21462/session/3a5ad09eae1ea543909ab660241191f5/element {"using": "name", "value": "password", "sessionId": "3a5ad09eae1ea543909ab660241191f5"}s
+2018-09-22 17:55:03,886 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21462 "POST /session/3a5ad09eae1ea543909ab660241191f5/element HTTP/1.1" 200 102s
+2018-09-22 17:55:03,890 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:03,900 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - GET http://127.0.0.1:21462/session/3a5ad09eae1ea543909ab660241191f5/element/0.4952908826852407-2/displayed {"id": "0.4952908826852407-2", "sessionId": "3a5ad09eae1ea543909ab660241191f5"}s
+2018-09-22 17:55:03,998 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21462 "GET /session/3a5ad09eae1ea543909ab660241191f5/element/0.4952908826852407-2/displayed HTTP/1.1" 200 72s
+2018-09-22 17:55:04,028 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:04,037 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21462/session/3a5ad09eae1ea543909ab660241191f5/element {"using": "name", "value": "password", "sessionId": "3a5ad09eae1ea543909ab660241191f5"}s
+2018-09-22 17:55:04,150 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21462 "POST /session/3a5ad09eae1ea543909ab660241191f5/element HTTP/1.1" 200 102s
+2018-09-22 17:55:04,161 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:04,184 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21462/session/3a5ad09eae1ea543909ab660241191f5/element/0.4952908826852407-2/value {"text": "password", "value": ["p", "a", "s", "s", "w", "o", "r", "d"], "id": "0.4952908826852407-2", "sessionId": "3a5ad09eae1ea543909ab660241191f5"}s
+2018-09-22 17:55:05,081 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21462 "POST /session/3a5ad09eae1ea543909ab660241191f5/element/0.4952908826852407-2/value HTTP/1.1" 200 72s
+2018-09-22 17:55:05,093 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:05,122 - [INFO] - 基本操作 - click_submit - 点击登录按钮s
+2018-09-22 17:55:05,127 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21462/session/3a5ad09eae1ea543909ab660241191f5/element {"using": "name", "value": "submit", "sessionId": "3a5ad09eae1ea543909ab660241191f5"}s
+2018-09-22 17:55:05,235 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21462 "POST /session/3a5ad09eae1ea543909ab660241191f5/element HTTP/1.1" 200 102s
+2018-09-22 17:55:05,238 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:05,244 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - GET http://127.0.0.1:21462/session/3a5ad09eae1ea543909ab660241191f5/element/0.4952908826852407-3/displayed {"id": "0.4952908826852407-3", "sessionId": "3a5ad09eae1ea543909ab660241191f5"}s
+2018-09-22 17:55:05,350 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21462 "GET /session/3a5ad09eae1ea543909ab660241191f5/element/0.4952908826852407-3/displayed HTTP/1.1" 200 72s
+2018-09-22 17:55:05,355 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:05,361 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - GET http://127.0.0.1:21462/session/3a5ad09eae1ea543909ab660241191f5/element/0.4952908826852407-3/enabled {"id": "0.4952908826852407-3", "sessionId": "3a5ad09eae1ea543909ab660241191f5"}s
+2018-09-22 17:55:05,433 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21462 "GET /session/3a5ad09eae1ea543909ab660241191f5/element/0.4952908826852407-3/enabled HTTP/1.1" 200 72s
+2018-09-22 17:55:05,437 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:05,442 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21462/session/3a5ad09eae1ea543909ab660241191f5/element {"using": "name", "value": "submit", "sessionId": "3a5ad09eae1ea543909ab660241191f5"}s
+2018-09-22 17:55:05,511 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21462 "POST /session/3a5ad09eae1ea543909ab660241191f5/element HTTP/1.1" 200 102s
+2018-09-22 17:55:05,516 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:05,532 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - GET http://127.0.0.1:21462/session/3a5ad09eae1ea543909ab660241191f5/element/0.4952908826852407-3/displayed {"id": "0.4952908826852407-3", "sessionId": "3a5ad09eae1ea543909ab660241191f5"}s
+2018-09-22 17:55:05,721 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21462 "GET /session/3a5ad09eae1ea543909ab660241191f5/element/0.4952908826852407-3/displayed HTTP/1.1" 200 72s
+2018-09-22 17:55:05,727 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:05,729 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21462/session/3a5ad09eae1ea543909ab660241191f5/element {"using": "name", "value": "submit", "sessionId": "3a5ad09eae1ea543909ab660241191f5"}s
+2018-09-22 17:55:05,786 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21462 "POST /session/3a5ad09eae1ea543909ab660241191f5/element HTTP/1.1" 200 102s
+2018-09-22 17:55:05,792 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:05,806 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21462/session/3a5ad09eae1ea543909ab660241191f5/element/0.4952908826852407-3/click {"id": "0.4952908826852407-3", "sessionId": "3a5ad09eae1ea543909ab660241191f5"}s
+2018-09-22 17:55:06,000 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21462 "POST /session/3a5ad09eae1ea543909ab660241191f5/element/0.4952908826852407-3/click HTTP/1.1" 200 72s
+2018-09-22 17:55:06,006 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:06,018 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - GET http://127.0.0.1:21462/session/3a5ad09eae1ea543909ab660241191f5/title {"sessionId": "3a5ad09eae1ea543909ab660241191f5"}s
+2018-09-22 17:55:06,090 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21462 "GET /session/3a5ad09eae1ea543909ab660241191f5/title HTTP/1.1" 200 96s
+2018-09-22 17:55:06,096 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:06,112 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21462/session/3a5ad09eae1ea543909ab660241191f5/element {"using": "xpath", "value": "//*[@id=\"cas\"]/div/div[1]/div/div[2]/div[2]/div[3]", "sessionId": "3a5ad09eae1ea543909ab660241191f5"}s
+2018-09-22 17:55:06,214 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21462 "POST /session/3a5ad09eae1ea543909ab660241191f5/element HTTP/1.1" 200 102s
+2018-09-22 17:55:06,221 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:06,224 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - GET http://127.0.0.1:21462/session/3a5ad09eae1ea543909ab660241191f5/element/0.4952908826852407-4/displayed {"id": "0.4952908826852407-4", "sessionId": "3a5ad09eae1ea543909ab660241191f5"}s
+2018-09-22 17:55:06,281 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21462 "GET /session/3a5ad09eae1ea543909ab660241191f5/element/0.4952908826852407-4/displayed HTTP/1.1" 200 72s
+2018-09-22 17:55:06,285 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:06,287 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21462/session/3a5ad09eae1ea543909ab660241191f5/element {"using": "xpath", "value": "//*[@id=\"cas\"]/div/div[1]/div/div[2]/div[2]/div[3]", "sessionId": "3a5ad09eae1ea543909ab660241191f5"}s
+2018-09-22 17:55:06,307 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21462 "POST /session/3a5ad09eae1ea543909ab660241191f5/element HTTP/1.1" 200 102s
+2018-09-22 17:55:06,310 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:06,311 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - GET http://127.0.0.1:21462/session/3a5ad09eae1ea543909ab660241191f5/element/0.4952908826852407-4/text {"id": "0.4952908826852407-4", "sessionId": "3a5ad09eae1ea543909ab660241191f5"}s
+2018-09-22 17:55:06,401 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21462 "GET /session/3a5ad09eae1ea543909ab660241191f5/element/0.4952908826852407-4/text HTTP/1.1" 200 91s
+2018-09-22 17:55:06,405 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:06,407 - [INFO] - 基本操作 - show_msg - 提示信息：账号不能为空！s
+2018-09-22 17:55:06,411 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - DELETE http://127.0.0.1:21462/session/3a5ad09eae1ea543909ab660241191f5 {"sessionId": "3a5ad09eae1ea543909ab660241191f5"}s
+2018-09-22 17:55:06,632 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21462 "DELETE /session/3a5ad09eae1ea543909ab660241191f5 HTTP/1.1" 200 72s
+2018-09-22 17:55:06,662 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:10,155 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21538/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}s
+2018-09-22 17:55:10,158 - [DEBUG] - urllib3.connectionpool - _new_conn - Starting new HTTP connection (1): 127.0.0.1:21538s
+2018-09-22 17:55:13,182 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21538 "POST /session HTTP/1.1" 200 887s
+2018-09-22 17:55:13,193 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:13,202 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21538/session/686af31946ebb5a96b7d977481510f47/timeouts/implicit_wait {"ms": 10000.0, "sessionId": "686af31946ebb5a96b7d977481510f47"}s
+2018-09-22 17:55:13,214 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21538 "POST /session/686af31946ebb5a96b7d977481510f47/timeouts/implicit_wait HTTP/1.1" 200 72s
+2018-09-22 17:55:13,219 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:13,226 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21538/session/686af31946ebb5a96b7d977481510f47/window/current/size {"width": 1366, "height": 768, "windowHandle": "current", "sessionId": "686af31946ebb5a96b7d977481510f47"}s
+2018-09-22 17:55:14,372 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21538 "POST /session/686af31946ebb5a96b7d977481510f47/window/current/size HTTP/1.1" 200 72s
+2018-09-22 17:55:14,375 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:14,435 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.htmls
+2018-09-22 17:55:14,437 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21538/session/686af31946ebb5a96b7d977481510f47/url {"url": "https://192.168.219.227:8099/csc/index.html", "sessionId": "686af31946ebb5a96b7d977481510f47"}s
+2018-09-22 17:55:16,340 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21538 "POST /session/686af31946ebb5a96b7d977481510f47/url HTTP/1.1" 200 72s
+2018-09-22 17:55:16,346 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:16,353 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21538/session/686af31946ebb5a96b7d977481510f47/refresh {"sessionId": "686af31946ebb5a96b7d977481510f47"}s
+2018-09-22 17:55:16,943 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21538 "POST /session/686af31946ebb5a96b7d977481510f47/refresh HTTP/1.1" 200 72s
+2018-09-22 17:55:16,962 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:16,967 - [INFO] - 基本操作 - input_username - admins
+2018-09-22 17:55:16,976 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21538/session/686af31946ebb5a96b7d977481510f47/element {"using": "name", "value": "username", "sessionId": "686af31946ebb5a96b7d977481510f47"}s
+2018-09-22 17:55:17,059 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21538 "POST /session/686af31946ebb5a96b7d977481510f47/element HTTP/1.1" 200 102s
+2018-09-22 17:55:17,065 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:17,070 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - GET http://127.0.0.1:21538/session/686af31946ebb5a96b7d977481510f47/element/0.6472638402235924-1/displayed {"id": "0.6472638402235924-1", "sessionId": "686af31946ebb5a96b7d977481510f47"}s
+2018-09-22 17:55:17,129 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21538 "GET /session/686af31946ebb5a96b7d977481510f47/element/0.6472638402235924-1/displayed HTTP/1.1" 200 72s
+2018-09-22 17:55:17,133 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:17,137 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21538/session/686af31946ebb5a96b7d977481510f47/element {"using": "name", "value": "username", "sessionId": "686af31946ebb5a96b7d977481510f47"}s
+2018-09-22 17:55:17,169 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21538 "POST /session/686af31946ebb5a96b7d977481510f47/element HTTP/1.1" 200 102s
+2018-09-22 17:55:17,172 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:17,175 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21538/session/686af31946ebb5a96b7d977481510f47/element/0.6472638402235924-1/value {"text": "admin", "value": ["a", "d", "m", "i", "n"], "id": "0.6472638402235924-1", "sessionId": "686af31946ebb5a96b7d977481510f47"}s
+2018-09-22 17:55:17,590 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21538 "POST /session/686af31946ebb5a96b7d977481510f47/element/0.6472638402235924-1/value HTTP/1.1" 200 72s
+2018-09-22 17:55:17,596 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:17,621 - [INFO] - 基本操作 - input_password - s
+2018-09-22 17:55:17,649 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21538/session/686af31946ebb5a96b7d977481510f47/element {"using": "name", "value": "password", "sessionId": "686af31946ebb5a96b7d977481510f47"}s
+2018-09-22 17:55:17,707 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21538 "POST /session/686af31946ebb5a96b7d977481510f47/element HTTP/1.1" 200 102s
+2018-09-22 17:55:17,717 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:17,719 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - GET http://127.0.0.1:21538/session/686af31946ebb5a96b7d977481510f47/element/0.6472638402235924-2/displayed {"id": "0.6472638402235924-2", "sessionId": "686af31946ebb5a96b7d977481510f47"}s
+2018-09-22 17:55:17,769 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21538 "GET /session/686af31946ebb5a96b7d977481510f47/element/0.6472638402235924-2/displayed HTTP/1.1" 200 72s
+2018-09-22 17:55:17,776 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:17,780 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21538/session/686af31946ebb5a96b7d977481510f47/element {"using": "name", "value": "password", "sessionId": "686af31946ebb5a96b7d977481510f47"}s
+2018-09-22 17:55:17,805 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21538 "POST /session/686af31946ebb5a96b7d977481510f47/element HTTP/1.1" 200 102s
+2018-09-22 17:55:17,810 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:17,813 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21538/session/686af31946ebb5a96b7d977481510f47/element/0.6472638402235924-2/value {"text": "", "value": [], "id": "0.6472638402235924-2", "sessionId": "686af31946ebb5a96b7d977481510f47"}s
+2018-09-22 17:55:17,965 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21538 "POST /session/686af31946ebb5a96b7d977481510f47/element/0.6472638402235924-2/value HTTP/1.1" 200 72s
+2018-09-22 17:55:17,985 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:18,015 - [INFO] - 基本操作 - click_submit - 点击登录按钮s
+2018-09-22 17:55:18,026 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21538/session/686af31946ebb5a96b7d977481510f47/element {"using": "name", "value": "submit", "sessionId": "686af31946ebb5a96b7d977481510f47"}s
+2018-09-22 17:55:18,126 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21538 "POST /session/686af31946ebb5a96b7d977481510f47/element HTTP/1.1" 200 102s
+2018-09-22 17:55:18,136 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:18,146 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - GET http://127.0.0.1:21538/session/686af31946ebb5a96b7d977481510f47/element/0.6472638402235924-3/displayed {"id": "0.6472638402235924-3", "sessionId": "686af31946ebb5a96b7d977481510f47"}s
+2018-09-22 17:55:18,202 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21538 "GET /session/686af31946ebb5a96b7d977481510f47/element/0.6472638402235924-3/displayed HTTP/1.1" 200 72s
+2018-09-22 17:55:18,205 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:18,208 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - GET http://127.0.0.1:21538/session/686af31946ebb5a96b7d977481510f47/element/0.6472638402235924-3/enabled {"id": "0.6472638402235924-3", "sessionId": "686af31946ebb5a96b7d977481510f47"}s
+2018-09-22 17:55:18,278 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21538 "GET /session/686af31946ebb5a96b7d977481510f47/element/0.6472638402235924-3/enabled HTTP/1.1" 200 72s
+2018-09-22 17:55:18,302 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:18,304 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21538/session/686af31946ebb5a96b7d977481510f47/element {"using": "name", "value": "submit", "sessionId": "686af31946ebb5a96b7d977481510f47"}s
+2018-09-22 17:55:18,342 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21538 "POST /session/686af31946ebb5a96b7d977481510f47/element HTTP/1.1" 200 102s
+2018-09-22 17:55:18,346 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:18,352 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - GET http://127.0.0.1:21538/session/686af31946ebb5a96b7d977481510f47/element/0.6472638402235924-3/displayed {"id": "0.6472638402235924-3", "sessionId": "686af31946ebb5a96b7d977481510f47"}s
+2018-09-22 17:55:18,398 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21538 "GET /session/686af31946ebb5a96b7d977481510f47/element/0.6472638402235924-3/displayed HTTP/1.1" 200 72s
+2018-09-22 17:55:18,409 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:18,416 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21538/session/686af31946ebb5a96b7d977481510f47/element {"using": "name", "value": "submit", "sessionId": "686af31946ebb5a96b7d977481510f47"}s
+2018-09-22 17:55:18,447 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21538 "POST /session/686af31946ebb5a96b7d977481510f47/element HTTP/1.1" 200 102s
+2018-09-22 17:55:18,451 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:18,453 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21538/session/686af31946ebb5a96b7d977481510f47/element/0.6472638402235924-3/click {"id": "0.6472638402235924-3", "sessionId": "686af31946ebb5a96b7d977481510f47"}s
+2018-09-22 17:55:18,732 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21538 "POST /session/686af31946ebb5a96b7d977481510f47/element/0.6472638402235924-3/click HTTP/1.1" 200 72s
+2018-09-22 17:55:18,738 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:18,764 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - GET http://127.0.0.1:21538/session/686af31946ebb5a96b7d977481510f47/title {"sessionId": "686af31946ebb5a96b7d977481510f47"}s
+2018-09-22 17:55:18,896 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21538 "GET /session/686af31946ebb5a96b7d977481510f47/title HTTP/1.1" 200 96s
+2018-09-22 17:55:18,933 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:18,980 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21538/session/686af31946ebb5a96b7d977481510f47/element {"using": "xpath", "value": "//*[@id=\"cas\"]/div/div[1]/div/div[2]/div[2]/div[3]", "sessionId": "686af31946ebb5a96b7d977481510f47"}s
+2018-09-22 17:55:19,118 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21538 "POST /session/686af31946ebb5a96b7d977481510f47/element HTTP/1.1" 200 102s
+2018-09-22 17:55:19,122 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:19,124 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - GET http://127.0.0.1:21538/session/686af31946ebb5a96b7d977481510f47/element/0.6472638402235924-4/displayed {"id": "0.6472638402235924-4", "sessionId": "686af31946ebb5a96b7d977481510f47"}s
+2018-09-22 17:55:19,172 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21538 "GET /session/686af31946ebb5a96b7d977481510f47/element/0.6472638402235924-4/displayed HTTP/1.1" 200 72s
+2018-09-22 17:55:19,176 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:19,178 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21538/session/686af31946ebb5a96b7d977481510f47/element {"using": "xpath", "value": "//*[@id=\"cas\"]/div/div[1]/div/div[2]/div[2]/div[3]", "sessionId": "686af31946ebb5a96b7d977481510f47"}s
+2018-09-22 17:55:19,205 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21538 "POST /session/686af31946ebb5a96b7d977481510f47/element HTTP/1.1" 200 102s
+2018-09-22 17:55:19,208 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:19,210 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - GET http://127.0.0.1:21538/session/686af31946ebb5a96b7d977481510f47/element/0.6472638402235924-4/text {"id": "0.6472638402235924-4", "sessionId": "686af31946ebb5a96b7d977481510f47"}s
+2018-09-22 17:55:19,267 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21538 "GET /session/686af31946ebb5a96b7d977481510f47/element/0.6472638402235924-4/text HTTP/1.1" 200 91s
+2018-09-22 17:55:19,274 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:19,277 - [INFO] - 基本操作 - show_msg - 提示信息：密码不能为空！s
+2018-09-22 17:55:19,280 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - DELETE http://127.0.0.1:21538/session/686af31946ebb5a96b7d977481510f47 {"sessionId": "686af31946ebb5a96b7d977481510f47"}s
+2018-09-22 17:55:19,467 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21538 "DELETE /session/686af31946ebb5a96b7d977481510f47 HTTP/1.1" 200 72s
+2018-09-22 17:55:19,499 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:23,176 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21605/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}s
+2018-09-22 17:55:23,180 - [DEBUG] - urllib3.connectionpool - _new_conn - Starting new HTTP connection (1): 127.0.0.1:21605s
+2018-09-22 17:55:26,473 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21605 "POST /session HTTP/1.1" 200 885s
+2018-09-22 17:55:26,476 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:26,478 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21605/session/8b14d7ad84033291ff82d66409b3b013/timeouts/implicit_wait {"ms": 10000.0, "sessionId": "8b14d7ad84033291ff82d66409b3b013"}s
+2018-09-22 17:55:26,483 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21605 "POST /session/8b14d7ad84033291ff82d66409b3b013/timeouts/implicit_wait HTTP/1.1" 200 72s
+2018-09-22 17:55:26,486 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:26,488 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21605/session/8b14d7ad84033291ff82d66409b3b013/window/current/size {"width": 1366, "height": 768, "windowHandle": "current", "sessionId": "8b14d7ad84033291ff82d66409b3b013"}s
+2018-09-22 17:55:27,634 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21605 "POST /session/8b14d7ad84033291ff82d66409b3b013/window/current/size HTTP/1.1" 200 72s
+2018-09-22 17:55:27,637 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:27,699 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.htmls
+2018-09-22 17:55:27,701 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21605/session/8b14d7ad84033291ff82d66409b3b013/url {"url": "https://192.168.219.227:8099/csc/index.html", "sessionId": "8b14d7ad84033291ff82d66409b3b013"}s
+2018-09-22 17:55:29,953 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21605 "POST /session/8b14d7ad84033291ff82d66409b3b013/url HTTP/1.1" 200 72s
+2018-09-22 17:55:29,978 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:29,983 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21605/session/8b14d7ad84033291ff82d66409b3b013/refresh {"sessionId": "8b14d7ad84033291ff82d66409b3b013"}s
+2018-09-22 17:55:30,545 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21605 "POST /session/8b14d7ad84033291ff82d66409b3b013/refresh HTTP/1.1" 200 72s
+2018-09-22 17:55:30,576 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:30,582 - [INFO] - 基本操作 - input_username - admins
+2018-09-22 17:55:30,586 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21605/session/8b14d7ad84033291ff82d66409b3b013/element {"using": "name", "value": "username", "sessionId": "8b14d7ad84033291ff82d66409b3b013"}s
+2018-09-22 17:55:30,687 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21605 "POST /session/8b14d7ad84033291ff82d66409b3b013/element HTTP/1.1" 200 102s
+2018-09-22 17:55:30,697 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:30,702 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - GET http://127.0.0.1:21605/session/8b14d7ad84033291ff82d66409b3b013/element/0.9925476935341428-1/displayed {"id": "0.9925476935341428-1", "sessionId": "8b14d7ad84033291ff82d66409b3b013"}s
+2018-09-22 17:55:30,788 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21605 "GET /session/8b14d7ad84033291ff82d66409b3b013/element/0.9925476935341428-1/displayed HTTP/1.1" 200 72s
+2018-09-22 17:55:30,793 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:30,797 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21605/session/8b14d7ad84033291ff82d66409b3b013/element {"using": "name", "value": "username", "sessionId": "8b14d7ad84033291ff82d66409b3b013"}s
+2018-09-22 17:55:30,829 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21605 "POST /session/8b14d7ad84033291ff82d66409b3b013/element HTTP/1.1" 200 102s
+2018-09-22 17:55:30,834 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:30,837 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21605/session/8b14d7ad84033291ff82d66409b3b013/element/0.9925476935341428-1/value {"text": "admin", "value": ["a", "d", "m", "i", "n"], "id": "0.9925476935341428-1", "sessionId": "8b14d7ad84033291ff82d66409b3b013"}s
+2018-09-22 17:55:31,183 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21605 "POST /session/8b14d7ad84033291ff82d66409b3b013/element/0.9925476935341428-1/value HTTP/1.1" 200 72s
+2018-09-22 17:55:31,190 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:31,193 - [INFO] - 基本操作 - input_password - 1234567890s
+2018-09-22 17:55:31,195 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21605/session/8b14d7ad84033291ff82d66409b3b013/element {"using": "name", "value": "password", "sessionId": "8b14d7ad84033291ff82d66409b3b013"}s
+2018-09-22 17:55:31,263 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21605 "POST /session/8b14d7ad84033291ff82d66409b3b013/element HTTP/1.1" 200 102s
+2018-09-22 17:55:31,266 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:31,269 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - GET http://127.0.0.1:21605/session/8b14d7ad84033291ff82d66409b3b013/element/0.9925476935341428-2/displayed {"id": "0.9925476935341428-2", "sessionId": "8b14d7ad84033291ff82d66409b3b013"}s
+2018-09-22 17:55:31,365 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21605 "GET /session/8b14d7ad84033291ff82d66409b3b013/element/0.9925476935341428-2/displayed HTTP/1.1" 200 72s
+2018-09-22 17:55:31,374 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:31,376 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21605/session/8b14d7ad84033291ff82d66409b3b013/element {"using": "name", "value": "password", "sessionId": "8b14d7ad84033291ff82d66409b3b013"}s
+2018-09-22 17:55:31,409 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21605 "POST /session/8b14d7ad84033291ff82d66409b3b013/element HTTP/1.1" 200 102s
+2018-09-22 17:55:31,411 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:31,413 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21605/session/8b14d7ad84033291ff82d66409b3b013/element/0.9925476935341428-2/value {"text": "1234567890", "value": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"], "id": "0.9925476935341428-2", "sessionId": "8b14d7ad84033291ff82d66409b3b013"}s
+2018-09-22 17:55:31,929 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21605 "POST /session/8b14d7ad84033291ff82d66409b3b013/element/0.9925476935341428-2/value HTTP/1.1" 200 72s
+2018-09-22 17:55:31,932 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:31,934 - [INFO] - 基本操作 - click_submit - 点击登录按钮s
+2018-09-22 17:55:31,937 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21605/session/8b14d7ad84033291ff82d66409b3b013/element {"using": "name", "value": "submit", "sessionId": "8b14d7ad84033291ff82d66409b3b013"}s
+2018-09-22 17:55:32,000 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21605 "POST /session/8b14d7ad84033291ff82d66409b3b013/element HTTP/1.1" 200 102s
+2018-09-22 17:55:32,003 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:32,008 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - GET http://127.0.0.1:21605/session/8b14d7ad84033291ff82d66409b3b013/element/0.9925476935341428-3/displayed {"id": "0.9925476935341428-3", "sessionId": "8b14d7ad84033291ff82d66409b3b013"}s
+2018-09-22 17:55:32,105 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21605 "GET /session/8b14d7ad84033291ff82d66409b3b013/element/0.9925476935341428-3/displayed HTTP/1.1" 200 72s
+2018-09-22 17:55:32,108 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:32,112 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - GET http://127.0.0.1:21605/session/8b14d7ad84033291ff82d66409b3b013/element/0.9925476935341428-3/enabled {"id": "0.9925476935341428-3", "sessionId": "8b14d7ad84033291ff82d66409b3b013"}s
+2018-09-22 17:55:32,169 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21605 "GET /session/8b14d7ad84033291ff82d66409b3b013/element/0.9925476935341428-3/enabled HTTP/1.1" 200 72s
+2018-09-22 17:55:32,175 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:32,178 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21605/session/8b14d7ad84033291ff82d66409b3b013/element {"using": "name", "value": "submit", "sessionId": "8b14d7ad84033291ff82d66409b3b013"}s
+2018-09-22 17:55:32,227 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21605 "POST /session/8b14d7ad84033291ff82d66409b3b013/element HTTP/1.1" 200 102s
+2018-09-22 17:55:32,229 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:32,233 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - GET http://127.0.0.1:21605/session/8b14d7ad84033291ff82d66409b3b013/element/0.9925476935341428-3/displayed {"id": "0.9925476935341428-3", "sessionId": "8b14d7ad84033291ff82d66409b3b013"}s
+2018-09-22 17:55:32,274 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21605 "GET /session/8b14d7ad84033291ff82d66409b3b013/element/0.9925476935341428-3/displayed HTTP/1.1" 200 72s
+2018-09-22 17:55:32,282 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:32,285 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21605/session/8b14d7ad84033291ff82d66409b3b013/element {"using": "name", "value": "submit", "sessionId": "8b14d7ad84033291ff82d66409b3b013"}s
+2018-09-22 17:55:32,317 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21605 "POST /session/8b14d7ad84033291ff82d66409b3b013/element HTTP/1.1" 200 102s
+2018-09-22 17:55:32,321 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:32,325 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21605/session/8b14d7ad84033291ff82d66409b3b013/element/0.9925476935341428-3/click {"id": "0.9925476935341428-3", "sessionId": "8b14d7ad84033291ff82d66409b3b013"}s
+2018-09-22 17:55:34,620 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21605 "POST /session/8b14d7ad84033291ff82d66409b3b013/element/0.9925476935341428-3/click HTTP/1.1" 200 72s
+2018-09-22 17:55:34,622 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:34,625 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - GET http://127.0.0.1:21605/session/8b14d7ad84033291ff82d66409b3b013/title {"sessionId": "8b14d7ad84033291ff82d66409b3b013"}s
+2018-09-22 17:55:35,941 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21605 "GET /session/8b14d7ad84033291ff82d66409b3b013/title HTTP/1.1" 200 82s
+2018-09-22 17:55:35,946 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:35,948 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21605/session/8b14d7ad84033291ff82d66409b3b013/element {"using": "xpath", "value": "//*[@id=\"header\"]/div[2]/ul/li[5]/a/span", "sessionId": "8b14d7ad84033291ff82d66409b3b013"}s
+2018-09-22 17:55:36,376 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21605 "POST /session/8b14d7ad84033291ff82d66409b3b013/element HTTP/1.1" 200 103s
+2018-09-22 17:55:36,381 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:36,389 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - GET http://127.0.0.1:21605/session/8b14d7ad84033291ff82d66409b3b013/element/0.43629727301363497-1/displayed {"id": "0.43629727301363497-1", "sessionId": "8b14d7ad84033291ff82d66409b3b013"}s
+2018-09-22 17:55:36,621 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21605 "GET /session/8b14d7ad84033291ff82d66409b3b013/element/0.43629727301363497-1/displayed HTTP/1.1" 200 72s
+2018-09-22 17:55:36,624 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:36,631 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21605/session/8b14d7ad84033291ff82d66409b3b013/element {"using": "xpath", "value": "//*[@id=\"header\"]/div[2]/ul/li[5]/a/span", "sessionId": "8b14d7ad84033291ff82d66409b3b013"}s
+2018-09-22 17:55:37,532 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21605 "POST /session/8b14d7ad84033291ff82d66409b3b013/element HTTP/1.1" 200 103s
+2018-09-22 17:55:37,534 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:37,537 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - GET http://127.0.0.1:21605/session/8b14d7ad84033291ff82d66409b3b013/element/0.43629727301363497-1/text {"id": "0.43629727301363497-1", "sessionId": "8b14d7ad84033291ff82d66409b3b013"}s
+2018-09-22 17:55:38,473 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21605 "GET /session/8b14d7ad84033291ff82d66409b3b013/element/0.43629727301363497-1/text HTTP/1.1" 200 75s
+2018-09-22 17:55:38,484 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:38,485 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - DELETE http://127.0.0.1:21605/session/8b14d7ad84033291ff82d66409b3b013 {"sessionId": "8b14d7ad84033291ff82d66409b3b013"}s
+2018-09-22 17:55:38,716 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21605 "DELETE /session/8b14d7ad84033291ff82d66409b3b013 HTTP/1.1" 200 72s
+2018-09-22 17:55:38,722 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:43,066 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21705/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}s
+2018-09-22 17:55:43,071 - [DEBUG] - urllib3.connectionpool - _new_conn - Starting new HTTP connection (1): 127.0.0.1:21705s
+2018-09-22 17:55:47,067 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21705 "POST /session HTTP/1.1" 200 887s
+2018-09-22 17:55:47,070 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:47,073 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21705/session/87ce6ecee47f2bf0eb309af6d46db26e/timeouts/implicit_wait {"ms": 10000.0, "sessionId": "87ce6ecee47f2bf0eb309af6d46db26e"}s
+2018-09-22 17:55:47,081 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21705 "POST /session/87ce6ecee47f2bf0eb309af6d46db26e/timeouts/implicit_wait HTTP/1.1" 200 72s
+2018-09-22 17:55:47,090 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:47,092 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21705/session/87ce6ecee47f2bf0eb309af6d46db26e/window/current/size {"width": 1366, "height": 768, "windowHandle": "current", "sessionId": "87ce6ecee47f2bf0eb309af6d46db26e"}s
+2018-09-22 17:55:48,240 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21705 "POST /session/87ce6ecee47f2bf0eb309af6d46db26e/window/current/size HTTP/1.1" 200 72s
+2018-09-22 17:55:48,244 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:48,302 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.htmls
+2018-09-22 17:55:48,305 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21705/session/87ce6ecee47f2bf0eb309af6d46db26e/url {"url": "https://192.168.219.227:8099/csc/index.html", "sessionId": "87ce6ecee47f2bf0eb309af6d46db26e"}s
+2018-09-22 17:55:50,469 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21705 "POST /session/87ce6ecee47f2bf0eb309af6d46db26e/url HTTP/1.1" 200 72s
+2018-09-22 17:55:50,474 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:50,485 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21705/session/87ce6ecee47f2bf0eb309af6d46db26e/refresh {"sessionId": "87ce6ecee47f2bf0eb309af6d46db26e"}s
+2018-09-22 17:55:50,878 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21705 "POST /session/87ce6ecee47f2bf0eb309af6d46db26e/refresh HTTP/1.1" 200 72s
+2018-09-22 17:55:50,883 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:50,893 - [INFO] - 基本操作 - input_username - wjxs
+2018-09-22 17:55:50,901 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21705/session/87ce6ecee47f2bf0eb309af6d46db26e/element {"using": "name", "value": "username", "sessionId": "87ce6ecee47f2bf0eb309af6d46db26e"}s
+2018-09-22 17:55:51,033 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21705 "POST /session/87ce6ecee47f2bf0eb309af6d46db26e/element HTTP/1.1" 200 103s
+2018-09-22 17:55:51,039 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:51,042 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - GET http://127.0.0.1:21705/session/87ce6ecee47f2bf0eb309af6d46db26e/element/0.10277412733618019-1/displayed {"id": "0.10277412733618019-1", "sessionId": "87ce6ecee47f2bf0eb309af6d46db26e"}s
+2018-09-22 17:55:51,099 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21705 "GET /session/87ce6ecee47f2bf0eb309af6d46db26e/element/0.10277412733618019-1/displayed HTTP/1.1" 200 72s
+2018-09-22 17:55:51,102 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:51,104 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21705/session/87ce6ecee47f2bf0eb309af6d46db26e/element {"using": "name", "value": "username", "sessionId": "87ce6ecee47f2bf0eb309af6d46db26e"}s
+2018-09-22 17:55:51,135 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21705 "POST /session/87ce6ecee47f2bf0eb309af6d46db26e/element HTTP/1.1" 200 103s
+2018-09-22 17:55:51,138 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:51,140 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21705/session/87ce6ecee47f2bf0eb309af6d46db26e/element/0.10277412733618019-1/value {"text": "wjx", "value": ["w", "j", "x"], "id": "0.10277412733618019-1", "sessionId": "87ce6ecee47f2bf0eb309af6d46db26e"}s
+2018-09-22 17:55:51,387 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21705 "POST /session/87ce6ecee47f2bf0eb309af6d46db26e/element/0.10277412733618019-1/value HTTP/1.1" 200 72s
+2018-09-22 17:55:51,392 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:51,407 - [INFO] - 基本操作 - input_password - Admin123s
+2018-09-22 17:55:51,413 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21705/session/87ce6ecee47f2bf0eb309af6d46db26e/element {"using": "name", "value": "password", "sessionId": "87ce6ecee47f2bf0eb309af6d46db26e"}s
+2018-09-22 17:55:51,482 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21705 "POST /session/87ce6ecee47f2bf0eb309af6d46db26e/element HTTP/1.1" 200 103s
+2018-09-22 17:55:51,487 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:51,490 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - GET http://127.0.0.1:21705/session/87ce6ecee47f2bf0eb309af6d46db26e/element/0.10277412733618019-2/displayed {"id": "0.10277412733618019-2", "sessionId": "87ce6ecee47f2bf0eb309af6d46db26e"}s
+2018-09-22 17:55:51,547 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21705 "GET /session/87ce6ecee47f2bf0eb309af6d46db26e/element/0.10277412733618019-2/displayed HTTP/1.1" 200 72s
+2018-09-22 17:55:51,551 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:51,556 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21705/session/87ce6ecee47f2bf0eb309af6d46db26e/element {"using": "name", "value": "password", "sessionId": "87ce6ecee47f2bf0eb309af6d46db26e"}s
+2018-09-22 17:55:51,594 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21705 "POST /session/87ce6ecee47f2bf0eb309af6d46db26e/element HTTP/1.1" 200 103s
+2018-09-22 17:55:51,599 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:51,603 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21705/session/87ce6ecee47f2bf0eb309af6d46db26e/element/0.10277412733618019-2/value {"text": "Admin123", "value": ["A", "d", "m", "i", "n", "1", "2", "3"], "id": "0.10277412733618019-2", "sessionId": "87ce6ecee47f2bf0eb309af6d46db26e"}s
+2018-09-22 17:55:52,280 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21705 "POST /session/87ce6ecee47f2bf0eb309af6d46db26e/element/0.10277412733618019-2/value HTTP/1.1" 200 72s
+2018-09-22 17:55:52,309 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:52,318 - [INFO] - 基本操作 - switch_usertype - 切换为AD用户登陆s
+2018-09-22 17:55:52,324 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21705/session/87ce6ecee47f2bf0eb309af6d46db26e/element {"using": "id", "value": "adUser", "sessionId": "87ce6ecee47f2bf0eb309af6d46db26e"}s
+2018-09-22 17:55:52,427 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21705 "POST /session/87ce6ecee47f2bf0eb309af6d46db26e/element HTTP/1.1" 200 103s
+2018-09-22 17:55:52,430 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:52,435 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - GET http://127.0.0.1:21705/session/87ce6ecee47f2bf0eb309af6d46db26e/element/0.10277412733618019-3/displayed {"id": "0.10277412733618019-3", "sessionId": "87ce6ecee47f2bf0eb309af6d46db26e"}s
+2018-09-22 17:55:52,508 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21705 "GET /session/87ce6ecee47f2bf0eb309af6d46db26e/element/0.10277412733618019-3/displayed HTTP/1.1" 200 72s
+2018-09-22 17:55:52,517 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:52,520 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - GET http://127.0.0.1:21705/session/87ce6ecee47f2bf0eb309af6d46db26e/element/0.10277412733618019-3/enabled {"id": "0.10277412733618019-3", "sessionId": "87ce6ecee47f2bf0eb309af6d46db26e"}s
+2018-09-22 17:55:52,568 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21705 "GET /session/87ce6ecee47f2bf0eb309af6d46db26e/element/0.10277412733618019-3/enabled HTTP/1.1" 200 72s
+2018-09-22 17:55:52,573 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:52,575 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21705/session/87ce6ecee47f2bf0eb309af6d46db26e/element {"using": "id", "value": "adUser", "sessionId": "87ce6ecee47f2bf0eb309af6d46db26e"}s
+2018-09-22 17:55:52,596 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21705 "POST /session/87ce6ecee47f2bf0eb309af6d46db26e/element HTTP/1.1" 200 103s
+2018-09-22 17:55:52,600 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:52,602 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - GET http://127.0.0.1:21705/session/87ce6ecee47f2bf0eb309af6d46db26e/element/0.10277412733618019-3/displayed {"id": "0.10277412733618019-3", "sessionId": "87ce6ecee47f2bf0eb309af6d46db26e"}s
+2018-09-22 17:55:52,638 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21705 "GET /session/87ce6ecee47f2bf0eb309af6d46db26e/element/0.10277412733618019-3/displayed HTTP/1.1" 200 72s
+2018-09-22 17:55:52,642 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:52,644 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21705/session/87ce6ecee47f2bf0eb309af6d46db26e/element {"using": "id", "value": "adUser", "sessionId": "87ce6ecee47f2bf0eb309af6d46db26e"}s
+2018-09-22 17:55:52,677 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21705 "POST /session/87ce6ecee47f2bf0eb309af6d46db26e/element HTTP/1.1" 200 103s
+2018-09-22 17:55:52,680 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:52,685 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21705/session/87ce6ecee47f2bf0eb309af6d46db26e/element/0.10277412733618019-3/click {"id": "0.10277412733618019-3", "sessionId": "87ce6ecee47f2bf0eb309af6d46db26e"}s
+2018-09-22 17:55:52,879 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21705 "POST /session/87ce6ecee47f2bf0eb309af6d46db26e/element/0.10277412733618019-3/click HTTP/1.1" 200 72s
+2018-09-22 17:55:52,885 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:52,888 - [INFO] - 基本操作 - click_submit - 点击登录按钮s
+2018-09-22 17:55:52,891 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21705/session/87ce6ecee47f2bf0eb309af6d46db26e/element {"using": "name", "value": "submit", "sessionId": "87ce6ecee47f2bf0eb309af6d46db26e"}s
+2018-09-22 17:55:53,027 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21705 "POST /session/87ce6ecee47f2bf0eb309af6d46db26e/element HTTP/1.1" 200 103s
+2018-09-22 17:55:53,031 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:53,036 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - GET http://127.0.0.1:21705/session/87ce6ecee47f2bf0eb309af6d46db26e/element/0.10277412733618019-4/displayed {"id": "0.10277412733618019-4", "sessionId": "87ce6ecee47f2bf0eb309af6d46db26e"}s
+2018-09-22 17:55:53,097 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21705 "GET /session/87ce6ecee47f2bf0eb309af6d46db26e/element/0.10277412733618019-4/displayed HTTP/1.1" 200 72s
+2018-09-22 17:55:53,100 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:53,102 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - GET http://127.0.0.1:21705/session/87ce6ecee47f2bf0eb309af6d46db26e/element/0.10277412733618019-4/enabled {"id": "0.10277412733618019-4", "sessionId": "87ce6ecee47f2bf0eb309af6d46db26e"}s
+2018-09-22 17:55:53,134 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21705 "GET /session/87ce6ecee47f2bf0eb309af6d46db26e/element/0.10277412733618019-4/enabled HTTP/1.1" 200 72s
+2018-09-22 17:55:53,138 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:53,141 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21705/session/87ce6ecee47f2bf0eb309af6d46db26e/element {"using": "name", "value": "submit", "sessionId": "87ce6ecee47f2bf0eb309af6d46db26e"}s
+2018-09-22 17:55:53,168 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21705 "POST /session/87ce6ecee47f2bf0eb309af6d46db26e/element HTTP/1.1" 200 103s
+2018-09-22 17:55:53,173 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:53,178 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - GET http://127.0.0.1:21705/session/87ce6ecee47f2bf0eb309af6d46db26e/element/0.10277412733618019-4/displayed {"id": "0.10277412733618019-4", "sessionId": "87ce6ecee47f2bf0eb309af6d46db26e"}s
+2018-09-22 17:55:53,216 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21705 "GET /session/87ce6ecee47f2bf0eb309af6d46db26e/element/0.10277412733618019-4/displayed HTTP/1.1" 200 72s
+2018-09-22 17:55:53,219 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:53,221 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21705/session/87ce6ecee47f2bf0eb309af6d46db26e/element {"using": "name", "value": "submit", "sessionId": "87ce6ecee47f2bf0eb309af6d46db26e"}s
+2018-09-22 17:55:53,266 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21705 "POST /session/87ce6ecee47f2bf0eb309af6d46db26e/element HTTP/1.1" 200 103s
+2018-09-22 17:55:53,273 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:53,277 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21705/session/87ce6ecee47f2bf0eb309af6d46db26e/element/0.10277412733618019-4/click {"id": "0.10277412733618019-4", "sessionId": "87ce6ecee47f2bf0eb309af6d46db26e"}s
+2018-09-22 17:55:55,888 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21705 "POST /session/87ce6ecee47f2bf0eb309af6d46db26e/element/0.10277412733618019-4/click HTTP/1.1" 200 72s
+2018-09-22 17:55:55,893 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:55,902 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - GET http://127.0.0.1:21705/session/87ce6ecee47f2bf0eb309af6d46db26e/title {"sessionId": "87ce6ecee47f2bf0eb309af6d46db26e"}s
+2018-09-22 17:55:57,148 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21705 "GET /session/87ce6ecee47f2bf0eb309af6d46db26e/title HTTP/1.1" 200 82s
+2018-09-22 17:55:57,160 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:57,167 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21705/session/87ce6ecee47f2bf0eb309af6d46db26e/element {"using": "xpath", "value": "//*[@id=\"header\"]/div[2]/ul/li[5]/a/span", "sessionId": "87ce6ecee47f2bf0eb309af6d46db26e"}s
+2018-09-22 17:55:57,527 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21705 "POST /session/87ce6ecee47f2bf0eb309af6d46db26e/element HTTP/1.1" 200 103s
+2018-09-22 17:55:57,538 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:57,567 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - GET http://127.0.0.1:21705/session/87ce6ecee47f2bf0eb309af6d46db26e/element/0.24698441215949063-1/displayed {"id": "0.24698441215949063-1", "sessionId": "87ce6ecee47f2bf0eb309af6d46db26e"}s
+2018-09-22 17:55:57,754 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21705 "GET /session/87ce6ecee47f2bf0eb309af6d46db26e/element/0.24698441215949063-1/displayed HTTP/1.1" 200 72s
+2018-09-22 17:55:57,759 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:57,820 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - POST http://127.0.0.1:21705/session/87ce6ecee47f2bf0eb309af6d46db26e/element {"using": "xpath", "value": "//*[@id=\"header\"]/div[2]/ul/li[5]/a/span", "sessionId": "87ce6ecee47f2bf0eb309af6d46db26e"}s
+2018-09-22 17:55:58,987 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21705 "POST /session/87ce6ecee47f2bf0eb309af6d46db26e/element HTTP/1.1" 200 103s
+2018-09-22 17:55:58,994 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:58,997 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - GET http://127.0.0.1:21705/session/87ce6ecee47f2bf0eb309af6d46db26e/element/0.24698441215949063-1/text {"id": "0.24698441215949063-1", "sessionId": "87ce6ecee47f2bf0eb309af6d46db26e"}s
+2018-09-22 17:55:59,921 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21705 "GET /session/87ce6ecee47f2bf0eb309af6d46db26e/element/0.24698441215949063-1/text HTTP/1.1" 200 73s
+2018-09-22 17:55:59,931 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:55:59,936 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - DELETE http://127.0.0.1:21705/session/87ce6ecee47f2bf0eb309af6d46db26e {"sessionId": "87ce6ecee47f2bf0eb309af6d46db26e"}s
+2018-09-22 17:56:00,292 - [DEBUG] - urllib3.connectionpool - _make_request - http://127.0.0.1:21705 "DELETE /session/87ce6ecee47f2bf0eb309af6d46db26e HTTP/1.1" 200 72s
+2018-09-22 17:56:00,307 - [DEBUG] - selenium.webdriver.remote.remote_connection - _request - Finished Requests
+2018-09-22 17:58:13,088 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.htmls
+2018-09-22 17:58:15,754 - [INFO] - 基本操作 - input_username - s
+2018-09-22 17:58:16,067 - [INFO] - 基本操作 - input_password - passwords
+2018-09-22 17:58:16,567 - [INFO] - 基本操作 - click_submit - 点击登录按钮s
+2018-09-22 17:58:17,189 - [INFO] - 基本操作 - show_msg - 提示信息：账号不能为空！s
+2018-09-22 17:58:24,859 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.htmls
+2018-09-22 17:58:27,532 - [INFO] - 基本操作 - input_username - admins
+2018-09-22 17:58:28,041 - [INFO] - 基本操作 - input_password - s
+2018-09-22 17:58:28,318 - [INFO] - 基本操作 - click_submit - 点击登录按钮s
+2018-09-22 17:58:29,288 - [INFO] - 基本操作 - show_msg - 提示信息：密码不能为空！s
+2018-09-22 17:58:39,217 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.htmls
+2018-09-22 17:58:41,134 - [INFO] - 基本操作 - input_username - admins
+2018-09-22 17:58:41,556 - [INFO] - 基本操作 - input_password - 1234567890s
+2018-09-22 17:58:41,897 - [INFO] - 基本操作 - click_submit - 点击登录按钮s
+2018-09-22 17:58:53,699 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-22 17:58:56,976 - [INFO] - 基本操作 - input_username - wjx
+2018-09-22 17:58:57,404 - [INFO] - 基本操作 - input_password - Admin123
+2018-09-22 17:58:57,871 - [INFO] - 基本操作 - switch_usertype - 切换为AD用户登陆
+2018-09-22 17:58:58,310 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-22 21:13:29,110 - [INFO] - test - <module> - 就是这样：('By.XPATH', '//*[@id="dragDiv5"]/div[2]/div[1]/select')
+2018-09-22 21:13:29,190 - [INFO] - test2 - <module> - 就是这样2：('By.XPATH', '//*[@id="dragDiv5"]/div[2]/div[1]/select')
+2018-09-22 21:14:38,527 - [INFO] - test - <module> - 就是这样：('By.XPATH', '//*[@id="dragDiv5"]/div[2]/div[1]/select')
+2018-09-22 21:14:38,576 - [INFO] - test2 - <module> - 就是这样2：('By.XPATH', '//*[@id="dragDiv5"]/div[2]/div[1]/select')
+2018-09-22 21:15:14,962 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-22 21:15:17,611 - [INFO] - 基本操作 - input_username - 
+2018-09-22 21:15:17,837 - [INFO] - 基本操作 - input_password - password
+2018-09-22 21:15:18,312 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-22 21:15:18,953 - [INFO] - 基本操作 - show_msg - 提示信息：账号不能为空！
+2018-09-22 21:15:27,495 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-22 21:15:29,852 - [INFO] - 基本操作 - input_username - admin
+2018-09-22 21:15:30,327 - [INFO] - 基本操作 - input_password - 
+2018-09-22 21:15:30,592 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-22 21:15:31,416 - [INFO] - 基本操作 - show_msg - 提示信息：密码不能为空！
+2018-09-22 21:15:40,157 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-22 21:15:42,726 - [INFO] - 基本操作 - input_username - admin
+2018-09-22 21:15:43,272 - [INFO] - 基本操作 - input_password - 1234567890
+2018-09-22 21:15:43,869 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-22 21:15:56,908 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-22 21:15:59,372 - [INFO] - 基本操作 - input_username - wjx
+2018-09-22 21:15:59,829 - [INFO] - 基本操作 - input_password - Admin123
+2018-09-22 21:16:00,361 - [INFO] - 基本操作 - switch_usertype - 切换为AD用户登陆
+2018-09-22 21:16:00,746 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-22 21:18:23,981 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-22 21:18:26,482 - [INFO] - 基本操作 - input_username - admin
+2018-09-22 21:18:26,947 - [INFO] - 基本操作 - input_password - 1234567890
+2018-09-22 21:18:27,467 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-22 21:18:31,599 - [INFO] - 登录 - login - 登录成功
+2018-09-22 21:18:31,659 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html#pages/resources/instances/vms/vm_create?previousPage=1
+2018-09-22 21:18:34,625 - [INFO] - 云主机创建 - input_item - 云主机名称：python01
+2018-09-22 21:18:39,462 - [INFO] - 云主机创建 - input_item - VM Name：python01
+2018-09-22 21:18:42,070 - [INFO] - 云主机创建 - input_item - Hostname：python01
+2018-09-22 21:18:44,760 - [INFO] - 云主机创建 - input_item - 归属服务：zhh2
+2018-09-22 21:18:44,762 - [INFO] - 云主机创建 - search_for - 归属服务：zhh2
+2018-09-22 21:18:47,612 - [INFO] - 云主机创建 - search_for - 点击搜索按钮
+2018-09-22 21:18:48,123 - [INFO] - 云主机创建 - search_for - 勾选第一个搜索结果
+2018-09-22 21:18:58,667 - [ERROR] - 基本操作 - click_element - 元素('xpath', '//table//tr[2]/td[1]//span')无法点击：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\CSC7.0.1\autotest\workspace\pages\base_page.py", line 70, in click_element
+    WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(loc))
+  File "E:\OneDrive\MYpy\winhong\CSC7.0.1\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-09-22 21:18:58,686 - [WARNING] - 云主机创建 - search_for - 搜索不到对应结果
+2018-09-22 21:19:01,163 - [INFO] - 云主机创建 - input_item - 归属VDC：zhhvdca
+2018-09-22 21:19:01,165 - [INFO] - 云主机创建 - search_for - 归属VDC：zhhvdca
+2018-09-22 21:52:18,636 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-22 21:52:21,486 - [INFO] - 基本操作 - input_username - 
+2018-09-22 21:52:21,799 - [INFO] - 基本操作 - input_password - password
+2018-09-22 21:52:22,310 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-22 21:52:22,949 - [INFO] - 基本操作 - show_msg - 提示信息：账号不能为空！
+2018-09-22 21:52:31,007 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-22 21:52:33,580 - [INFO] - 基本操作 - input_username - admin
+2018-09-22 21:52:34,208 - [INFO] - 基本操作 - input_password - 
+2018-09-22 21:52:34,586 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-22 21:52:35,859 - [INFO] - 基本操作 - show_msg - 提示信息：密码不能为空！
+2018-09-22 21:52:44,247 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-22 21:52:46,665 - [INFO] - 基本操作 - input_username - admin
+2018-09-22 21:52:47,063 - [INFO] - 基本操作 - input_password - 1234567890
+2018-09-22 21:52:47,440 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-22 21:52:59,542 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-22 21:53:02,425 - [INFO] - 基本操作 - input_username - wjx
+2018-09-22 21:53:03,112 - [INFO] - 基本操作 - input_password - Admin1231
+2018-09-22 21:53:03,796 - [INFO] - 基本操作 - switch_usertype - 切换为AD用户登陆
+2018-09-22 21:53:04,466 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-22 21:53:06,717 - [INFO] - 基本操作 - show_msg - 提示信息：认证信息无效，剩余98次尝试的机会！
+2018-09-22 23:14:34,602 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-22 23:14:36,808 - [INFO] - 基本操作 - input_username - 
+2018-09-22 23:14:37,013 - [INFO] - 基本操作 - input_password - password
+2018-09-22 23:14:37,384 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-22 23:14:37,865 - [INFO] - 基本操作 - show_msg - 提示信息：账号不能为空！
+2018-09-22 23:14:46,536 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-22 23:14:49,310 - [INFO] - 基本操作 - input_username - admin
+2018-09-22 23:14:49,648 - [INFO] - 基本操作 - input_password - 
+2018-09-22 23:14:49,864 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-22 23:14:50,848 - [INFO] - 基本操作 - show_msg - 提示信息：密码不能为空！
+2018-09-22 23:15:03,359 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-22 23:15:06,095 - [INFO] - 基本操作 - input_username - admin
+2018-09-22 23:15:06,562 - [INFO] - 基本操作 - input_password - 1234567890
+2018-09-22 23:15:06,948 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-22 23:15:19,515 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-22 23:15:23,566 - [INFO] - 基本操作 - input_username - wjx
+2018-09-22 23:15:24,448 - [INFO] - 基本操作 - input_password - Admin1231
+2018-09-22 23:15:25,043 - [INFO] - 基本操作 - switch_usertype - 切换为AD用户登陆
+2018-09-22 23:15:26,057 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-22 23:15:27,995 - [INFO] - 基本操作 - show_msg - 提示信息：认证信息无效，剩余97次尝试的机会！
+2018-09-22 23:18:05,855 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-22 23:18:08,446 - [INFO] - 基本操作 - input_username - 
+2018-09-22 23:18:08,675 - [INFO] - 基本操作 - input_password - password
+2018-09-22 23:18:09,035 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-22 23:18:09,614 - [INFO] - 基本操作 - show_msg - 提示信息：账号不能为空！
+2018-09-22 23:18:20,849 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-22 23:18:24,377 - [INFO] - 基本操作 - input_username - admin
+2018-09-22 23:18:24,812 - [INFO] - 基本操作 - input_password - 
+2018-09-22 23:18:25,039 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-22 23:18:25,725 - [INFO] - 基本操作 - show_msg - 提示信息：密码不能为空！
+2018-09-22 23:18:35,480 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-22 23:18:38,415 - [INFO] - 基本操作 - input_username - admin
+2018-09-22 23:18:39,179 - [INFO] - 基本操作 - input_password - 1234567890
+2018-09-22 23:18:39,548 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-22 23:18:50,460 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-22 23:18:53,642 - [INFO] - 基本操作 - input_username - wjx
+2018-09-22 23:18:54,762 - [INFO] - 基本操作 - input_password - Admin1231
+2018-09-22 23:18:55,806 - [INFO] - 基本操作 - switch_usertype - 切换为AD用户登陆
+2018-09-22 23:18:56,673 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-22 23:18:58,288 - [INFO] - 基本操作 - show_msg - 提示信息：认证信息无效，剩余96次尝试的机会！
+2018-09-23 00:26:07,929 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-23 00:26:10,804 - [INFO] - 基本操作 - input_username - 
+2018-09-23 00:26:11,119 - [INFO] - 基本操作 - input_password - password
+2018-09-23 00:26:11,718 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-23 00:26:12,419 - [INFO] - 基本操作 - show_msg - 提示信息：账号不能为空！
+2018-09-23 00:26:21,180 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-23 00:26:23,821 - [INFO] - 基本操作 - input_username - admin
+2018-09-23 00:26:24,372 - [INFO] - 基本操作 - input_password - 
+2018-09-23 00:26:24,733 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-23 00:26:25,582 - [INFO] - 基本操作 - show_msg - 提示信息：密码不能为空！
+2018-09-23 00:26:34,418 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-23 00:26:36,938 - [INFO] - 基本操作 - input_username - admin
+2018-09-23 00:26:37,368 - [INFO] - 基本操作 - input_password - 1234567890
+2018-09-23 00:26:37,780 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-23 00:26:51,523 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-23 00:26:53,673 - [INFO] - 基本操作 - input_username - wjx
+2018-09-23 00:26:54,040 - [INFO] - 基本操作 - input_password - Admin1231
+2018-09-23 00:26:54,548 - [INFO] - 基本操作 - switch_usertype - 切换为AD用户登陆
+2018-09-23 00:26:54,935 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-23 00:26:56,591 - [INFO] - 基本操作 - show_msg - 提示信息：认证信息无效，剩余95次尝试的机会！
+2018-09-26 14:41:12,708 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-26 14:41:14,411 - [INFO] - 基本操作 - input_username - 
+2018-09-26 14:41:14,583 - [INFO] - 基本操作 - input_password - password
+2018-09-26 14:41:14,797 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-29 17:24:51,693 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-29 17:24:52,681 - [INFO] - 基本操作 - input_username - 
+2018-09-29 17:24:52,785 - [INFO] - 基本操作 - input_password - password
+2018-09-29 17:24:52,927 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-29 17:24:53,165 - [INFO] - 基本操作 - show_msg - 提示信息：账号不能为空！
+2018-09-29 17:24:58,812 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-29 17:24:59,814 - [INFO] - 基本操作 - input_username - admin
+2018-09-29 17:24:59,974 - [INFO] - 基本操作 - input_password - 
+2018-09-29 17:25:00,096 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-29 17:25:00,388 - [INFO] - 基本操作 - show_msg - 提示信息：密码不能为空！
+2018-09-29 17:25:05,884 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-29 17:25:06,982 - [INFO] - 基本操作 - input_username - admin
+2018-09-29 17:25:07,137 - [INFO] - 基本操作 - input_password - 1234567890
+2018-09-29 17:25:07,301 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-29 17:25:19,511 - [ERROR] - 基本操作 - find_element - 定位('xpath', '//*[@id="header"]/div[2]/ul/li[5]/a/span')时发生异常：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 53, in find_element
+    WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(loc))
+  File "e:\onedrive\mypy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-09-29 17:25:25,233 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-29 17:25:26,176 - [INFO] - 基本操作 - input_username - wjx
+2018-09-29 17:25:26,319 - [INFO] - 基本操作 - input_password - Admin1231
+2018-09-29 17:25:26,482 - [INFO] - 基本操作 - switch_usertype - 切换为AD用户登陆
+2018-09-29 17:25:26,633 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-29 17:25:27,174 - [INFO] - 基本操作 - show_msg - 提示信息：认证信息无效，剩余94次尝试的机会！
+2018-09-29 17:27:37,291 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-29 17:27:38,240 - [INFO] - 基本操作 - input_username - 
+2018-09-29 17:27:38,364 - [INFO] - 基本操作 - input_password - password
+2018-09-29 17:27:38,541 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-29 17:27:39,045 - [INFO] - 基本操作 - show_msg - 提示信息：账号不能为空！
+2018-09-29 17:27:44,571 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-29 17:27:45,552 - [INFO] - 基本操作 - input_username - admin
+2018-09-29 17:27:45,709 - [INFO] - 基本操作 - input_password - 
+2018-09-29 17:27:45,819 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-29 17:27:46,121 - [INFO] - 基本操作 - show_msg - 提示信息：密码不能为空！
+2018-09-29 17:27:51,678 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-29 17:27:52,522 - [INFO] - 基本操作 - input_username - admin
+2018-09-29 17:27:52,662 - [INFO] - 基本操作 - input_password - 1234567890
+2018-09-29 17:27:52,803 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-29 17:28:04,836 - [ERROR] - 基本操作 - find_element - 定位('xpath', '//*[@id="header"]/div[2]/ul/li[5]/a/span')时发生异常：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 53, in find_element
+    WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(loc))
+  File "e:\onedrive\mypy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-09-29 17:28:10,459 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-29 17:28:11,514 - [INFO] - 基本操作 - input_username - wjx
+2018-09-29 17:28:11,663 - [INFO] - 基本操作 - input_password - Admin1231
+2018-09-29 17:28:11,839 - [INFO] - 基本操作 - switch_usertype - 切换为AD用户登陆
+2018-09-29 17:28:12,025 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-29 17:28:12,627 - [INFO] - 基本操作 - show_msg - 提示信息：认证信息无效，剩余93次尝试的机会！
+2018-09-29 17:31:13,902 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-29 17:31:14,749 - [INFO] - 基本操作 - input_username - 
+2018-09-29 17:31:14,856 - [INFO] - 基本操作 - input_password - password
+2018-09-29 17:31:14,998 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-29 17:31:15,274 - [INFO] - 基本操作 - show_msg - 提示信息：账号不能为空！
+2018-09-29 17:31:20,770 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-29 17:31:21,840 - [INFO] - 基本操作 - input_username - admin
+2018-09-29 17:31:22,015 - [INFO] - 基本操作 - input_password - 
+2018-09-29 17:31:22,119 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-29 17:31:22,424 - [INFO] - 基本操作 - show_msg - 提示信息：密码不能为空！
+2018-09-29 17:31:28,010 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-29 17:31:28,829 - [INFO] - 基本操作 - input_username - admin
+2018-09-29 17:31:28,965 - [INFO] - 基本操作 - input_password - 1234567890
+2018-09-29 17:31:29,110 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-29 17:31:40,762 - [ERROR] - 基本操作 - find_element - 定位('xpath', '//*[@id="header"]/div[2]/ul/li[5]/a/span')时发生异常：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 53, in find_element
+    WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(loc))
+  File "e:\onedrive\mypy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-09-29 17:31:46,390 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-29 17:31:47,282 - [INFO] - 基本操作 - input_username - wjx
+2018-09-29 17:31:47,409 - [INFO] - 基本操作 - input_password - Admin123
+2018-09-29 17:31:47,553 - [INFO] - 基本操作 - switch_usertype - 切换为AD用户登陆
+2018-09-29 17:31:47,713 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-29 17:31:59,617 - [ERROR] - 基本操作 - find_element - 定位('xpath', '//*[@id="header"]/div[2]/ul/li[5]/a/span')时发生异常：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 53, in find_element
+    WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(loc))
+  File "e:\onedrive\mypy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-09-29 17:35:23,895 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-09-29 17:35:25,181 - [INFO] - 基本操作 - input_username - 
+2018-09-29 17:35:25,302 - [INFO] - 基本操作 - input_password - password
+2018-09-29 17:35:25,464 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-29 17:35:25,742 - [INFO] - 基本操作 - show_msg - 提示信息：账号不能为空！
+2018-09-29 17:35:31,965 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-09-29 17:35:33,402 - [INFO] - 基本操作 - input_username - admin
+2018-09-29 17:35:33,578 - [INFO] - 基本操作 - input_password - 
+2018-09-29 17:35:33,710 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-29 17:35:34,040 - [INFO] - 基本操作 - show_msg - 提示信息：密码不能为空！
+2018-09-29 17:35:40,850 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-09-29 17:35:42,121 - [INFO] - 基本操作 - input_username - admin
+2018-09-29 17:35:42,304 - [INFO] - 基本操作 - input_password - 1234567890
+2018-09-29 17:35:42,451 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-29 17:35:51,882 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-09-29 17:35:53,577 - [INFO] - 基本操作 - input_username - wjx
+2018-09-29 17:35:53,740 - [INFO] - 基本操作 - input_password - Admin123
+2018-09-29 17:35:53,893 - [INFO] - 基本操作 - switch_usertype - 切换为AD用户登陆
+2018-09-29 17:35:54,039 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-29 17:35:55,045 - [INFO] - 基本操作 - show_msg - 提示信息：wjx：用户未授权！
+2018-09-29 17:36:25,676 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-09-29 17:36:26,667 - [INFO] - 基本操作 - input_username - 
+2018-09-29 17:36:26,778 - [INFO] - 基本操作 - input_password - password
+2018-09-29 17:36:26,928 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-29 17:36:27,170 - [INFO] - 基本操作 - show_msg - 提示信息：账号不能为空！
+2018-09-29 17:36:33,579 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-09-29 17:36:34,494 - [INFO] - 基本操作 - input_username - admin
+2018-09-29 17:36:34,631 - [INFO] - 基本操作 - input_password - 
+2018-09-29 17:36:34,732 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-29 17:36:34,998 - [INFO] - 基本操作 - show_msg - 提示信息：密码不能为空！
+2018-09-29 17:36:40,860 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-09-29 17:36:41,817 - [INFO] - 基本操作 - input_username - admin
+2018-09-29 17:36:41,967 - [INFO] - 基本操作 - input_password - 1234567890
+2018-09-29 17:36:42,108 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-29 17:36:54,851 - [ERROR] - 基本操作 - find_element - 定位('xpath', '//*[@id="header"]/div[2]/ul/li[5]/a/span')时发生异常：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 53, in find_element
+    WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(loc))
+  File "e:\onedrive\mypy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-09-29 17:37:00,513 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-09-29 17:37:01,403 - [INFO] - 基本操作 - input_username - wjx
+2018-09-29 17:37:01,532 - [INFO] - 基本操作 - input_password - Admin123
+2018-09-29 17:37:01,686 - [INFO] - 基本操作 - switch_usertype - 切换为AD用户登陆
+2018-09-29 17:37:01,829 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-29 17:37:02,412 - [INFO] - 基本操作 - show_msg - 提示信息：wjx：用户未授权！
+2018-10-08 22:01:53,329 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-08 22:01:56,032 - [INFO] - 基本操作 - input_username - 
+2018-10-08 22:01:56,268 - [INFO] - 基本操作 - input_password - password
+2018-10-08 22:01:56,696 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-08 22:01:57,067 - [INFO] - 基本操作 - show_msg - 提示信息：账号不能为空！
+2018-10-08 22:02:04,466 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-08 22:02:06,182 - [INFO] - 基本操作 - input_username - admin
+2018-10-08 22:02:06,399 - [INFO] - 基本操作 - input_password - 
+2018-10-08 22:02:06,524 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-08 22:02:06,884 - [INFO] - 基本操作 - show_msg - 提示信息：密码不能为空！
+2018-10-08 22:02:13,792 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-08 22:02:15,966 - [INFO] - 基本操作 - input_username - admin
+2018-10-08 22:02:16,219 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-08 22:02:16,455 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-08 22:02:26,450 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-08 22:02:28,614 - [INFO] - 基本操作 - input_username - wjx
+2018-10-08 22:02:28,819 - [INFO] - 基本操作 - input_password - Admin123
+2018-10-08 22:02:29,000 - [INFO] - 基本操作 - switch_usertype - 切换为AD用户登陆
+2018-10-08 22:02:29,191 - [INFO] - 基本操作 - click_submit - 点击登录按钮
