@@ -7,6 +7,7 @@ Project: 登录模块的测试用例
 
 import pytest
 from selenium import webdriver
+from workspace.config import csc_config
 from workspace.pages.login_page import LoginPage
 
 
@@ -22,7 +23,7 @@ class TestLoginCSC():
         self.driver = webdriver.Chrome()
         self.driver.implicitly_wait(10)
         self.driver.set_window_size(1366, 768)
-        self.url = "https://192.168.208.70:8099/csc/index.html"
+        self.url = csc_config.URL
         # pass
 
     @pytest.mark.parametrize('casename, username, password, asserts',
@@ -58,4 +59,3 @@ class TestLoginCSC():
 
 if __name__ == '__main__':
     pytest.main(['-q', './workspace/testcase/test_login.py'])
-    

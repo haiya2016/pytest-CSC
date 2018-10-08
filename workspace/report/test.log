@@ -1224,3 +1224,34 @@ selenium.common.exceptions.TimeoutException: Message:
 2018-10-08 22:02:28,819 - [INFO] - 基本操作 - input_password - Admin123
 2018-10-08 22:02:29,000 - [INFO] - 基本操作 - switch_usertype - 切换为AD用户登陆
 2018-10-08 22:02:29,191 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-08 23:03:31,642 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-08 23:03:38,698 - [INFO] - 基本操作 - input_username - 
+2018-10-08 23:03:38,916 - [INFO] - 基本操作 - input_password - password
+2018-10-08 23:03:39,173 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-08 23:03:39,602 - [INFO] - 基本操作 - show_msg - 提示信息：账号不能为空！
+2018-10-08 23:03:46,805 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-08 23:03:48,673 - [INFO] - 基本操作 - input_username - admin
+2018-10-08 23:03:48,941 - [INFO] - 基本操作 - input_password - 
+2018-10-08 23:03:49,070 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-08 23:03:49,440 - [INFO] - 基本操作 - show_msg - 提示信息：密码不能为空！
+2018-10-08 23:03:57,304 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-08 23:04:00,567 - [INFO] - 基本操作 - input_username - admin
+2018-10-08 23:04:00,828 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-08 23:04:01,066 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-08 23:04:11,237 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-08 23:04:14,190 - [INFO] - 基本操作 - input_username - wjx
+2018-10-08 23:04:14,573 - [INFO] - 基本操作 - input_password - Admin123
+2018-10-08 23:04:15,044 - [INFO] - 基本操作 - switch_usertype - 切换为AD用户登陆
+2018-10-08 23:04:15,279 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-08 23:04:45,887 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-08 23:04:48,688 - [INFO] - 基本操作 - input_username - wjx
+2018-10-08 23:04:48,920 - [INFO] - 基本操作 - input_password - Admin123
+2018-10-08 23:04:49,106 - [INFO] - 基本操作 - switch_usertype - 切换为AD用户登陆
+2018-10-08 23:04:49,313 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-08 23:04:52,421 - [INFO] - 登录 - login - 登录成功
+2018-10-08 23:07:28,755 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-08 23:07:31,029 - [INFO] - 基本操作 - input_username - wjx
+2018-10-08 23:07:31,283 - [INFO] - 基本操作 - input_password - Admin123
+2018-10-08 23:07:31,528 - [INFO] - 基本操作 - switch_usertype - 切换为AD用户登陆
+2018-10-08 23:07:31,734 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-08 23:07:34,906 - [INFO] - 登录 - login - 登录成功

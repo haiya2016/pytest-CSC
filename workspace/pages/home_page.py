@@ -34,8 +34,8 @@ class HomePage(BasePage):
         数据中心下拉列表选择，dc_name为数据中心的名称
         '''
         select = Select(self.find_element(*self.datacenter_loc))
-        # print(select.all_selected_options)
-        # print(select.all_selected_options.text)
+        print(select.all_selected_options)
+        print(select.all_selected_options.text)
         if dc_name in select.options.text:
             select.select_by_visible_text(dc_name)
         assert dc_name in select.options.text

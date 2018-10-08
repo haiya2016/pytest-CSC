@@ -4,34 +4,28 @@ Created on 2018-9-9
 @author: wjx
 Project: 首页模块的测试用例
 '''
-import unittest
-# import sys
-# import os
-import pymysql
+import pytest
 from selenium import webdriver
-from BeautifulReport import BeautifulReport
-# sys.path.append(os.path.abspath(os.path.dirname(__file__)+'\\'+'..\\pages'))
-from pages.login_page import LoginPage
-from pages.home_page import HomePage
+from workspace.config import csc_config
+from workspace.pages.login_page import LoginPage
+from workspace.pages.home_page import HomePage
 
 
-class HomepageCSC(unittest.TestCase):
+class TestHomepageCSC():
     '''
     CSC首页case
     '''
 
-    def setUp(self):
-        self.url = 'https://192.168.219.227:8099/csc/index.html'
+    def setup_method(self):
+        """
+            初始化，在每个方法前运行
+        """
+        self.url = csc_config.URL
         self.driver = webdriver.Chrome()
         self.driver.implicitly_wait(10)
         self.driver.set_window_size(1366, 768)
         self.login_driver = LoginPage.login(self.driver, self.url, 'wjx', 'Admin123', 'ad')
-        self.database = pymysql.connect(
-            host='192.168.219.227',
-            port=3306,
-            user='csc',
-            password='csc',
-            db='csc')
+        self.database = csc_config.DB
 
     def test_switch_dc(self):
         '''切换数据中心'''
@@ -41,15 +35,13 @@ class HomepageCSC(unittest.TestCase):
         print(homepage.dc_check())
         print(homepage.db_check(self.database, 'DC-PVC'))
 
-    def tearDown(self):
+    def teardown_method(self):
+        """
+            在每个测试用例结束后运行，关闭浏览器
+        """
         self.driver.close()
         self.database.close()
 
 
 if __name__ == '__main__':
-    TEST_SUITE = unittest.defaultTestLoader.discover(
-        r'.\testcase', pattern='*_homepage.py')
-    RESULT = BeautifulReport(TEST_SUITE)
-    RESULT.report(filename='CSC7.0自动化测试报告_首页',
-                  description='首页模块测试报告',
-                  log_path='report')
+    pytest.main(['-q', './workspace/testcase/test_homepage.py'])
