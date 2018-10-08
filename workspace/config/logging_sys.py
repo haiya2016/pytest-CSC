@@ -15,8 +15,8 @@ class Logger(object):
         '''
         self.logger = logging.getLogger(logger)     # 创建一个logger，作为日志的容器
         yaml_file = './workspace/config/logging_config.yaml'
-        with open(yaml_file, 'rt') as f:
-            conf = yaml.safe_load(f.read())
+        with open(yaml_file, 'rt') as yfile:
+            conf = yaml.safe_load(yfile.read())
         logging.config.dictConfig(conf)         # 使用yaml文件作为配置
 
     def getlog(self):

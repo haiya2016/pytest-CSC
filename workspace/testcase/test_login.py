@@ -32,7 +32,7 @@ class TestLoginCSC():
                               ("ad_login", 'wjx', 'Admin123', 'wjx')])
     def test_login_csc(self, casename, username, password, asserts):
         '''
-        测试使用不同的账号密码组合进行登陆测试
+            测试使用不同的账号密码组合进行登陆测试
         '''
         login_page = LoginPage(self.driver, self.url)   # 创建一个登陆页面的实例
         login_page.open()
@@ -58,3 +58,4 @@ class TestLoginCSC():
 
 if __name__ == '__main__':
     pytest.main(['-q', './workspace/testcase/test_login.py'])
+    
