@@ -1,11 +1,11 @@
 # coding=utf-8
 '''
-Created on 2018-9-9
-@author: wjx
-Project: 首页模块的测试用例
+    Created on 2018-9-9
+    @author: wjx
+    Project: 首页模块的测试用例
 '''
 import pytest
-from selenium import webdriver
+from workspace.config.running_config import chrome_driver
 from workspace.config import csc_config
 from workspace.pages.login_page import LoginPage
 from workspace.pages.home_page import HomePage
@@ -20,20 +20,18 @@ class TestHomepageCSC():
         """
             初始化，在每个方法前运行
         """
-        self.url = csc_config.URL
-        self.driver = webdriver.Chrome()
-        self.driver.implicitly_wait(10)
-        self.driver.set_window_size(1366, 768)
-        self.login_driver = LoginPage.login(self.driver, self.url, 'wjx', 'Admin123', 'ad')
+        self.driver = chrome_driver()
+        self.login_driver = LoginPage.login(self.driver)
         self.database = csc_config.DB
 
     def test_switch_dc(self):
-        '''切换数据中心'''
-        homepage = HomePage(self.login_driver, self.url)
-        # 选择某个数据中心的数据
-        homepage.dc_select('DC-PVC')
+        '''
+            切换数据中心
+        '''
+        homepage = HomePage(self.login_driver)
+        homepage.dc_select('opws')   # 选择某个数据中心的数据
         print(homepage.dc_check())
-        print(homepage.db_check(self.database, 'DC-PVC'))
+        print(homepage.db_check(self.database, 'opws'))
 
     def teardown_method(self):
         """

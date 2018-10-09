@@ -1279,3 +1279,81 @@ selenium.common.exceptions.TimeoutException: Message:
 2018-10-08 23:24:10,287 - [INFO] - 基本操作 - switch_usertype - 切换为AD用户登陆
 2018-10-08 23:24:10,454 - [INFO] - 基本操作 - click_submit - 点击登录按钮
 2018-10-08 23:24:12,854 - [INFO] - 登录 - login - 登录成功
+2018-10-09 09:22:19,592 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-09 09:22:20,929 - [INFO] - 基本操作 - input_username - wjx
+2018-10-09 09:22:21,102 - [INFO] - 基本操作 - input_password - Admin123
+2018-10-09 09:22:21,245 - [INFO] - 基本操作 - switch_usertype - 切换为AD用户登陆
+2018-10-09 09:22:21,399 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-09 09:22:23,707 - [INFO] - 登录 - login - 登录成功
+2018-10-09 09:32:58,913 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-09 09:33:00,366 - [INFO] - 基本操作 - input_username - admin
+2018-10-09 09:33:00,558 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-09 09:33:00,727 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-09 09:33:03,333 - [INFO] - 登录 - login - 登录成功
+2018-10-09 09:54:20,322 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-09 09:54:22,082 - [INFO] - 基本操作 - input_username - admin
+2018-10-09 09:54:22,289 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-09 09:54:22,461 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-09 09:54:24,844 - [INFO] - 登录 - login - 登录成功
+2018-10-09 09:58:41,092 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-09 09:58:42,730 - [INFO] - 基本操作 - input_username - 
+2018-10-09 09:58:42,859 - [INFO] - 基本操作 - input_password - password
+2018-10-09 09:58:43,028 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-09 09:58:43,306 - [INFO] - 基本操作 - show_msg - 提示信息：账号不能为空！
+2018-10-09 09:58:50,304 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-09 09:58:51,529 - [INFO] - 基本操作 - input_username - admin
+2018-10-09 09:58:51,736 - [INFO] - 基本操作 - input_password - 
+2018-10-09 09:58:51,856 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-09 09:58:52,166 - [INFO] - 基本操作 - show_msg - 提示信息：密码不能为空！
+2018-10-09 09:58:58,925 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-09 09:59:00,588 - [INFO] - 基本操作 - input_username - admin
+2018-10-09 09:59:00,776 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-09 09:59:00,951 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-09 09:59:10,391 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-09 09:59:12,273 - [INFO] - 基本操作 - input_username - wjx
+2018-10-09 09:59:12,429 - [INFO] - 基本操作 - input_password - Admin123
+2018-10-09 09:59:12,603 - [INFO] - 基本操作 - switch_usertype - 切换为AD用户登陆
+2018-10-09 09:59:12,768 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-09 10:07:20,869 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-09 10:07:23,273 - [INFO] - 基本操作 - input_username - 
+2018-10-09 10:07:23,403 - [INFO] - 基本操作 - input_password - password
+2018-10-09 10:07:23,588 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-09 10:07:23,913 - [INFO] - 基本操作 - show_msg - 提示信息：账号不能为空！
+2018-10-09 10:07:31,323 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-09 10:07:33,641 - [INFO] - 基本操作 - input_username - admin
+2018-10-09 10:07:33,929 - [INFO] - 基本操作 - input_password - 
+2018-10-09 10:07:34,122 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-09 10:07:34,473 - [INFO] - 基本操作 - show_msg - 提示信息：密码不能为空！
+2018-10-09 10:07:42,085 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-09 10:07:44,943 - [INFO] - 基本操作 - input_username - admin
+2018-10-09 10:07:45,213 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-09 10:07:45,416 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-09 10:07:55,227 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-09 10:07:57,912 - [INFO] - 基本操作 - input_username - wjx
+2018-10-09 10:07:58,431 - [INFO] - 基本操作 - input_password - Admin123
+2018-10-09 10:07:58,915 - [INFO] - 基本操作 - switch_usertype - 切换为AD用户登陆
+2018-10-09 10:07:59,163 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-09 10:17:20,472 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-09 10:17:22,428 - [INFO] - 基本操作 - input_username - admin
+2018-10-09 10:17:22,633 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-09 10:17:22,804 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-09 10:17:25,011 - [INFO] - 登录 - login - 登录成功
+2018-10-09 10:17:25,061 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html#pages/resources/instances/vms/vm_create?previousPage=1
+2018-10-09 10:17:25,620 - [INFO] - 云主机创建 - input_item - 云主机名称：python01
+2018-10-09 10:17:28,581 - [INFO] - 云主机创建 - input_item - VM Name：python01
+2018-10-09 10:17:31,018 - [INFO] - 云主机创建 - input_item - Hostname：python01
+2018-10-09 10:17:33,375 - [INFO] - 云主机创建 - input_item - 归属服务：zhh2
+2018-10-09 10:17:33,375 - [INFO] - 云主机创建 - search_for - 归属服务：zhh2
+2018-10-09 10:17:35,927 - [INFO] - 云主机创建 - search_for - 点击搜索按钮
+2018-10-09 10:17:36,213 - [INFO] - 云主机创建 - search_for - 勾选第一个搜索结果
+2018-10-09 10:17:47,315 - [ERROR] - 基本操作 - click_element - 元素('xpath', '//table//tr[2]/td[1]//span')无法点击：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 78, in click_element
+    EC.element_to_be_clickable(loc))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-10-09 10:17:47,318 - [WARNING] - 云主机创建 - search_for - 搜索不到对应结果
+2018-10-09 10:17:49,518 - [INFO] - 云主机创建 - input_item - 归属VDC：zhhvdca
+2018-10-09 10:17:49,518 - [INFO] - 云主机创建 - search_for - 归属VDC：zhhvdca

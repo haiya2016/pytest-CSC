@@ -40,10 +40,12 @@ class HomePage(BasePage):
             options_list.append(option.text)
         if dc_name in options_list:
             select.select_by_visible_text(dc_name)
-        assert dc_name in options_list
+        assert dc_name in options_list    # 判断传入的数据中心名称是否在下拉列表中
 
     def db_check(self, csc_db, dc_name):
-        '''检查数据中心的数据与数据库是否相符'''
+        '''
+        检查数据中心的数据与数据库是否相符
+        '''
         # csc_db = Database(**db_config)   # 连接数据库
         cursor = csc_db.cursor()
         sel_lists_dict = {
@@ -84,7 +86,9 @@ class HomePage(BasePage):
         return csc_count_dict
 
     def dc_check(self):
-        '''以字典的形式返回页面上数据中心的数值'''
+        '''
+        以字典的形式返回页面上数据中心的数值
+        '''
         resource_count_dict = {}
         for resource in self.resource_list:
             value = self.find_element(By.XPATH, f'//div[@class="resource-{resource}"]//strong').text

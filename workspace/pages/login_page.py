@@ -7,6 +7,8 @@ Project:页面基本操作方法：如input_username，input_password，click_su
 from selenium.webdriver.common.by import By
 from workspace.pages.base_page import BasePage
 from workspace.config.logging_sys import Logger
+from workspace.config import csc_config
+
 
 class LoginPage(BasePage):
     '''
@@ -27,52 +29,62 @@ class LoginPage(BasePage):
 
     # 操作
     def input_username(self, username):
-        '''输入用户名'''
+        '''
+        输入用户名
+        '''
         self.log.info(f'{username}')
         self.find_element(*self.username_loc).send_keys(username)
 
     def input_password(self, password):
-        '''输入密码'''
+        '''
+        输入密码
+        '''
         self.log.info(f'{password}')
         self.find_element(*self.password_loc).send_keys(password)
 
     def click_submit(self):
-        '''点击登录'''
+        '''
+        点击登录
+        '''
         self.log.info('点击登录按钮')
         self.click_element(*self.submit_loc)
 
     def show_msg(self):
-        '''用户名或密码不合理时Tip框内容展示'''
+        '''
+        用户名或密码不合理时Tip框内容展示
+        '''
         mesg = self.find_element(*self.msg_loc).text
         self.log.info(f'提示信息：{mesg}')
         return mesg
 
     def switch_usertype(self):
-        '''切换为AD用户登陆'''
+        '''
+        切换为AD用户登陆
+        '''
         self.log.info('切换为AD用户登陆')
         self.click_element(*self.usertype_ad_loc)
         # self.find_element(*self.usertype_ad_loc).click()
 
     def show_userid(self, username):
-        '''登录成功页面判断用户id是否相同'''
+        '''
+        登录成功页面判断用户id是否相同
+        '''
         return self.find_element(*self.userid_loc).text == username
 
-
     @classmethod
-    def login(cls, driver, url, username, password, usertype='本地'):
+    def login(cls, driver, url=csc_config.URL, user=csc_config.USER_ADMIN):
         '''
-        类方法：账号正常登录后返回浏览器给用例使用
+        类方法：账号正常登录后返回浏览器给用例使用，默认用管理员账号登录
         '''
         login = cls(driver, url)    # 初始化
         login.open()
-        login.input_username(username)
-        login.input_password(password)
-        if usertype != '本地':
+        login.input_username(user['username'])
+        login.input_password(user['password'])
+        if user['usertype'] != 'local':
             login.switch_usertype()
         login.click_submit()
-        if cls.show_userid(login, username):
+        if cls.show_userid(login, user['username']):
             cls.log.info('登录成功')
         else:
             raise AssertionError
         return login.driver
-        

@@ -6,25 +6,21 @@ Project: 登录模块的测试用例
 '''
 
 import pytest
-from selenium import webdriver
-from workspace.config import csc_config
 from workspace.pages.login_page import LoginPage
+from workspace.config.running_config import chrome_driver
 
 
 class TestLoginCSC():
     """
-          登录CSC的测试用例
+        登录CSC的测试用例
     """
 
     def setup_method(self):
         """
             初始化，在每个方法前运行
         """
-        self.driver = webdriver.Chrome()
-        self.driver.implicitly_wait(10)
-        self.driver.set_window_size(1366, 768)
-        self.url = csc_config.URL
-        # pass
+        self.driver = chrome_driver()
+
 
     @pytest.mark.parametrize('casename, username, password, asserts',
                              [("user_null", '', 'password', '账号不能为空！'),
@@ -35,7 +31,7 @@ class TestLoginCSC():
         '''
             测试使用不同的账号密码组合进行登陆测试
         '''
-        login_page = LoginPage(self.driver, self.url)   # 创建一个登陆页面的实例
+        login_page = LoginPage(self.driver)   # 创建一个登陆页面的实例
         login_page.open()
         login_page.input_username(username)
         login_page.input_password(password)
