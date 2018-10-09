@@ -72,10 +72,14 @@ class LoginPage(BasePage):
         return self.find_element(*self.userid_loc).text == username
 
     @classmethod
-    def login(cls, driver, url=csc_config.URL, user=csc_config.USER_ADMIN):
+    def login(cls, driver, url=None, user=None):
         '''
         类方法：账号正常登录后返回浏览器给用例使用，默认用管理员账号登录
         '''
+        if not url:
+            url = csc_config.URL
+        if not user:
+            user = csc_config.USER_ADMIN
         login = cls(driver, url)    # 初始化
         login.open()
         login.input_username(user['username'])

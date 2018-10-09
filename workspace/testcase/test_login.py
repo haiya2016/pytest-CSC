@@ -7,7 +7,7 @@ Project: 登录模块的测试用例
 
 import pytest
 from workspace.pages.login_page import LoginPage
-from workspace.config.running_config import chrome_driver
+from workspace.config.running_config import get_driver
 
 
 class TestLoginCSC():
@@ -19,7 +19,7 @@ class TestLoginCSC():
         """
             初始化，在每个方法前运行
         """
-        self.driver = chrome_driver()
+        self.driver = get_driver()
 
 
     @pytest.mark.parametrize('casename, username, password, asserts',

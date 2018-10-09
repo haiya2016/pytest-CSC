@@ -5,7 +5,7 @@
     Project: 首页模块的测试用例
 '''
 import pytest
-from workspace.config.running_config import chrome_driver
+from workspace.config.running_config import get_driver
 from workspace.config import csc_config
 from workspace.pages.login_page import LoginPage
 from workspace.pages.home_page import HomePage
@@ -20,7 +20,7 @@ class TestHomepageCSC():
         """
             初始化，在每个方法前运行
         """
-        self.driver = chrome_driver()
+        self.driver = get_driver()
         self.login_driver = LoginPage.login(self.driver)
         self.database = csc_config.DB
 

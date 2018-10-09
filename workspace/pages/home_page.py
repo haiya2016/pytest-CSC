@@ -1,8 +1,8 @@
 # coding=utf-8
 '''
-Created on 2018-9-9
-@author: wjx
-Project:页面基本操作方法：如open，input_username，input_password，click_submit
+    Created on 2018-9-9
+    @author: wjx
+    Project:首页的元素定位，数据中心选择
 '''
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
@@ -11,7 +11,7 @@ from workspace.pages.base_page import BasePage
 
 class HomePage(BasePage):
     '''
-    继承BasePage类
+    首页页面，继承BasePage类
     '''
     datacenter_loc = (By.XPATH, '//*[@id="dragDiv5"]/div[2]/div[1]/select')
     dc_vm_loc = (By.XPATH, '//div[@class="resource-vm"]//strong')                           # 云主机

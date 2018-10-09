@@ -7,7 +7,7 @@
 
 import time
 import pytest
-from workspace.config.running_config import chrome_driver
+from workspace.config.running_config import get_driver
 from workspace.config import csc_config
 from workspace.pages.login_page import LoginPage
 from workspace.pages.vm_create_page import VmCreatePage
@@ -23,7 +23,7 @@ class TestCreateVM():
             初始化，在每个方法前运行
         """
         self.create_vm_url = csc_config.CREATE_VM_URL
-        self.driver = chrome_driver()
+        self.driver = get_driver()
         self.login_driver = LoginPage.login(self.driver)  # 调用LoginPage的类方法，直接获取一个已登录的浏览器
 
     def test_create_vm(self):
@@ -38,7 +38,7 @@ class TestCreateVM():
             '云主机名称': 'python01',
             'VM Name': 'python01',
             'Hostname': 'python01',
-            '归属服务': 'zhh2',
+            '归属服务': 'wpl',
             '归属VDC': 'zhhvdca',
             '归属用户': 'admin',
             '业务系统': '',

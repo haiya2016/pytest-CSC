@@ -1357,3 +1357,27 @@ selenium.common.exceptions.TimeoutException: Message:
 2018-10-09 10:17:47,318 - [WARNING] - 云主机创建 - search_for - 搜索不到对应结果
 2018-10-09 10:17:49,518 - [INFO] - 云主机创建 - input_item - 归属VDC：zhhvdca
 2018-10-09 10:17:49,518 - [INFO] - 云主机创建 - search_for - 归属VDC：zhhvdca
+2018-10-09 11:44:19,015 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-09 11:44:21,466 - [INFO] - 基本操作 - input_username - admin
+2018-10-09 11:44:21,690 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-09 11:44:21,907 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-09 11:44:24,439 - [INFO] - 登录 - login - 登录成功
+2018-10-09 11:44:24,494 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html#pages/resources/instances/vms/vm_create?previousPage=1
+2018-10-09 11:44:25,277 - [INFO] - 云主机创建 - input_item - 云主机名称：python01
+2018-10-09 11:44:28,284 - [INFO] - 云主机创建 - input_item - VM Name：python01
+2018-10-09 11:44:30,573 - [INFO] - 云主机创建 - input_item - Hostname：python01
+2018-10-09 11:44:32,823 - [INFO] - 云主机创建 - input_item - 归属服务：zhh2
+2018-10-09 11:44:32,823 - [INFO] - 云主机创建 - search_for - 归属服务：zhh2
+2018-10-09 11:44:35,292 - [INFO] - 云主机创建 - search_for - 点击搜索按钮
+2018-10-09 11:44:35,532 - [INFO] - 云主机创建 - search_for - 勾选第一个搜索结果
+2018-10-09 11:44:46,653 - [ERROR] - 基本操作 - click_element - 元素('xpath', '//table//tr[2]/td[1]//span')无法点击：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 78, in click_element
+    EC.element_to_be_clickable(loc))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-10-09 11:44:46,666 - [WARNING] - 云主机创建 - search_for - 搜索不到对应结果
+2018-10-09 11:44:48,859 - [INFO] - 云主机创建 - input_item - 归属VDC：zhhvdca
+2018-10-09 11:44:48,859 - [INFO] - 云主机创建 - search_for - 归属VDC：zhhvdca
