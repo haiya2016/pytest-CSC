@@ -7,10 +7,11 @@ Project:基础类BasePage，封装所有页面都公用的方法，
 在初始化方法中定义驱动driver，基本url，title
 WebDriverWait提供了显式等待方式。
 '''
-# import time
+import time
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 # from selenium.common.exceptions import TimeoutException
+from selenium.webdriver.support.ui import Select
 from workspace.config.logging_sys import Logger
 from workspace.config import csc_config
 
@@ -75,14 +76,17 @@ class BasePage(object):
         '''
         重写元素点击方法，增加是否可点击的判断
         '''
+        self.scroll(*loc)
         try:
-            WebDriverWait(self.driver, 10).until(
-                EC.element_to_be_clickable(loc))
+            WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(loc))
         except Exception as allerr:
             self.log.exception(f'元素{loc}无法点击：{allerr}')
             raise Exception
         else:
+            self.log.info(f"点击元素{loc}")
             self.find_element(*loc).click()
+            time.sleep(2)  # 点击元素后睡眠2秒等待界面加载
+
 
     def switch_frame(self, *loc):
         '''
@@ -98,6 +102,14 @@ class BasePage(object):
         self.log.info(f'执行js脚本：{src}')
         self.driver.execute_script(src)
 
+    def scroll(self, *loc):
+        '''
+        element对象的“底端”与当前窗口的“底部”对齐
+        :param *loc:定位element对象
+        '''
+        element = self.find_element(*loc)
+        self.driver.execute_script('arguments[0].focus();', element)
+
     def remove_disabled(self, *loc):
         '''
         通过js移除元素的disabled属性
@@ -106,7 +118,7 @@ class BasePage(object):
         element = self.find_element(*loc)
         self.driver.execute_script("arguments[0].removeAttribute('disabled')", element)
 
-    def assertByText(self, text, *loc):
+    def assert_By_Text(self, text, *loc):
         '''
         判断获取的元素文本是否和预期一致
         :param text:用于比较的文本
@@ -114,3 +126,20 @@ class BasePage(object):
         '''
         assert self.find_element(*loc).text == text
 
+    def selectByText(self, text, *loc):
+        '''
+        通过文本对下拉框进行选择
+        :param text:用于选择的文本
+        :param *loc:定位因子
+        '''
+        select = Select(self.find_element(*loc))
+        select.select_by_visible_text(text)
+
+    def sendKeys(self, text, *loc):
+        '''
+        通过文本对下拉框进行选择
+        :param text:用于输入的文本
+        :param *loc:定位因子
+        '''
+        self.find_element(*loc).clear()
+        self.find_element(*loc).send_keys(text)

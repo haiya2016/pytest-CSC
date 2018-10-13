@@ -6,7 +6,6 @@ Project:云主机创建页面
 '''
 import time
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import Select
 from workspace.pages.base_page import BasePage
 from workspace.config.logging_sys import Logger
 
@@ -94,10 +93,10 @@ class VmCreatePage(BasePage):
         '''
         进入云主机创建页面
         '''
-        self.find_element(*self.virtual_recourse_manage_loc).click()
-        self.find_element(*self.recourse_instance_loc).click()
+        self.click_element(*self.virtual_recourse_manage_loc)
+        self.click_element(*self.recourse_instance_loc)
         time.sleep(2)
-        self.find_element(*self.create_button_lov).click()
+        self.click_element(*self.create_button_lov)
         time.sleep(2)
         self.vclog.info('进入云主机创建页面')
 
@@ -112,57 +111,50 @@ class VmCreatePage(BasePage):
         self.vclog.info(f'{item_type}：{item_value}')
         if item_type == '归属服务':
             self.click_element(*self.service_loc)
-            time.sleep(2)
-            self.find_element(*self.service_search_input_loc).send_keys(item_value)
+            self.sendKeys(item_value, *self.service_search_input_loc)
         elif item_type == '归属VDC':
             self.click_element(*self.vdc_loc)
-            time.sleep(2)
-            self.find_element(*self.vdc_search_input_loc).send_keys(item_value)
+            self.sendKeys(item_value, *self.vdc_search_input_loc)
         elif item_type == '归属用户':
             self.click_element(*self.user_loc)
-            time.sleep(2)
-            self.find_element(*self.user_search_input_loc).send_keys(item_value)
+            self.sendKeys(item_value, *self.user_search_input_loc)
         elif item_type == '业务系统':
             if item_value:             # 非必填，有传值才进行操作
                 self.click_element(*self.bussys_loc)
-                time.sleep(2)
-                self.find_element(*self.bussys_search_input_loc).send_keys(item_value)
+                self.sendKeys(item_value, *self.bussys_search_input_loc)
             else:
                 return True
         elif item_type == '应用集群':
             if item_value:             # 非必填，有传值才进行操作
                 self.click_element(*self.busitem_loc)
-                time.sleep(2)
-                self.find_element(*self.busitem_search_input_loc).send_keys(item_value)
+                self.sendKeys(item_value, *self.busitem_search_input_loc)
             else:
                 return True
         elif item_type == '镜像':
             self.click_element(*self.image_loc)
-            time.sleep(2)
-            self.find_element(*self.image_search_input_loc).send_keys(item_value)
+            self.sendKeys(item_value, *self.image_search_input_loc)
         elif item_type == '宿主机':
             self.click_element(*self.host_loc)
-            time.sleep(2)
-            self.find_element(*self.host_search_input_loc).send_keys(item_value)
+            self.sendKeys(item_value, *self.host_search_input_loc)
         elif item_type == '存储池':
             self.click_element(*self.storage_pool_loc)
-            time.sleep(2)
-            self.find_element(*self.storage_pool_search_input_loc).send_keys(item_value)
-        self.vclog.info('点击搜索按钮')    
+            self.sendKeys(item_value, *self.storage_pool_search_input_loc)
+        self.vclog.info('点击搜索按钮')
         self.click_element(*self.search_button_loc)         # 点击搜索按钮
         self.vclog.info('勾选第一个搜索结果')
         try:
             self.click_element(*self.first_search_result_loc)    # 勾选第一个搜索结果
         except Exception as err:
             self.vclog.warning(f'搜索不到对应结果:{err}')
-        
 
 
     def item_click(self, item_type, item_value):
-        '''搜索之后点击确认
+        '''
+        搜索之后点击确认
         :param item_type: 组件类型
         :param item_value: 组件值
-        :return'''
+        :return
+        '''
         self.search_for(item_type, item_value)
         if item_type == '归属服务':
             self.click_element(*self.service_confirm_loc)
@@ -190,17 +182,16 @@ class VmCreatePage(BasePage):
         :param item_value: 组件值
         :return'''
         if item_type == '到期时间':
-            select = Select(self.find_element(*self.applytime_timefor_loc))
+            self.selectByText(item_value, *self.applytime_timefor_loc)
         elif item_type == '可用分区':
-            select = Select(self.find_element(*self.az_loc))
+            self.selectByText(item_value, *self.az_loc)
         elif item_type == 'CPU':
-            select = Select(self.find_element(*self.cpu_loc))
+            self.selectByText(item_value, *self.cpu_loc)
         elif item_type == '内存':
-            select = Select(self.find_element(*self.memory_loc))
+            self.selectByText(item_value, *self.memory_loc)
         elif item_type == 'IP池':
-            select = Select(self.find_element(*self.ip_pool_loc))
+            self.selectByText(item_value, *self.ip_pool_loc)
         self.vclog.info(f'下拉{item_type}，选择{item_value}')
-        select.select_by_visible_text(item_value)
 
 
     def input_item(self, item_type, item_value):
@@ -210,16 +201,16 @@ class VmCreatePage(BasePage):
         :return'''
         self.vclog.info(f'{item_type}：{item_value}')
         if item_type == '云主机名称':
-            self.find_element(*self.name_input_loc).send_keys(item_value)
+            self.sendKeys(item_value, *self.name_input_loc)
         elif item_type == 'VM Name':
-            self.find_element(*self.vmname_input_loc).send_keys(item_value)
+            self.sendKeys(item_value, *self.vmname_input_loc)
         elif item_type == 'Hostname':
-            self.find_element(*self.hostname_input_loc).send_keys(item_value)
+            self.sendKeys(item_value, *self.hostname_input_loc)
         elif item_type == '备注':
-            self.find_element(*self.textarea_input_loc).send_keys(item_value)
+            self.sendKeys(item_value, *self.textarea_input_loc)
         elif item_type == '系统盘':
             if item_value:  # 有值才重新赋值
-                self.find_element(*self.sysdisk_loc).send_keys(item_value)
+                self.sendKeys(item_value, *self.sysdisk_loc)
         elif item_type == '到期时间':
             if item_value == '永久':
                 self.click_element(*self.applytime_datefor_loc)
@@ -229,12 +220,10 @@ class VmCreatePage(BasePage):
             else:
                 self.click_element(*self.applytime_date_loc)
                 self.find_element(*self.applytime_datefor_loc).clear()
-                self.find_element(*self.applytime_datefor_loc).send_keys(item_value)
+                self.sendKeys(item_value, *self.applytime_datefor_loc)
                 self.click_element(*self.textarea_input_loc)      # 用于取消日历控件
         elif item_type in ['可用分区', 'CPU', '内存', 'IP池']:     # 需要下拉选择的控件
             self.item_select(item_type, item_value)
         else:       # 需要搜索的控件
             self.item_click(item_type, item_value)
         time.sleep(2)
-
-        

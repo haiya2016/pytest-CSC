@@ -1526,3 +1526,572 @@ selenium.common.exceptions.TimeoutException: Message:
 2018-10-12 17:17:01,501 - [INFO] - 登录 - login - 登录成功
 2018-10-12 17:17:02,433 - [INFO] - 基本操作 - enter_menu - 进入服务管理菜单
 2018-10-12 17:17:06,507 - [INFO] - 基本操作 - remove_disabled - 移除元素disabled属性，使元素可见
+2018-10-13 18:43:17,442 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-13 18:43:19,032 - [INFO] - 基本操作 - input_username - 
+2018-10-13 18:43:19,201 - [INFO] - 基本操作 - input_password - password
+2018-10-13 18:43:19,451 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-13 18:43:19,928 - [INFO] - 基本操作 - show_msg - 提示信息：账号不能为空！
+2018-10-13 18:43:27,101 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-13 18:43:28,288 - [INFO] - 基本操作 - input_username - admin
+2018-10-13 18:43:28,548 - [INFO] - 基本操作 - input_password - 
+2018-10-13 18:43:28,700 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-13 18:43:29,165 - [INFO] - 基本操作 - show_msg - 提示信息：密码不能为空！
+2018-10-13 18:43:36,267 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-13 18:43:37,551 - [INFO] - 基本操作 - input_username - admin
+2018-10-13 18:43:37,797 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-13 18:43:38,032 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-13 18:43:48,575 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-13 18:43:49,702 - [INFO] - 基本操作 - input_username - wjx
+2018-10-13 18:43:49,927 - [INFO] - 基本操作 - input_password - Admin123
+2018-10-13 18:43:50,154 - [INFO] - 基本操作 - switch_usertype - 切换为AD用户登陆
+2018-10-13 18:43:50,350 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-13 22:26:57,659 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-13 22:26:59,046 - [INFO] - 基本操作 - input_username - admin
+2018-10-13 22:26:59,280 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-13 22:26:59,525 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-13 22:27:04,615 - [INFO] - 登录 - login - 登录成功
+2018-10-13 22:27:07,295 - [INFO] - 基本操作 - enter_menu - 进入服务管理菜单
+2018-10-13 22:27:20,151 - [ERROR] - 基本操作 - click_element - 元素('xpath', "//a[text()='创建服务 ']")无法点击：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 80, in click_element
+    WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(loc))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-10-13 22:31:39,958 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-13 22:31:41,240 - [INFO] - 基本操作 - input_username - admin
+2018-10-13 22:31:41,498 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-13 22:31:41,757 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-13 22:31:46,943 - [INFO] - 登录 - login - 登录成功
+2018-10-13 22:31:49,694 - [INFO] - 基本操作 - enter_menu - 进入服务管理菜单
+2018-10-13 22:32:02,492 - [ERROR] - 基本操作 - click_element - 元素('xpath', "//a[text()='创建服务 ']")无法点击：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 80, in click_element
+    WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(loc))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-10-13 22:35:21,869 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-13 22:35:23,082 - [INFO] - 基本操作 - input_username - admin
+2018-10-13 22:35:23,308 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-13 22:35:23,514 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-13 22:35:28,266 - [INFO] - 登录 - login - 登录成功
+2018-10-13 22:35:31,017 - [INFO] - 基本操作 - enter_menu - 进入服务管理菜单
+2018-10-13 22:35:31,019 - [INFO] - 基本操作 - create_vm_service - 点击创建按钮
+2018-10-13 22:35:33,270 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务名称: 自动化创建云服务01
+2018-10-13 22:35:33,271 - [INFO] - 基本操作 - create_vm_service - 点击创建按钮
+2018-10-13 22:35:43,839 - [ERROR] - 基本操作 - click_element - 元素('xpath', "//a[text()='创建服务 ']")无法点击：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 80, in click_element
+    WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(loc))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-10-13 22:41:22,974 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-13 22:41:24,135 - [INFO] - 基本操作 - input_username - admin
+2018-10-13 22:41:24,391 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-13 22:41:24,639 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-13 22:41:29,608 - [INFO] - 登录 - login - 登录成功
+2018-10-13 22:41:32,031 - [INFO] - 基本操作 - enter_menu - 进入服务管理菜单
+2018-10-13 22:41:32,033 - [INFO] - 基本操作 - enter_create - 点击创建按钮
+2018-10-13 22:41:34,305 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务名称: 自动化创建云服务01
+2018-10-13 22:41:34,644 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务有效期: 永久
+2018-10-13 22:41:34,646 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：发布范围: 全局
+2018-10-13 22:41:34,648 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务图标: 这里输入图标路径
+2018-10-13 22:41:34,653 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务SLA登记: P1
+2018-10-13 22:41:34,654 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务介绍: 这里输入服务的相关介绍内容
+2018-10-13 22:41:35,184 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：计费规则: 计费规则的名称
+2018-10-13 22:41:35,186 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：可用分区: [{'可用分区名称': '38KVM', '镜像': ['cirros', 'cirros_xen'], '配置列表': [('配置1', '1', '1'), ('配置2', '2', '2')], '应用列表': ['tomcat'], '磁盘服务': 'zhh云硬盘服务'}]
+2018-10-13 22:41:48,082 - [ERROR] - 基本操作 - find_element - 定位('xpath', "//span[text()='可用分区名称']/../input")时发生异常：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 61, in find_element
+    EC.visibility_of_element_located(loc))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-10-13 22:44:04,980 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-13 22:44:06,142 - [INFO] - 基本操作 - input_username - admin
+2018-10-13 22:44:06,442 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-13 22:44:06,714 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-13 22:44:11,894 - [INFO] - 登录 - login - 登录成功
+2018-10-13 22:44:14,342 - [INFO] - 基本操作 - enter_menu - 进入服务管理菜单
+2018-10-13 22:44:14,343 - [INFO] - 基本操作 - enter_create - 点击创建按钮
+2018-10-13 22:44:16,601 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务名称: 自动化创建云服务01
+2018-10-13 22:44:16,941 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务有效期: 永久
+2018-10-13 22:44:16,943 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：发布范围: 全局
+2018-10-13 22:44:19,303 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务图标: 这里输入图标路径
+2018-10-13 22:44:19,304 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务SLA登记: P1
+2018-10-13 22:44:19,305 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务介绍: 这里输入服务的相关介绍内容
+2018-10-13 22:44:19,675 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：计费规则: 计费规则的名称
+2018-10-13 22:44:19,676 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：可用分区: [{'可用分区名称': '38KVM', '镜像': ['cirros', 'cirros_xen'], '配置列表': [('配置1', '1', '1'), ('配置2', '2', '2')], '应用列表': ['tomcat'], '磁盘服务': 'zhh云硬盘服务'}]
+2018-10-13 22:44:39,683 - [ERROR] - 基本操作 - click_element - 元素('xpath', "//label[text()='None']/../../..//a[text()='+添加镜像 ']")无法点击：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 80, in click_element
+    WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(loc))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-10-13 22:48:27,798 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-13 22:48:28,969 - [INFO] - 基本操作 - input_username - admin
+2018-10-13 22:48:29,188 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-13 22:48:29,410 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-13 22:48:34,785 - [INFO] - 登录 - login - 登录成功
+2018-10-13 22:48:37,314 - [INFO] - 基本操作 - enter_menu - 进入服务管理菜单
+2018-10-13 22:48:37,315 - [INFO] - 基本操作 - enter_create - 点击创建按钮
+2018-10-13 22:48:39,607 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务名称: 自动化创建云服务01
+2018-10-13 22:48:40,081 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务有效期: 永久
+2018-10-13 22:48:40,083 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：发布范围: 全局
+2018-10-13 22:48:42,463 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务图标: 这里输入图标路径
+2018-10-13 22:48:42,464 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务SLA登记: P1
+2018-10-13 22:48:42,465 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务介绍: 这里输入服务的相关介绍内容
+2018-10-13 22:48:42,784 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：计费规则: 计费规则的名称
+2018-10-13 22:48:42,786 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：可用分区: [{'可用分区名称': '38KVM', '镜像': ['cirros', 'cirros_xen'], '配置列表': [('配置1', '1', '1'), ('配置2', '2', '2')], '应用列表': ['tomcat'], '磁盘服务': 'zhh云硬盘服务'}]
+2018-10-13 22:50:13,358 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-13 22:50:14,450 - [INFO] - 基本操作 - input_username - admin
+2018-10-13 22:50:14,682 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-13 22:50:14,912 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-13 22:50:20,138 - [INFO] - 登录 - login - 登录成功
+2018-10-13 22:50:22,795 - [INFO] - 基本操作 - enter_menu - 进入服务管理菜单
+2018-10-13 22:50:22,796 - [INFO] - 基本操作 - enter_create - 点击创建按钮
+2018-10-13 22:50:25,059 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务名称: 自动化创建云服务01
+2018-10-13 22:50:25,620 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务有效期: 永久
+2018-10-13 22:50:25,622 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：发布范围: 全局
+2018-10-13 22:50:28,001 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务图标: 这里输入图标路径
+2018-10-13 22:50:28,005 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务SLA登记: P1
+2018-10-13 22:50:28,007 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务介绍: 这里输入服务的相关介绍内容
+2018-10-13 22:50:28,313 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：计费规则: 计费规则的名称
+2018-10-13 22:50:28,315 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：可用分区: [{'可用分区名称': '38KVM', '镜像': ['cirros', 'cirros_xen'], '配置列表': [('配置1', '1', '1'), ('配置2', '2', '2')], '应用列表': ['tomcat'], '磁盘服务': 'zhh云硬盘服务'}]
+2018-10-13 22:50:48,273 - [ERROR] - 基本操作 - click_element - 元素('xpath', "//label[text()='None']/../../..//a[text()='+添加镜像 ']")无法点击：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 80, in click_element
+    WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(loc))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-10-13 23:01:35,568 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-13 23:01:36,873 - [INFO] - 基本操作 - input_username - admin
+2018-10-13 23:01:37,167 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-13 23:01:37,425 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-13 23:01:42,238 - [INFO] - 登录 - login - 登录成功
+2018-10-13 23:01:44,876 - [INFO] - 基本操作 - enter_menu - 进入服务管理菜单
+2018-10-13 23:01:44,879 - [INFO] - 基本操作 - enter_create - 点击创建按钮
+2018-10-13 23:01:47,157 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务名称: 自动化创建云服务01
+2018-10-13 23:01:47,495 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务有效期: 永久
+2018-10-13 23:01:47,496 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：发布范围: 全局
+2018-10-13 23:01:49,863 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务图标: 这里输入图标路径
+2018-10-13 23:01:49,866 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务SLA登记: P1
+2018-10-13 23:01:49,868 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务介绍: 这里输入服务的相关介绍内容
+2018-10-13 23:01:50,211 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：计费规则: 计费规则的名称
+2018-10-13 23:01:50,213 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：可用分区: [{'可用分区名称': '38KVM', '镜像': ['cirros', 'cirros_xen'], '配置列表': [('配置1', '1', '1'), ('配置2', '2', '2')], '应用列表': ['tomcat'], '磁盘服务': 'zhh云硬盘服务'}]
+2018-10-13 23:01:52,530 - [INFO] - 基本操作 - az_process - azName的值：None
+2018-10-13 23:01:59,639 - [INFO] - 基本操作 - az_process - azName的值：38KVM
+2018-10-13 23:01:59,640 - [INFO] - 基本操作 - add_iamge - 添加镜像cirros
+2018-10-13 23:02:10,178 - [ERROR] - 基本操作 - click_element - 元素('xpath', "//label[text()='None']/../../..//a[text()='+添加镜像 ']")无法点击：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 80, in click_element
+    WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(loc))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-10-13 23:12:16,310 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-13 23:12:17,420 - [INFO] - 基本操作 - input_username - admin
+2018-10-13 23:12:17,635 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-13 23:12:17,861 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-13 23:12:22,830 - [INFO] - 登录 - login - 登录成功
+2018-10-13 23:12:25,428 - [INFO] - 基本操作 - enter_menu - 进入服务管理菜单
+2018-10-13 23:12:25,430 - [INFO] - 基本操作 - enter_create - 点击创建按钮
+2018-10-13 23:12:27,699 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务名称: 自动化创建云服务01
+2018-10-13 23:12:28,044 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务有效期: 永久
+2018-10-13 23:12:28,046 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：发布范围: 全局
+2018-10-13 23:12:30,471 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务图标: 这里输入图标路径
+2018-10-13 23:12:30,476 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务SLA登记: P1
+2018-10-13 23:12:30,477 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务介绍: 这里输入服务的相关介绍内容
+2018-10-13 23:12:30,861 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：计费规则: 计费规则的名称
+2018-10-13 23:12:30,863 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：可用分区: [{'可用分区名称': '38KVM', '镜像': ['cirros', 'cirros_xen'], '配置列表': [('配置1', '1', '1'), ('配置2', '2', '2')], '应用列表': ['tomcat'], '磁盘服务': 'zhh云硬盘服务'}]
+2018-10-13 23:12:33,207 - [INFO] - 基本操作 - az_process - azName的值：None
+2018-10-13 23:12:40,601 - [INFO] - 基本操作 - az_process - azName的值：38KVM
+2018-10-13 23:12:40,602 - [INFO] - 基本操作 - add_iamge - 添加镜像cirros
+2018-10-13 23:12:43,278 - [ERROR] - 基本操作 - click_element - 元素(('xpath', "//button[text()='搜索']"),)无法点击：Message: invalid argument: 'using' must be a string
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 80, in click_element
+    WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(loc))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 71, in until
+    value = method(self._driver)
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 297, in __call__
+    element = visibility_of_element_located(self.locator)(driver)
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 128, in __call__
+    return _element_if_visible(_find_element(driver, self.locator))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 415, in _find_element
+    raise e
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 411, in _find_element
+    return driver.find_element(*by)
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: invalid argument: 'using' must be a string
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+
+2018-10-13 23:18:53,646 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-13 23:18:55,008 - [INFO] - 基本操作 - input_username - admin
+2018-10-13 23:18:55,279 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-13 23:18:55,537 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-13 23:19:00,974 - [INFO] - 登录 - login - 登录成功
+2018-10-13 23:19:03,426 - [INFO] - 基本操作 - enter_menu - 进入服务管理菜单
+2018-10-13 23:19:03,428 - [INFO] - 基本操作 - enter_create - 点击创建按钮
+2018-10-13 23:19:05,687 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务名称: 自动化创建云服务01
+2018-10-13 23:19:05,989 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务有效期: 永久
+2018-10-13 23:19:05,991 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：发布范围: 全局
+2018-10-13 23:19:08,299 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务图标: 这里输入图标路径
+2018-10-13 23:19:08,303 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务SLA登记: P1
+2018-10-13 23:19:08,304 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务介绍: 这里输入服务的相关介绍内容
+2018-10-13 23:19:08,621 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：计费规则: 计费规则的名称
+2018-10-13 23:19:08,622 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：可用分区: [{'可用分区名称': '38KVM', '镜像': ['cirros', 'cirros_xen'], '配置列表': [('配置1', '1', '1'), ('配置2', '2', '2')], '应用列表': ['tomcat'], '磁盘服务': 'zhh云硬盘服务'}]
+2018-10-13 23:19:18,042 - [INFO] - 基本操作 - add_iamge - 添加镜像cirros
+2018-10-13 23:19:27,819 - [ERROR] - 基本操作 - click_element - 元素(('xpath', "//button[text()='搜索']"),)无法点击：Message: invalid argument: 'using' must be a string
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 80, in click_element
+    WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(loc))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 71, in until
+    value = method(self._driver)
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 297, in __call__
+    element = visibility_of_element_located(self.locator)(driver)
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 128, in __call__
+    return _element_if_visible(_find_element(driver, self.locator))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 415, in _find_element
+    raise e
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 411, in _find_element
+    return driver.find_element(*by)
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: invalid argument: 'using' must be a string
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+
+2018-10-13 23:24:02,781 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-13 23:24:04,017 - [INFO] - 基本操作 - input_username - admin
+2018-10-13 23:24:04,295 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-13 23:24:04,529 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-13 23:24:09,966 - [INFO] - 登录 - login - 登录成功
+2018-10-13 23:24:12,396 - [INFO] - 基本操作 - enter_menu - 进入服务管理菜单
+2018-10-13 23:24:12,398 - [INFO] - 基本操作 - enter_create - 点击创建按钮
+2018-10-13 23:24:14,649 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务名称: 自动化创建云服务01
+2018-10-13 23:24:15,015 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务有效期: 永久
+2018-10-13 23:24:15,017 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：发布范围: 全局
+2018-10-13 23:24:17,359 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务图标: 这里输入图标路径
+2018-10-13 23:24:17,360 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务SLA登记: P1
+2018-10-13 23:24:17,362 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务介绍: 这里输入服务的相关介绍内容
+2018-10-13 23:24:17,678 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：计费规则: 计费规则的名称
+2018-10-13 23:24:17,680 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：可用分区: [{'可用分区名称': '38KVM', '镜像': ['cirros', 'cirros_xen'], '配置列表': [('配置1', '1', '1'), ('配置2', '2', '2')], '应用列表': ['tomcat'], '磁盘服务': 'zhh云硬盘服务'}]
+2018-10-13 23:24:27,124 - [INFO] - 基本操作 - add_iamge - 添加镜像cirros
+2018-10-13 23:24:42,014 - [INFO] - 基本操作 - add_iamge - 添加镜像cirros_xen
+2018-10-13 23:24:51,363 - [INFO] - 基本操作 - add_config - 添加配置('配置1', '1', '1')
+2018-10-13 23:24:51,374 - [ERROR] - 基本操作 - find_element - 定位()时发生异常：Message: invalid argument: 'value' must be a string
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 61, in find_element
+    EC.visibility_of_element_located(loc))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 71, in until
+    value = method(self._driver)
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 128, in __call__
+    return _element_if_visible(_find_element(driver, self.locator))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 415, in _find_element
+    raise e
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 411, in _find_element
+    return driver.find_element(*by)
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: invalid argument: 'value' must be a string
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+
+2018-10-13 23:35:33,678 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-13 23:35:34,989 - [INFO] - 基本操作 - input_username - admin
+2018-10-13 23:35:35,192 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-13 23:35:35,412 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-13 23:35:40,863 - [INFO] - 登录 - login - 登录成功
+2018-10-13 23:35:43,467 - [INFO] - 基本操作 - enter_menu - 进入服务管理菜单
+2018-10-13 23:35:43,468 - [INFO] - 基本操作 - enter_create - 点击创建按钮
+2018-10-13 23:37:41,982 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-13 23:37:43,263 - [INFO] - 基本操作 - input_username - admin
+2018-10-13 23:37:43,482 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-13 23:37:43,695 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-13 23:37:49,121 - [INFO] - 登录 - login - 登录成功
+2018-10-13 23:37:51,739 - [INFO] - 基本操作 - enter_menu - 进入服务管理菜单
+2018-10-13 23:37:51,742 - [INFO] - 基本操作 - enter_create - 点击创建按钮
+2018-10-13 23:37:54,070 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务名称: 自动化创建云服务01
+2018-10-13 23:37:54,481 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务有效期: 永久
+2018-10-13 23:37:54,483 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：发布范围: 全局
+2018-10-13 23:37:56,916 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务图标: 这里输入图标路径
+2018-10-13 23:37:56,917 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务SLA登记: P1
+2018-10-13 23:37:56,918 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务介绍: 这里输入服务的相关介绍内容
+2018-10-13 23:37:57,262 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：计费规则: 计费规则的名称
+2018-10-13 23:37:57,264 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：可用分区: [{'可用分区名称': '38KVM', '镜像': ['cirros', 'cirros_xen'], '配置列表': [('配置1', '1', '1'), ('配置2', '2', '2')], '应用列表': ['tomcat'], '磁盘服务': 'zhh云硬盘服务'}]
+2018-10-13 23:38:07,068 - [INFO] - 基本操作 - add_iamge - 添加镜像cirros
+2018-10-13 23:38:21,889 - [INFO] - 基本操作 - add_iamge - 添加镜像cirros_xen
+2018-10-13 23:38:35,224 - [INFO] - 基本操作 - add_config - 添加配置('配置1', '1', '1')
+2018-10-13 23:38:38,348 - [INFO] - 基本操作 - add_config - 添加配置('配置2', '2', '2')
+2018-10-13 23:38:41,363 - [INFO] - 基本操作 - add_config - 添加配置tomcat
+2018-10-13 23:43:16,306 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-13 23:43:17,551 - [INFO] - 基本操作 - input_username - admin
+2018-10-13 23:43:17,837 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-13 23:43:18,177 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-13 23:43:23,165 - [INFO] - 登录 - login - 登录成功
+2018-10-13 23:43:25,569 - [INFO] - 基本操作 - enter_menu - 进入服务管理菜单
+2018-10-13 23:43:25,571 - [INFO] - 基本操作 - enter_create - 点击创建按钮
+2018-10-13 23:46:06,386 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-13 23:46:07,609 - [INFO] - 基本操作 - input_username - admin
+2018-10-13 23:46:07,976 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-13 23:46:08,360 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-13 23:46:13,704 - [INFO] - 登录 - login - 登录成功
+2018-10-13 23:46:16,323 - [INFO] - 基本操作 - enter_menu - 进入服务管理菜单
+2018-10-13 23:46:16,325 - [INFO] - 基本操作 - enter_create - 点击创建按钮
+2018-10-13 23:46:18,657 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务名称: 自动化创建云服务01
+2018-10-13 23:46:19,085 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务有效期: 永久
+2018-10-13 23:46:19,087 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：发布范围: 全局
+2018-10-13 23:46:21,393 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务图标: 这里输入图标路径
+2018-10-13 23:46:21,398 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务SLA登记: P1
+2018-10-13 23:46:21,399 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务介绍: 这里输入服务的相关介绍内容
+2018-10-13 23:46:21,767 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：计费规则: 计费规则的名称
+2018-10-13 23:46:21,769 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：可用分区: [{'可用分区名称': '38KVM', '镜像': ['cirros', 'cirros_xen'], '配置列表': [('配置1', '1', '1'), ('配置2', '2', '2')], '应用列表': ['tomcat'], '磁盘服务': 'zhh云硬盘服务'}]
+2018-10-13 23:46:31,559 - [INFO] - 基本操作 - add_iamge - 添加镜像cirros
+2018-10-13 23:46:47,209 - [INFO] - 基本操作 - add_iamge - 添加镜像cirros_xen
+2018-10-13 23:46:56,932 - [INFO] - 基本操作 - add_config - 添加配置('配置1', '1', '1')
+2018-10-13 23:47:00,094 - [INFO] - 基本操作 - add_config - 添加配置('配置2', '2', '2')
+2018-10-13 23:47:03,135 - [INFO] - 基本操作 - add_soft - 添加应用tomcat
+2018-10-13 23:52:24,920 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-13 23:52:26,197 - [INFO] - 基本操作 - input_username - admin
+2018-10-13 23:52:26,499 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-13 23:52:26,821 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-13 23:52:32,051 - [INFO] - 登录 - login - 登录成功
+2018-10-13 23:52:34,672 - [INFO] - 基本操作 - enter_menu - 进入服务管理菜单
+2018-10-13 23:52:34,674 - [INFO] - 基本操作 - enter_create - 点击创建按钮
+2018-10-13 23:52:37,037 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务名称: 自动化创建云服务01
+2018-10-13 23:52:37,519 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务有效期: 永久
+2018-10-13 23:52:37,521 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：发布范围: 全局
+2018-10-13 23:52:39,948 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务图标: 这里输入图标路径
+2018-10-13 23:52:39,949 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务SLA登记: P1
+2018-10-13 23:52:39,950 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务介绍: 这里输入服务的相关介绍内容
+2018-10-13 23:52:40,331 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：计费规则: 计费规则的名称
+2018-10-13 23:52:40,333 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：可用分区: [{'可用分区名称': '38KVM', '镜像': ['cirros', 'cirros_xen'], '配置列表': [('配置1', '1', '1'), ('配置2', '2', '2')], '应用列表': ['tomcat'], '磁盘服务': 'zhh云硬盘服务'}]
+2018-10-13 23:52:50,274 - [INFO] - 基本操作 - add_iamge - 添加镜像cirros
+2018-10-13 23:53:00,103 - [INFO] - 基本操作 - add_iamge - 添加镜像cirros_xen
+2018-10-13 23:53:10,004 - [INFO] - 基本操作 - add_config - 添加配置('配置1', '1', '1')
+2018-10-13 23:53:13,287 - [INFO] - 基本操作 - add_config - 添加配置('配置2', '2', '2')
+2018-10-13 23:53:16,449 - [INFO] - 基本操作 - add_soft - 添加应用tomcat
+2018-10-13 23:58:05,805 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-13 23:58:06,985 - [INFO] - 基本操作 - input_username - admin
+2018-10-13 23:58:07,394 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-13 23:58:07,810 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-13 23:58:12,809 - [INFO] - 登录 - login - 登录成功
+2018-10-13 23:58:15,507 - [INFO] - 基本操作 - enter_menu - 进入服务管理菜单
+2018-10-13 23:58:15,509 - [INFO] - 基本操作 - enter_create - 点击创建按钮
+2018-10-13 23:58:17,828 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务名称: 自动化创建云服务01
+2018-10-13 23:58:18,281 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务有效期: 永久
+2018-10-13 23:58:18,283 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：发布范围: 全局
+2018-10-13 23:58:20,581 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务图标: 这里输入图标路径
+2018-10-13 23:58:20,585 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务SLA登记: P1
+2018-10-13 23:58:20,586 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务介绍: 这里输入服务的相关介绍内容
+2018-10-13 23:58:20,997 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：计费规则: 计费规则的名称
+2018-10-13 23:58:20,999 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：可用分区: [{'可用分区名称': '38KVM', '镜像': ['cirros', 'cirros_xen'], '配置列表': [('配置1', '1', '1'), ('配置2', '2', '2')], '应用列表': ['tomcat'], '磁盘服务': 'zhh云硬盘服务'}]
+2018-10-13 23:58:30,996 - [INFO] - 基本操作 - add_iamge - 添加镜像cirros
+2018-10-13 23:58:41,116 - [INFO] - 基本操作 - add_iamge - 添加镜像cirros_xen
+2018-10-13 23:58:51,022 - [INFO] - 基本操作 - add_config - 添加配置('配置1', '1', '1')
+2018-10-13 23:58:54,278 - [INFO] - 基本操作 - add_config - 添加配置('配置2', '2', '2')
+2018-10-13 23:58:57,311 - [INFO] - 基本操作 - add_soft - 添加应用tomcat
+2018-10-14 00:23:23,258 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-14 00:23:25,017 - [INFO] - 基本操作 - input_username - admin
+2018-10-14 00:23:25,394 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-14 00:23:25,821 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-14 00:23:31,349 - [INFO] - 登录 - login - 登录成功
+2018-10-14 00:23:33,882 - [INFO] - 基本操作 - enter_menu - 进入服务管理菜单
+2018-10-14 00:23:33,884 - [INFO] - 基本操作 - enter_create - 点击创建按钮
+2018-10-14 00:23:36,213 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务名称: 自动化创建云服务01
+2018-10-14 00:23:36,841 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务有效期: 永久
+2018-10-14 00:23:36,843 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：发布范围: 全局
+2018-10-14 00:23:39,234 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务图标: 这里输入图标路径
+2018-10-14 00:23:39,238 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务SLA登记: P1
+2018-10-14 00:23:39,240 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务介绍: 这里输入服务的相关介绍内容
+2018-10-14 00:23:39,620 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：计费规则: 计费规则的名称
+2018-10-14 00:23:39,622 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：可用分区: [{'可用分区名称': '38KVM', '镜像': ['cirros', 'cirros_xen'], '配置列表': [('配置1', '1', '1'), ('配置2', '2', '2')], '应用列表': ['tomcat'], '磁盘服务': 'zhh云硬盘服务'}]
+2018-10-14 00:23:49,547 - [INFO] - 基本操作 - add_iamge - 添加镜像cirros
+2018-10-14 00:23:59,390 - [INFO] - 基本操作 - add_iamge - 添加镜像cirros_xen
+2018-10-14 00:24:09,233 - [INFO] - 基本操作 - add_config - 添加配置('配置1', '1', '1')
+2018-10-14 00:24:12,436 - [INFO] - 基本操作 - add_config - 添加配置('配置2', '2', '2')
+2018-10-14 00:24:15,452 - [INFO] - 基本操作 - add_soft - 添加应用tomcat
+2018-10-14 00:24:25,231 - [INFO] - 基本操作 - script - 执行js脚本：window.scrollTo(0, 300)
+2018-10-14 00:24:37,935 - [ERROR] - 基本操作 - find_element - 定位('xpath', "//td[text()='38KVM']/..//select")时发生异常：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 61, in find_element
+    EC.visibility_of_element_located(loc))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-10-14 00:26:08,783 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-14 00:26:10,256 - [INFO] - 基本操作 - input_username - admin
+2018-10-14 00:26:10,597 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-14 00:26:11,001 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-14 00:26:16,286 - [INFO] - 登录 - login - 登录成功
+2018-10-14 00:26:18,997 - [INFO] - 基本操作 - enter_menu - 进入服务管理菜单
+2018-10-14 00:26:18,998 - [INFO] - 基本操作 - enter_create - 点击创建按钮
+2018-10-14 00:26:21,338 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务名称: 自动化创建云服务01
+2018-10-14 00:26:21,865 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务有效期: 永久
+2018-10-14 00:26:21,866 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：发布范围: 全局
+2018-10-14 00:26:24,222 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务图标: 这里输入图标路径
+2018-10-14 00:26:24,224 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务SLA登记: P1
+2018-10-14 00:26:24,225 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务介绍: 这里输入服务的相关介绍内容
+2018-10-14 00:26:24,681 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：计费规则: 计费规则的名称
+2018-10-14 00:26:24,683 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：可用分区: [{'可用分区名称': '38KVM', '镜像': ['cirros_xen'], '配置列表': [('配置1', '1', '1')], '应用列表': ['tomcat'], '磁盘服务': 'zhh云硬盘服务'}]
+2018-10-14 00:26:34,631 - [INFO] - 基本操作 - add_iamge - 添加镜像cirros_xen
+2018-10-14 00:26:44,548 - [INFO] - 基本操作 - add_config - 添加配置('配置1', '1', '1')
+2018-10-14 00:26:47,820 - [INFO] - 基本操作 - add_soft - 添加应用tomcat
+2018-10-14 00:26:57,644 - [INFO] - 基本操作 - script - 执行js脚本：window.scrollTo(0, 300)
+2018-10-14 00:27:10,389 - [ERROR] - 基本操作 - find_element - 定位('xpath', "//td[text()='38KVM']/..//select")时发生异常：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 61, in find_element
+    EC.visibility_of_element_located(loc))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-10-14 00:36:39,994 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-14 00:36:41,272 - [INFO] - 基本操作 - input_username - admin
+2018-10-14 00:36:41,639 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-14 00:36:42,035 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-14 00:36:46,846 - [INFO] - 登录 - login - 登录成功
+2018-10-14 00:36:49,536 - [INFO] - 基本操作 - enter_menu - 进入服务管理菜单
+2018-10-14 00:36:49,538 - [INFO] - 基本操作 - enter_create - 点击创建按钮
+2018-10-14 00:36:51,890 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务名称: 自动化创建云服务01
+2018-10-14 00:36:52,472 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务有效期: 永久
+2018-10-14 00:36:52,475 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：发布范围: 全局
+2018-10-14 00:36:54,855 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务图标: 这里输入图标路径
+2018-10-14 00:36:54,859 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务SLA登记: P1
+2018-10-14 00:36:54,860 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务介绍: 这里输入服务的相关介绍内容
+2018-10-14 00:36:55,232 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：计费规则: 计费规则的名称
+2018-10-14 00:36:55,233 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：可用分区: [{'可用分区名称': '38KVM', '镜像': ['cirros_xen'], '配置列表': [('配置1', '1', '1')], '应用列表': ['tomcat'], '磁盘服务': 'zhh云硬盘服务'}]
+2018-10-14 00:37:05,026 - [INFO] - 基本操作 - add_iamge - 添加镜像cirros_xen
+2018-10-14 00:37:14,972 - [INFO] - 基本操作 - add_config - 添加配置('配置1', '1', '1')
+2018-10-14 00:37:18,317 - [INFO] - 基本操作 - add_soft - 添加应用tomcat
+2018-10-14 00:37:28,125 - [INFO] - 基本操作 - script - 执行js脚本：window.scrollTo(0, 300)
+2018-10-14 00:37:40,808 - [ERROR] - 基本操作 - find_element - 定位('xpath', "//td[text()='38KVM']/..//select")时发生异常：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 61, in find_element
+    EC.visibility_of_element_located(loc))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-10-14 00:39:11,476 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-14 00:39:12,742 - [INFO] - 基本操作 - input_username - admin
+2018-10-14 00:39:13,095 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-14 00:39:13,496 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-14 00:39:13,686 - [INFO] - 基本操作 - click_element - 点击元素('name', 'submit')
+2018-10-14 00:39:19,106 - [INFO] - 登录 - login - 登录成功
+2018-10-14 00:39:19,411 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//ul[@id='menuListId']//span[text()='服务管理']")
+2018-10-14 00:39:21,596 - [INFO] - 基本操作 - enter_menu - 进入服务管理菜单
+2018-10-14 00:39:21,598 - [INFO] - 基本操作 - enter_create - 点击创建按钮
+2018-10-14 00:39:21,745 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//a[text()='创建服务 ']")
+2018-10-14 00:39:23,922 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务名称: 自动化创建云服务01
+2018-10-14 00:39:24,360 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务有效期: 永久
+2018-10-14 00:39:24,361 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：发布范围: 全局
+2018-10-14 00:39:24,536 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//span[text()='全局发布']")
+2018-10-14 00:39:26,695 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务图标: 这里输入图标路径
+2018-10-14 00:39:26,697 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务SLA登记: P1
+2018-10-14 00:39:26,698 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务介绍: 这里输入服务的相关介绍内容
+2018-10-14 00:39:27,080 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：计费规则: 计费规则的名称
+2018-10-14 00:39:27,082 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：可用分区: [{'可用分区名称': '38KVM', '镜像': ['cirros_xen'], '配置列表': [('配置1', '1', '1')], '应用列表': ['tomcat'], '磁盘服务': 'zhh云硬盘服务'}]
+2018-10-14 00:39:27,245 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//*[@id='resources']/h5/a/button")
+2018-10-14 00:39:30,116 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//button[text()='搜索']")
+2018-10-14 00:39:32,470 - [INFO] - 基本操作 - click_element - 点击元素('xpath', '//tbody/tr[2]/td[1]/div/label/span')
+2018-10-14 00:39:34,777 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//h2[text()='添加可用分区']/../..//button[text()='确认']")
+2018-10-14 00:39:37,018 - [INFO] - 基本操作 - add_iamge - 添加镜像cirros_xen
+2018-10-14 00:39:37,159 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//label[text()='38KVM']/../../..//a[text()='+添加镜像 ']")
+2018-10-14 00:39:40,117 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//button[text()='搜索']")
+2018-10-14 00:39:42,444 - [INFO] - 基本操作 - click_element - 点击元素('xpath', '//tbody/tr[2]/td[1]/div/label/span')
+2018-10-14 00:39:44,732 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//h2[text()='添加镜像']/../..//button[text()='确认']")
+2018-10-14 00:39:46,910 - [INFO] - 基本操作 - add_config - 添加配置('配置1', '1', '1')
+2018-10-14 00:39:47,965 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//label[text()='38KVM']/../../..//button[@data-bind='click: $root.addConfig']")
+2018-10-14 00:39:50,125 - [INFO] - 基本操作 - add_soft - 添加应用tomcat
+2018-10-14 00:39:50,267 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//label[text()='38KVM']/../../..//a[text()='+添加应用']")
+2018-10-14 00:39:53,135 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//button[text()='搜索']")
+2018-10-14 00:39:55,461 - [INFO] - 基本操作 - click_element - 点击元素('xpath', '//tbody/tr[2]/td[1]/div/label/span')
+2018-10-14 00:39:57,752 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//h2[text()='添加应用']/../..//button[text()='确认']")
+2018-10-14 00:39:59,916 - [INFO] - 基本操作 - script - 执行js脚本：window.scrollTo(0, 300)
+2018-10-14 00:40:00,185 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//a[@href='#basic']")
+2018-10-14 00:40:12,620 - [ERROR] - 基本操作 - find_element - 定位('xpath', "//td[text()='38KVM']/..//select")时发生异常：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 61, in find_element
+    EC.visibility_of_element_located(loc))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-10-14 00:40:58,149 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-14 00:40:59,279 - [INFO] - 基本操作 - input_username - admin
+2018-10-14 00:40:59,573 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-14 00:40:59,907 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-14 00:41:00,110 - [INFO] - 基本操作 - click_element - 点击元素('name', 'submit')
+2018-10-14 00:41:05,332 - [INFO] - 登录 - login - 登录成功
+2018-10-14 00:41:05,759 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//ul[@id='menuListId']//span[text()='服务管理']")
+2018-10-14 00:41:07,996 - [INFO] - 基本操作 - enter_menu - 进入服务管理菜单
+2018-10-14 00:41:07,997 - [INFO] - 基本操作 - enter_create - 点击创建按钮
+2018-10-14 00:41:08,158 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//a[text()='创建服务 ']")
+2018-10-14 00:41:10,348 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务名称: 自动化创建云服务01
+2018-10-14 00:41:11,081 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务有效期: 永久
+2018-10-14 00:41:11,083 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：发布范围: 全局
+2018-10-14 00:41:11,371 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//span[text()='全局发布']")
+2018-10-14 00:41:13,843 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务图标: 这里输入图标路径
+2018-10-14 00:41:13,844 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务SLA登记: P1
+2018-10-14 00:41:13,845 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务介绍: 这里输入服务的相关介绍内容
+2018-10-14 00:41:14,299 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：计费规则: 计费规则的名称
+2018-10-14 00:41:14,301 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：可用分区: [{'可用分区名称': '38KVM', '镜像': ['cirros_xen'], '配置列表': [('配置1', '1', '1')], '应用列表': ['tomcat'], '磁盘服务': 'zhh云硬盘服务'}]
+2018-10-14 00:41:14,500 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//*[@id='resources']/h5/a/button")
+2018-10-14 00:41:17,490 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//button[text()='搜索']")
+2018-10-14 00:41:19,840 - [INFO] - 基本操作 - click_element - 点击元素('xpath', '//tbody/tr[2]/td[1]/div/label/span')
+2018-10-14 00:41:22,136 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//h2[text()='添加可用分区']/../..//button[text()='确认']")
+2018-10-14 00:41:24,326 - [INFO] - 基本操作 - add_iamge - 添加镜像cirros_xen
+2018-10-14 00:41:24,469 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//label[text()='38KVM']/../../..//a[text()='+添加镜像 ']")
+2018-10-14 00:41:27,414 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//button[text()='搜索']")
+2018-10-14 00:41:29,735 - [INFO] - 基本操作 - click_element - 点击元素('xpath', '//tbody/tr[2]/td[1]/div/label/span')
+2018-10-14 00:41:32,039 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//h2[text()='添加镜像']/../..//button[text()='确认']")
+2018-10-14 00:41:34,222 - [INFO] - 基本操作 - add_config - 添加配置('配置1', '1', '1')
+2018-10-14 00:41:35,329 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//label[text()='38KVM']/../../..//button[@data-bind='click: $root.addConfig']")
+2018-10-14 00:41:37,493 - [INFO] - 基本操作 - add_soft - 添加应用tomcat
+2018-10-14 00:41:37,664 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//label[text()='38KVM']/../../..//a[text()='+添加应用']")
+2018-10-14 00:41:40,660 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//button[text()='搜索']")
+2018-10-14 00:41:43,048 - [INFO] - 基本操作 - click_element - 点击元素('xpath', '//tbody/tr[2]/td[1]/div/label/span')
+2018-10-14 00:41:45,343 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//h2[text()='添加应用']/../..//button[text()='确认']")
+2018-10-14 00:41:47,512 - [INFO] - 基本操作 - script - 执行js脚本：window.scrollTo(0, 300)
+2018-10-14 00:41:47,738 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//a[@href='#basic']")
+2018-10-14 00:42:00,347 - [ERROR] - 基本操作 - find_element - 定位('xpath', "//td[text()='38KVM']/..//select")时发生异常：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 61, in find_element
+    EC.visibility_of_element_located(loc))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+

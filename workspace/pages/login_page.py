@@ -33,14 +33,14 @@ class LoginPage(BasePage):
         输入用户名
         '''
         self.log.info(f'{username}')
-        self.find_element(*self.username_loc).send_keys(username)
+        self.sendKeys(username, *self.username_loc)
 
     def input_password(self, password):
         '''
         输入密码
         '''
         self.log.info(f'{password}')
-        self.find_element(*self.password_loc).send_keys(password)
+        self.sendKeys(password, *self.password_loc)
 
     def click_submit(self):
         '''
