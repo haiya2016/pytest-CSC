@@ -18,7 +18,7 @@ from workspace.config import csc_config
 class BasePage(object):
     """
     BasePage封装所有页面都公用的方法，例如driver, url ,FindElement等
-    初始化driver、url、pagetitle等
+    初始化url为配置文件中的url
     """
 
     def __init__(self, selenium_driver, base_url=csc_config.URL):
@@ -33,11 +33,11 @@ class BasePage(object):
         return pagetitle in self.driver.title
 
     def _open(self, url):
-        '''打开页面，并校验页面链接是否加载正确
+        '''
+        打开页面，并校验页面链接是否加载正确
         以单下划线_开头的方法，在使用import *时，该方法不会被导入，保证该方法为类私有的。
         '''
         self.driver.get(url)
-        self.driver.refresh()   # 页面打开之后刷新一下，保证js都执行完成
         # assert self.on_page(pagetitle), "打开开页面失败 %s" %url
 
     def open(self):
@@ -50,6 +50,8 @@ class BasePage(object):
     def find_element(self, *loc):
         '''
         重写元素定位方法
+        :param *loc:定位因子，由定位方法和路径组成，因为是元组所以要加星号
+        :type *loc:元组
         '''
         try:
             # 确保元素是可见的。
@@ -95,3 +97,20 @@ class BasePage(object):
         '''
         self.log.info(f'执行js脚本：{src}')
         self.driver.execute_script(src)
+
+    def remove_disabled(self, *loc):
+        '''
+        通过js移除元素的disabled属性
+        '''
+        self.log.info('移除元素disabled属性，使元素可见')
+        element = self.find_element(*loc)
+        self.driver.execute_script("arguments[0].removeAttribute('disabled')", element)
+
+    def assertByText(self, text, *loc):
+        '''
+        判断获取的元素文本是否和预期一致
+        :param text:用于比较的文本
+        :param *loc:定位因子
+        '''
+        assert self.find_element(*loc).text == text
+

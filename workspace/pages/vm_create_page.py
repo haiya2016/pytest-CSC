@@ -19,6 +19,11 @@ class VmCreatePage(BasePage):
     # 创建日志
     vclog = Logger('云主机创建').getlog()
 
+    # 菜单入口
+    virtual_recourse_manage_loc = (By.XPATH, "//ul[@id='menuListId']//span[text()='虚拟化资源管理']")  # 虚拟化资源管理菜单
+    recourse_instance_loc = (By.XPATH, "//ul[@id='menuListId']//span[text()='资源实例']")   # 资源实例菜单
+    create_button_lov = (By.XPATH, "//div[@id='partition_vms']//a[text()='创建 ']")        # 云主机创建按钮
+
     # 按钮
     return_button1_loc = (By.XPATH, "//div[1]/a/button")                        # 顶部返回按钮
     return_button2_loc = (By.XPATH, "//div[2]/a/button")                        # 底部返回按钮
@@ -85,6 +90,17 @@ class VmCreatePage(BasePage):
     storage_pool_search_input_loc = (By.XPATH, "//span[text()='存储池名称']/../input")
     storage_pool_confirm_loc = (By.XPATH, "//button[text()='确认' and @data-bind='click:storagePoolSave']")
 
+    def enter_menu(self):
+        '''
+        进入云主机创建页面
+        '''
+        self.find_element(*self.virtual_recourse_manage_loc).click()
+        self.find_element(*self.recourse_instance_loc).click()
+        time.sleep(2)
+        self.find_element(*self.create_button_lov).click()
+        time.sleep(2)
+        self.vclog.info('进入云主机创建页面')
+
 
     def search_for(self, item_type, item_value):
         '''
@@ -138,7 +154,7 @@ class VmCreatePage(BasePage):
         try:
             self.click_element(*self.first_search_result_loc)    # 勾选第一个搜索结果
         except Exception as err:
-            self.vclog.warning(f'搜索不到对应结果')
+            self.vclog.warning(f'搜索不到对应结果:{err}')
         
 
 

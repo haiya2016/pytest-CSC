@@ -8,7 +8,7 @@
 import time
 import pytest
 from workspace.config.running_config import get_driver
-from workspace.config import csc_config
+# from workspace.config import csc_config
 from workspace.pages.login_page import LoginPage
 from workspace.pages.vm_create_page import VmCreatePage
 
@@ -22,7 +22,6 @@ class TestCreateVM():
         """
             初始化，在每个方法前运行
         """
-        self.create_vm_url = csc_config.CREATE_VM_URL
         self.driver = get_driver()
         self.login_driver = LoginPage.login(self.driver)  # 调用LoginPage的类方法，直接获取一个已登录的浏览器
 
@@ -31,8 +30,8 @@ class TestCreateVM():
         创建云主机
         '''
         # 使用已登录的浏览器生成一个已登录的云主机创建页面的对象
-        vm_page = VmCreatePage(self.login_driver, self.create_vm_url)
-        vm_page.open()
+        vm_page = VmCreatePage(self.login_driver)
+        vm_page.enter_menu()
         # 设置需要填写的值
         input_data = {
             '云主机名称': 'python01',
