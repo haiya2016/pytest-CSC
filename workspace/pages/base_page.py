@@ -94,7 +94,7 @@ class BasePage(object):
         self.log.info(f'切换到ifram框架：{loc}')
         return self.driver.switch_to_frame(*loc)
 
-    def assert_By_Text(self, text, *loc):
+    def assert_by_text(self, text, *loc):
         '''
         判断获取的元素文本是否和预期一致
         :param text:用于比较的文本
@@ -102,7 +102,7 @@ class BasePage(object):
         '''
         assert self.find_element(*loc).text == text
 
-    def selectByText(self, text, *loc):
+    def select_by_text(self, text, *loc):
         '''
         通过文本对下拉框进行选择
         :param text:用于选择的文本
@@ -111,7 +111,7 @@ class BasePage(object):
         select = Select(self.find_element(*loc))
         select.select_by_visible_text(text)
 
-    def sendKeys(self, text, *loc):
+    def set_value(self, text, *loc):
         '''
         通过文本对下拉框进行选择
         :param text:用于输入的文本
@@ -119,7 +119,7 @@ class BasePage(object):
         '''
         self.find_element(*loc).clear()
         self.find_element(*loc).send_keys(text)
-        
+
 
     #################################   js脚本  #########################################
 
@@ -138,7 +138,7 @@ class BasePage(object):
         element = self.find_element(*loc)
         self.driver.execute_script('arguments[0].focus();', element)
 
-    def remove_Attribute_by_js(self, attribute, *loc):
+    def remove_attribute_by_js(self, attribute, *loc):
         '''
         通过js移除元素的attribute属性
         :param attribute:元素的某个属性

@@ -59,13 +59,13 @@ class ServicesPage(BasePage):
     imageCancle_loc = (By.XPATH, "//h2[text()='添加镜像']/../..//button[text()='取消']")     #  添加镜像-取消按钮
     imageConfirm_loc = (By.XPATH, "//h2[text()='添加镜像']/../..//button[text()='确认']")    #  添加镜像-确认按钮
 
-    addImage_loc = None         #  云主机服务创建-添加镜像按钮
-    configCPU_loc = None        #  添加可用配置-CPU
-    configTitle_loc = None      #  添加可用配置-标题
-    configMem_loc = None        #  添加可用配置-内存
-    addConfig_loc = None        #  添加可用配置-添加按钮
-    addSoft_loc = None          #  云主机服务创建-添加应用按钮
-    osTypeSearch_loc = None     #  添加应用-操作系统类型搜索框
+    add_image_loc = None         #  云主机服务创建-添加镜像按钮
+    config_cpu_loc = None        #  添加可用配置-CPU
+    config_title_loc = None      #  添加可用配置-标题
+    config_mem_loc = None        #  添加可用配置-内存
+    add_config_loc = None        #  添加可用配置-添加按钮
+    add_soft_loc = None          #  云主机服务创建-添加应用按钮
+    ostype_search_loc = None     #  添加应用-操作系统类型搜索框
     diskservice_loc = None      #  磁盘服务下拉框
 
     softCancle_loc = (By.XPATH, "//h2[text()='添加应用']/../..//button[text()='取消']")        #  添加应用-取消按钮
@@ -94,13 +94,13 @@ class ServicesPage(BasePage):
         私有方法，用于刷新可用分区相关的页面元素定位
         '''
         path = f"//label[text()='{az_name}']/../../..//"
-        self.addImage_loc = (By.XPATH, f"{path}a[text()='+添加镜像 ']")                         #  云主机服务创建-添加镜像按钮
-        self.configCPU_loc = (By.XPATH, f"{path}select[@data-bind='value: configCpu']")       #  添加可用配置-CPU
-        self.configTitle_loc = (By.XPATH, f"{path}input[@data-bind='value: configTitle']")    #  添加可用配置-标题
-        self.configMem_loc = (By.XPATH, f"{path}select[@data-bind='value: configMemory']")    #  添加可用配置-内存
-        self.addConfig_loc = (By.XPATH, f"{path}button[@data-bind='click: $root.addConfig']") #  添加可用配置-添加按钮
-        self.addSoft_loc = (By.XPATH, f"{path}a[text()='+添加应用']")                           #  云主机服务创建-添加应用按钮
-        self.osTypeSearch_loc = (By.XPATH, f"{path}span[text()='操作系统类型']/../input")       #  添加应用-操作系统类型搜索框
+        self.add_image_loc = (By.XPATH, f"{path}a[text()='+添加镜像 ']")                         #  云主机服务创建-添加镜像按钮
+        self.config_cpu_loc = (By.XPATH, f"{path}select[@data-bind='value: configCpu']")       #  添加可用配置-CPU
+        self.config_title_loc = (By.XPATH, f"{path}input[@data-bind='value: configTitle']")    #  添加可用配置-标题
+        self.config_mem_loc = (By.XPATH, f"{path}select[@data-bind='value: configMemory']")    #  添加可用配置-内存
+        self.add_config_loc = (By.XPATH, f"{path}button[@data-bind='click: $root.addConfig']") #  添加可用配置-添加按钮
+        self.add_soft_loc = (By.XPATH, f"{path}a[text()='+添加应用']")                           #  云主机服务创建-添加应用按钮
+        self.ostype_search_loc = (By.XPATH, f"{path}span[text()='操作系统类型']/../input")       #  添加应用-操作系统类型搜索框
         self.diskservice_loc = (By.XPATH, f"//td[text()='{az_name}']/..//select")               #  磁盘服务下拉框
 
     def enter_menu(self):
@@ -123,7 +123,7 @@ class ServicesPage(BasePage):
         保存并发布
         '''
         self.click_element(*self.releaseButton_loc)
-        self.assert_By_Text("保存并发布成功！", *self.sys_info_loc)
+        self.assert_by_text("保存并发布成功！", *self.sys_info_loc)
         self.log.info("发布服务成功！")
         self.click_element(*self.comfirmButton_loc)
 
@@ -175,28 +175,26 @@ class ServicesPage(BasePage):
                 self.script("window.scrollTo(0, 300)")      #  滚动到tab可见的位置
                 time.sleep(2)
                 self.click_element(*self.diskTab_loc)
-                self.selectByText(item_dict['磁盘服务'], *self.diskservice_loc)
+                self.select_by_text(item_dict['磁盘服务'], *self.diskservice_loc)
                 self.click_element(*self.azTab_loc)         #  切换回可用分区tab
 
-    def add_az(self, az_Name):
+    def add_az(self, az_name):
         '''
         查找病添加可用分区
         '''
-        self.sendKeys(az_Name, *self.azNameSearch_loc)
-        self.click_element(*self.searchButton_loc)
-        self.click_element(*self.firstResult_loc)
+        self.set_value(az_name, *self.azNameSearch_loc)
+        self.search_first_result()
         self.click_element(*self.azConfirm_loc)
 
-    def add_iamge(self, image_Name):
+    def add_iamge(self, image_name):
         '''
         查找并添加镜像
         '''
-        self.log.info(f"添加镜像: {image_Name}")
-        # self.scroll(*self.addImage_loc)
-        self.click_element(*self.addImage_loc)
-        self.sendKeys(image_Name, *self.imageNameSearch_loc)
-        self.click_element(*self.searchButton_loc)
-        self.click_element(*self.firstResult_loc)
+        self.log.info(f"添加镜像: {image_name}")
+        # self.scroll(*self.add_image_loc)
+        self.click_element(*self.add_image_loc)
+        self.set_value(image_name, *self.imageNameSearch_loc)
+        self.search_first_result()
         self.click_element(*self.imageConfirm_loc)
 
     def add_config(self, config):
@@ -204,20 +202,19 @@ class ServicesPage(BasePage):
         添加配置
         '''
         self.log.info(f"添加配置: {config}")
-        self.sendKeys(config[0], *self.configTitle_loc)
-        self.selectByText(config[1], *self.configCPU_loc)
-        self.selectByText(config[2], *self.configMem_loc)
-        self.click_element(*self.addConfig_loc)
+        self.set_value(config[0], *self.config_title_loc)
+        self.select_by_text(config[1], *self.config_cpu_loc)
+        self.select_by_text(config[2], *self.config_mem_loc)
+        self.click_element(*self.add_config_loc)
 
     def add_soft(self, soft):
         '''
         添加应用
         '''
         self.log.info(f"添加应用: {soft}")
-        self.click_element(*self.addSoft_loc)
-        self.sendKeys(soft, *self.softNameSearch_loc)
-        self.click_element(*self.searchButton_loc)
-        self.click_element(*self.firstResult_loc)
+        self.click_element(*self.add_soft_loc)
+        self.set_value(soft, *self.softNameSearch_loc)
+        self.search_first_result()
         self.click_element(*self.softConfirm_loc)
 
     def item_select(self, item_type, item_value):
@@ -227,11 +224,11 @@ class ServicesPage(BasePage):
         :param item_value:下拉框的文本内容
         '''
         if item_type == '服务SLA等级':
-            self.selectByText(item_value, *self.SLAselect_loc)
+            self.select_by_text(item_value, *self.SLAselect_loc)
         elif item_type == 'CPU':
-            self.selectByText(item_value, *self.configCPU_loc)
+            self.select_by_text(item_value, *self.config_cpu_loc)
         elif item_type == '内存':
-            self.selectByText(item_value, *self.configMem_loc)
+            self.select_by_text(item_value, *self.config_mem_loc)
 
     def item_typing(self, item_type, item_value):
         '''
@@ -240,9 +237,9 @@ class ServicesPage(BasePage):
         :param item_value:输入框的文本内容
         '''
         if item_type == '服务名称':
-            self.sendKeys(item_value, *self.serviceName_loc)
+            self.set_value(item_value, *self.serviceName_loc)
         elif item_type == '服务介绍':
-            self.sendKeys(item_value, *self.serviceDesc_loc)
+            self.set_value(item_value, *self.serviceDesc_loc)
 
 
     def charge_process(self, charge_name):
@@ -251,3 +248,11 @@ class ServicesPage(BasePage):
         '''
         self._uptdate_charge_loc(charge_name)
         self.click_element(*self.charging_name_loc)
+
+    def search_first_result(self):
+        '''
+        点击搜索，勾选第一个结果
+        '''
+        self.click_element(*self.searchButton_loc)
+        self.click_element(*self.firstResult_loc)
+        

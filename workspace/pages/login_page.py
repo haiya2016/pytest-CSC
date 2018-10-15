@@ -33,14 +33,14 @@ class LoginPage(BasePage):
         输入用户名
         '''
         self.log.info(f'{username}')
-        self.sendKeys(username, *self.username_loc)
+        self.set_value(username, *self.username_loc)
 
     def input_password(self, password):
         '''
         输入密码
         '''
         self.log.info(f'{password}')
-        self.sendKeys(password, *self.password_loc)
+        self.set_value(password, *self.password_loc)
 
     def click_submit(self):
         '''
@@ -69,7 +69,7 @@ class LoginPage(BasePage):
         '''
         登录成功页面判断用户id是否相同
         '''
-        self.assert_By_Text(username, *self.userid_loc)
+        self.assert_by_text(username, *self.userid_loc)
         self.log.info('登录成功')
 
 
