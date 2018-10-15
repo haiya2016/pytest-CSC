@@ -4,7 +4,7 @@
     @author: wjx
     Project:服务管理页面
 '''
-
+import time
 from selenium.webdriver.common.by import By
 from workspace.pages.base_page import BasePage
 from workspace.config.logging_sys import Logger
@@ -42,51 +42,66 @@ class ServicesPage(BasePage):
     forever_loc = (By.XPATH, "//span[text()='永久']")                               #  截止时间为永久
     deadline_loc = (By.CSS_SELECTOR, "div.col-sm-4.no-padding>div>label>span.text>::before") #  截止时间按钮
     deadlinetime_loc = (By.XPATH, "//input[@id='rangeTime']")                       #  截止时间输入框
+    charging_bind_loc = (By.XPATH, "//button[text()='绑定']")                          #  计费规则绑定按钮
+    charging_name_loc = None                                                          #  计费规则名称
+    chargingConfirm_loc = (By.XPATH, "//h2[text()='绑定计费规则']/../..//button[text()='确认']")       #  计费规则-确认按钮
+    chargingcancel_loc = (By.XPATH, "//h2[text()='绑定计费规则']/../..//button[text()='取消']")       #  计费规则-确认按钮
 
     # 添加可用分区
     azTab_loc = (By.XPATH, "//a[@href='#resources']")                                       #  云主机服务创建-可用分区tab
     addAZ_loc = (By.XPATH, "//*[@id='resources']/h5/a/button")                              #  云主机服务创建-可用分区添加按钮
-    azNameSearch_loc = (By.XPATH, "//span[text()='可用分区名称']/../input")                 #  添加可用分区-可用分区搜索框
-    azCancle_loc = (By.XPATH, "//h2[text()='添加可用分区']/../..//button[text()='取消']")   #  添加可用分区-取消按钮
-    azConfirm_loc = (By.XPATH, "//h2[text()='添加可用分区']/../..//button[text()='确认']")  #  添加可用分区-确认按钮
-
-    addImage_loc = None#  云主机服务创建-添加镜像按钮
-    osTypeSelect_loc = (By.XPATH, "//span[text()='操作系统类型']/../select")                #  添加镜像-操作系统类型下拉框
-    osNameSearch_loc = (By.XPATH, "//span[text()='操作系统名称']/../input")                 #  添加镜像-操作系统名称搜索框
+    azNameSearch_loc = (By.XPATH, "//span[text()='可用分区名称']/../input")                  #  添加可用分区-可用分区搜索框
+    azCancle_loc = (By.XPATH, "//h2[text()='添加可用分区']/../..//button[text()='取消']")    #  添加可用分区-取消按钮
+    azConfirm_loc = (By.XPATH, "//h2[text()='添加可用分区']/../..//button[text()='确认']")   #  添加可用分区-确认按钮
+    osTypeSelect_loc = (By.XPATH, "//span[text()='操作系统类型']/../select")                 #  添加镜像-操作系统类型下拉框
+    osNameSearch_loc = (By.XPATH, "//span[text()='操作系统名称']/../input")                  #  添加镜像-操作系统名称搜索框
     imageNameSearch_loc = (By.XPATH, "//span[text()='镜像名称']/../input")                  #  添加镜像-镜像名称搜索框
-    imageCancle_loc = (By.XPATH, "//h2[text()='添加镜像']/../..//button[text()='取消']")    #  添加镜像-取消按钮
-    imageConfirm_loc = (By.XPATH, "//h2[text()='添加镜像']/../..//button[text()='确认']")   #  添加镜像-确认按钮
+    imageCancle_loc = (By.XPATH, "//h2[text()='添加镜像']/../..//button[text()='取消']")     #  添加镜像-取消按钮
+    imageConfirm_loc = (By.XPATH, "//h2[text()='添加镜像']/../..//button[text()='确认']")    #  添加镜像-确认按钮
 
-    configCPU_loc = None       #  添加可用配置-CPU
-    configTitle_loc = None    #  添加可用配置-标题
-    configMem_loc = None    #  添加可用配置-内存
-    addConfig_loc = None #  添加可用配置-添加按钮
+    addImage_loc = None         #  云主机服务创建-添加镜像按钮
+    configCPU_loc = None        #  添加可用配置-CPU
+    configTitle_loc = None      #  添加可用配置-标题
+    configMem_loc = None        #  添加可用配置-内存
+    addConfig_loc = None        #  添加可用配置-添加按钮
+    addSoft_loc = None          #  云主机服务创建-添加应用按钮
+    osTypeSearch_loc = None     #  添加应用-操作系统类型搜索框
+    diskservice_loc = None      #  磁盘服务下拉框
 
-    addSoft_loc = None                     #  云主机服务创建-添加应用按钮
-    osTypeSearch_loc = None #  添加应用-操作系统类型搜索框
-    softCancle_loc = (By.XPATH, "//h2[text()='添加应用']/../..//button[text()='取消']")                         #  添加应用-取消按钮
-    softConfirm_loc = (By.XPATH, "//h2[text()='添加应用']/../..//button[text()='确认']")                        #  添加应用-确认按钮
-    softTypeSelect_loc = (By.XPATH, "//span[text()='软件类型']/../select")                                      #  添加应用-软件类型下拉框
-    softNameSearch_loc = (By.XPATH, "//span[text()='软件名称']/../input")                                       #  添加应用-软件名称搜索框
+    softCancle_loc = (By.XPATH, "//h2[text()='添加应用']/../..//button[text()='取消']")        #  添加应用-取消按钮
+    softConfirm_loc = (By.XPATH, "//h2[text()='添加应用']/../..//button[text()='确认']")       #  添加应用-确认按钮
+    softTypeSelect_loc = (By.XPATH, "//span[text()='软件类型']/../select")                     #  添加应用-软件类型下拉框
+    softNameSearch_loc = (By.XPATH, "//span[text()='软件名称']/../input")                      #  添加应用-软件名称搜索框
 
     cancleButton_loc = (By.XPATH, "//div[3]/div[1]/a")                              #  云主机服务创建-取消按钮（顶部）
     saveButton_loc = (By.XPATH, "//div[3]/div[1]/button[text()='保存']")            #  云主机服务创建-保存按钮（顶部）
     releaseButton_loc = (By.XPATH, "//div[3]/div[1]/button[text()='保存并发布']")    #  云主机服务创建-保存并发布按钮（顶部）
 
     diskTab_loc = (By.XPATH, "//a[@href='#basic']")                                 #  云主机服务创建-磁盘服务tab
-    vmTab_loc = (By.XPATH, "//a[@href='#resources']")
-    diskservice_loc = None             #  磁盘服务下拉框
+    sys_info_loc = (By.XPATH, "//h4[text()='系统信息']/../../div[2]")                #  系统消息
+    comfirmButton_loc = (By.XPATH, "//button[text()='确定']")                        #  系统消息-确定按钮
 
-    def refash_loc(self, az_name):
-        '''刷新页面元素定位'''
-        self.addImage_loc = (By.XPATH, f"//label[text()='{az_name}']/../../..//a[text()='+添加镜像 ']")#  云主机服务创建-添加镜像按钮
-        self.configCPU_loc = (By.XPATH, f"//label[text()='{az_name}']/../../..//select[@data-bind='value: configCpu']")       #  添加可用配置-CPU
-        self.configTitle_loc = (By.XPATH, f"//label[text()='{az_name}']/../../..//input[@data-bind='value: configTitle']")    #  添加可用配置-标题
-        self.configMem_loc = (By.XPATH, f"//label[text()='{az_name}']/../../..//select[@data-bind='value: configMemory']")    #  添加可用配置-内存
-        self.addConfig_loc = (By.XPATH, f"//label[text()='{az_name}']/../../..//button[@data-bind='click: $root.addConfig']") #  添加可用配置-添加按钮
-        self.addSoft_loc = (By.XPATH, f"//label[text()='{az_name}']/../../..//a[text()='+添加应用']")                     #  云主机服务创建-添加应用按钮
-        self.osTypeSearch_loc = (By.XPATH, f"//label[text()='{az_name}']/../../..//span[text()='操作系统类型']/../input") #  添加应用-操作系统类型搜索框
-        self.diskservice_loc = (By.XPATH, f"//td[text()='{az_name}']/..//select")             #  磁盘服务下拉框
+    def _uptdate_charge_loc(self, charge_name):
+        '''
+        私有方法，用于根据计费规则名称更新对应计费规则的元素定位
+        '''
+        self.charging_name_loc = (By.XPATH, f"//td[@title='{charge_name}']/..//span")    #  计费规则名称
+
+
+
+    def _update_loc(self, az_name):
+        '''
+        私有方法，用于刷新可用分区相关的页面元素定位
+        '''
+        path = f"//label[text()='{az_name}']/../../..//"
+        self.addImage_loc = (By.XPATH, f"{path}a[text()='+添加镜像 ']")                         #  云主机服务创建-添加镜像按钮
+        self.configCPU_loc = (By.XPATH, f"{path}select[@data-bind='value: configCpu']")       #  添加可用配置-CPU
+        self.configTitle_loc = (By.XPATH, f"{path}input[@data-bind='value: configTitle']")    #  添加可用配置-标题
+        self.configMem_loc = (By.XPATH, f"{path}select[@data-bind='value: configMemory']")    #  添加可用配置-内存
+        self.addConfig_loc = (By.XPATH, f"{path}button[@data-bind='click: $root.addConfig']") #  添加可用配置-添加按钮
+        self.addSoft_loc = (By.XPATH, f"{path}a[text()='+添加应用']")                           #  云主机服务创建-添加应用按钮
+        self.osTypeSearch_loc = (By.XPATH, f"{path}span[text()='操作系统类型']/../input")       #  添加应用-操作系统类型搜索框
+        self.diskservice_loc = (By.XPATH, f"//td[text()='{az_name}']/..//select")               #  磁盘服务下拉框
 
     def enter_menu(self):
         '''
@@ -101,6 +116,16 @@ class ServicesPage(BasePage):
         '''
         self.log.info('点击创建按钮')
         self.click_element(*self.serviceCreate_loc)  # 点击创建按钮
+
+
+    def save_and_release(self):
+        '''
+        保存并发布
+        '''
+        self.click_element(*self.releaseButton_loc)
+        self.assert_By_Text("保存并发布成功！", *self.sys_info_loc)
+        self.log.info("发布服务成功！")
+        self.click_element(*self.comfirmButton_loc)
 
     def create_vm_service(self, item_type, item_value):
         '''
@@ -118,6 +143,13 @@ class ServicesPage(BasePage):
         if item_type == '可用分区':
             for item in item_value:
                 self.az_process(item)
+        if item_type == '计费规则':
+            self.click_element(*self.charging_bind_loc)
+            for item in item_value:
+                self.charge_process(item)
+            self.click_element(*self.chargingConfirm_loc)
+
+
 
 
     def az_process(self, item_dict):
@@ -128,7 +160,7 @@ class ServicesPage(BasePage):
         for item in item_dict:
             if item == '可用分区名称':
                 az_name = item_dict['可用分区名称']
-                self.refash_loc(az_name)
+                self._update_loc(az_name)
                 self.add_az(az_name)
             if item == '镜像':
                 for imagename in item_dict['镜像']:
@@ -140,28 +172,29 @@ class ServicesPage(BasePage):
                 for soft in item_dict['应用列表']:
                     self.add_soft(soft)
             if item == '磁盘服务':
-                self.script("window.scrollTo(0, 300)")
-                self.click_element(*self.diskTab_loc)    # TODO:点击不到
+                self.script("window.scrollTo(0, 300)")      #  滚动到tab可见的位置
+                time.sleep(2)
+                self.click_element(*self.diskTab_loc)
                 self.selectByText(item_dict['磁盘服务'], *self.diskservice_loc)
-                self.click_element(*self.vmTab_loc)
+                self.click_element(*self.azTab_loc)         #  切换回可用分区tab
 
-    def add_az(self, azName):
+    def add_az(self, az_Name):
         '''
         查找病添加可用分区
         '''
-        self.sendKeys(azName, *self.azNameSearch_loc)
+        self.sendKeys(az_Name, *self.azNameSearch_loc)
         self.click_element(*self.searchButton_loc)
         self.click_element(*self.firstResult_loc)
         self.click_element(*self.azConfirm_loc)
 
-    def add_iamge(self, imageName):
+    def add_iamge(self, image_Name):
         '''
         查找并添加镜像
         '''
-        self.log.info(f"添加镜像{imageName}")
+        self.log.info(f"添加镜像: {image_Name}")
         # self.scroll(*self.addImage_loc)
         self.click_element(*self.addImage_loc)
-        self.sendKeys(imageName, *self.imageNameSearch_loc)
+        self.sendKeys(image_Name, *self.imageNameSearch_loc)
         self.click_element(*self.searchButton_loc)
         self.click_element(*self.firstResult_loc)
         self.click_element(*self.imageConfirm_loc)
@@ -170,7 +203,7 @@ class ServicesPage(BasePage):
         '''
         添加配置
         '''
-        self.log.info(f"添加配置{config}")
+        self.log.info(f"添加配置: {config}")
         self.sendKeys(config[0], *self.configTitle_loc)
         self.selectByText(config[1], *self.configCPU_loc)
         self.selectByText(config[2], *self.configMem_loc)
@@ -180,7 +213,7 @@ class ServicesPage(BasePage):
         '''
         添加应用
         '''
-        self.log.info(f"添加应用{soft}")
+        self.log.info(f"添加应用: {soft}")
         self.click_element(*self.addSoft_loc)
         self.sendKeys(soft, *self.softNameSearch_loc)
         self.click_element(*self.searchButton_loc)
@@ -210,3 +243,11 @@ class ServicesPage(BasePage):
             self.sendKeys(item_value, *self.serviceName_loc)
         elif item_type == '服务介绍':
             self.sendKeys(item_value, *self.serviceDesc_loc)
+
+
+    def charge_process(self, charge_name):
+        '''
+        用于勾选计费规则
+        '''
+        self._uptdate_charge_loc(charge_name)
+        self.click_element(*self.charging_name_loc)

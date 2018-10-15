@@ -2095,3 +2095,270 @@ Traceback (most recent call last):
     raise TimeoutException(message, screen, stacktrace)
 selenium.common.exceptions.TimeoutException: Message: 
 
+2018-10-14 21:39:37,756 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-14 21:39:39,653 - [INFO] - 基本操作 - input_username - admin
+2018-10-14 21:39:40,026 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-14 21:39:40,375 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-14 21:39:40,564 - [INFO] - 基本操作 - click_element - 点击元素('name', 'submit')
+2018-10-14 21:39:44,002 - [INFO] - 登录 - login - 登录成功
+2018-10-14 21:39:44,981 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//ul[@id='menuListId']//span[text()='服务管理']")
+2018-10-14 21:39:45,274 - [INFO] - 基本操作 - enter_menu - 进入服务管理菜单
+2018-10-14 21:39:45,276 - [INFO] - 基本操作 - enter_create - 点击创建按钮
+2018-10-14 21:39:46,287 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//a[text()='创建服务 ']")
+2018-10-14 21:39:47,510 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//a[@href='#basic']")
+2018-10-14 21:39:47,744 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务名称: 自动化创建云服务01
+2018-10-14 21:39:48,564 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//a[@href='#basic']")
+2018-10-14 21:39:48,701 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务有效期: 永久
+2018-10-14 21:39:48,833 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//a[@href='#basic']")
+2018-10-14 21:39:48,945 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：发布范围: 全局
+2018-10-14 21:39:49,108 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//span[text()='全局发布']")
+2018-10-14 21:41:36,669 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-14 21:41:37,926 - [INFO] - 基本操作 - input_username - admin
+2018-10-14 21:41:38,217 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-14 21:41:38,553 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-14 21:41:38,731 - [INFO] - 基本操作 - click_element - 点击元素('name', 'submit')
+2018-10-14 21:41:42,008 - [INFO] - 登录 - login - 登录成功
+2018-10-14 21:41:42,869 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//ul[@id='menuListId']//span[text()='服务管理']")
+2018-10-14 21:41:43,201 - [INFO] - 基本操作 - enter_menu - 进入服务管理菜单
+2018-10-14 21:41:43,204 - [INFO] - 基本操作 - enter_create - 点击创建按钮
+2018-10-14 21:41:44,123 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//a[text()='创建服务 ']")
+2018-10-14 21:41:44,331 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务名称: 自动化创建云服务01
+2018-10-14 21:41:45,376 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务有效期: 永久
+2018-10-14 21:41:45,378 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：发布范围: 全局
+2018-10-14 21:41:45,562 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//span[text()='全局发布']")
+2018-10-14 21:41:45,751 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务图标: 这里输入图标路径
+2018-10-14 21:41:45,752 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务SLA登记: P1
+2018-10-14 21:41:45,754 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务介绍: 这里输入服务的相关介绍内容
+2018-10-14 21:41:46,236 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：计费规则: 计费规则的名称
+2018-10-14 21:41:46,238 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：可用分区: [{'可用分区名称': '38KVM', '镜像': ['cirros_xen'], '配置列表': [('配置1', '1', '1')], '应用列表': ['tomcat'], '磁盘服务': 'zhh云硬盘服务'}]
+2018-10-14 21:41:46,434 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//*[@id='resources']/h5/a/button")
+2018-10-14 21:41:48,199 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//button[text()='搜索']")
+2018-10-14 21:41:49,219 - [INFO] - 基本操作 - click_element - 点击元素('xpath', '//tbody/tr[2]/td[1]/div/label/span')
+2018-10-14 21:41:49,651 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//h2[text()='添加可用分区']/../..//button[text()='确认']")
+2018-10-14 21:41:49,909 - [INFO] - 基本操作 - add_iamge - 添加镜像: cirros_xen
+2018-10-14 21:41:50,147 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//label[text()='38KVM']/../../..//a[text()='+添加镜像 ']")
+2018-10-14 21:41:51,949 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//button[text()='搜索']")
+2018-10-14 21:41:52,922 - [INFO] - 基本操作 - click_element - 点击元素('xpath', '//tbody/tr[2]/td[1]/div/label/span')
+2018-10-14 21:41:53,537 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//h2[text()='添加镜像']/../..//button[text()='确认']")
+2018-10-14 21:41:53,782 - [INFO] - 基本操作 - add_config - 添加配置: ('配置1', '1', '1')
+2018-10-14 21:41:56,216 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//label[text()='38KVM']/../../..//button[@data-bind='click: $root.addConfig']")
+2018-10-14 21:41:56,625 - [INFO] - 基本操作 - add_soft - 添加应用: tomcat
+2018-10-14 21:41:56,951 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//label[text()='38KVM']/../../..//a[text()='+添加应用']")
+2018-10-14 21:41:58,796 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//button[text()='搜索']")
+2018-10-14 21:41:59,886 - [INFO] - 基本操作 - click_element - 点击元素('xpath', '//tbody/tr[2]/td[1]/div/label/span')
+2018-10-14 21:42:00,410 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//h2[text()='添加应用']/../..//button[text()='确认']")
+2018-10-14 21:42:00,605 - [INFO] - 基本操作 - script - 执行js脚本：window.scrollTo(0, 300)
+2018-10-14 21:42:01,122 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//a[@href='#basic']")
+2018-10-14 21:42:01,992 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//a[@href='#resources']")
+2018-10-14 22:10:34,967 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-14 22:10:36,253 - [INFO] - 基本操作 - input_username - admin
+2018-10-14 22:10:36,560 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-14 22:10:36,899 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-14 22:10:37,052 - [INFO] - 基本操作 - click_element - 点击元素('name', 'submit')
+2018-10-14 22:10:40,276 - [INFO] - 登录 - login - 登录成功
+2018-10-14 22:10:41,154 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//ul[@id='menuListId']//span[text()='服务管理']")
+2018-10-14 22:10:41,421 - [INFO] - 基本操作 - enter_menu - 进入服务管理菜单
+2018-10-14 22:10:41,423 - [INFO] - 基本操作 - enter_create - 点击创建按钮
+2018-10-14 22:10:42,362 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//a[text()='创建服务 ']")
+2018-10-14 22:10:42,545 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务名称: 自动化创建云服务01
+2018-10-14 22:10:43,722 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务有效期: 永久
+2018-10-14 22:10:43,725 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：发布范围: 全局
+2018-10-14 22:10:43,889 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//span[text()='全局发布']")
+2018-10-14 22:10:44,085 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务图标: 这里输入图标路径
+2018-10-14 22:10:44,086 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务SLA登记: P1
+2018-10-14 22:10:44,088 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务介绍: 这里输入服务的相关介绍内容
+2018-10-14 22:10:44,615 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：计费规则: 计费规则的名称
+2018-10-14 22:10:44,616 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：可用分区: [{'可用分区名称': '38KVM', '镜像': ['cirros_xen'], '配置列表': [('配置1', '1', '1')], '应用列表': ['tomcat'], '磁盘服务': 'zhh云硬盘服务'}]
+2018-10-14 22:10:44,797 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//*[@id='resources']/h5/a/button")
+2018-10-14 22:10:46,279 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//button[text()='搜索']")
+2018-10-14 22:10:46,826 - [INFO] - 基本操作 - click_element - 点击元素('xpath', '//tbody/tr[2]/td[1]/div/label/span')
+2018-10-14 22:10:47,343 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//h2[text()='添加可用分区']/../..//button[text()='确认']")
+2018-10-14 22:10:47,655 - [INFO] - 基本操作 - add_iamge - 添加镜像: cirros_xen
+2018-10-14 22:10:48,037 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//label[text()='38KVM']/../../..//a[text()='+添加镜像 ']")
+2018-10-14 22:10:49,849 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//button[text()='搜索']")
+2018-10-14 22:10:50,802 - [INFO] - 基本操作 - click_element - 点击元素('xpath', '//tbody/tr[2]/td[1]/div/label/span')
+2018-10-14 22:10:51,259 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//h2[text()='添加镜像']/../..//button[text()='确认']")
+2018-10-14 22:10:51,490 - [INFO] - 基本操作 - add_config - 添加配置: ('配置1', '1', '1')
+2018-10-14 22:10:53,492 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//label[text()='38KVM']/../../..//button[@data-bind='click: $root.addConfig']")
+2018-10-14 22:10:53,702 - [INFO] - 基本操作 - add_soft - 添加应用: tomcat
+2018-10-14 22:10:53,948 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//label[text()='38KVM']/../../..//a[text()='+添加应用']")
+2018-10-14 22:10:55,588 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//button[text()='搜索']")
+2018-10-14 22:10:56,159 - [INFO] - 基本操作 - click_element - 点击元素('xpath', '//tbody/tr[2]/td[1]/div/label/span')
+2018-10-14 22:10:56,632 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//h2[text()='添加应用']/../..//button[text()='确认']")
+2018-10-14 22:10:56,908 - [INFO] - 基本操作 - script - 执行js脚本：window.scrollTo(0, 300)
+2018-10-14 22:10:57,420 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//a[@href='#basic']")
+2018-10-14 22:10:58,164 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//a[@href='#resources']")
+2018-10-14 22:10:58,531 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//div[3]/div[1]/button[text()='保存并发布']")
+2018-10-14 22:11:00,142 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//button[text()='确定']")
+2018-10-14 22:31:23,004 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-14 22:31:24,359 - [INFO] - 基本操作 - input_username - admin
+2018-10-14 22:31:24,710 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-14 22:31:25,088 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-14 22:31:25,285 - [INFO] - 基本操作 - click_element - 点击元素('name', 'submit')
+2018-10-14 22:31:28,707 - [INFO] - 登录 - login - 登录成功
+2018-10-14 22:31:29,645 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//ul[@id='menuListId']//span[text()='服务管理']")
+2018-10-14 22:31:30,044 - [INFO] - 基本操作 - enter_menu - 进入服务管理菜单
+2018-10-14 22:31:30,046 - [INFO] - 基本操作 - enter_create - 点击创建按钮
+2018-10-14 22:31:30,987 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//a[text()='创建服务 ']")
+2018-10-14 22:31:31,166 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务名称: 自动化创建云服务01-python
+2018-10-14 22:31:32,298 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务有效期: 永久
+2018-10-14 22:31:32,300 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：发布范围: 全局
+2018-10-14 22:31:32,501 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//span[text()='全局发布']")
+2018-10-14 22:31:32,740 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务图标: 这里输入图标路径
+2018-10-14 22:31:32,741 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务SLA登记: P3
+2018-10-14 22:31:32,743 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务介绍: 该云主机服务由python自动化脚本执行发布
+2018-10-14 22:31:33,407 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：计费规则: ['auto', '内存']
+2018-10-14 22:31:33,592 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//button[text()='绑定']")
+2018-10-14 22:31:34,689 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//td[@title='auto']/..//span")
+2018-10-14 22:31:35,220 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//td[@title='内存']/..//span")
+2018-10-14 22:31:35,451 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：可用分区: [{'可用分区名称': '38KVM', '镜像': ['cirros_xen'], '配置列表': [('配置1', '1', '1')], '应用列表': ['tomcat'], '磁盘服务': 'zhh云硬盘服务'}]
+2018-10-14 22:31:39,999 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//*[@id='resources']/h5/a/button")
+2018-10-14 22:31:41,560 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//button[text()='搜索']")
+2018-10-14 22:31:42,354 - [INFO] - 基本操作 - click_element - 点击元素('xpath', '//tbody/tr[2]/td[1]/div/label/span')
+2018-10-14 22:31:43,054 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//h2[text()='添加可用分区']/../..//button[text()='确认']")
+2018-10-14 22:31:43,391 - [INFO] - 基本操作 - add_iamge - 添加镜像: cirros_xen
+2018-10-14 22:31:43,739 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//label[text()='38KVM']/../../..//a[text()='+添加镜像 ']")
+2018-10-14 22:31:45,050 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//button[text()='搜索']")
+2018-10-14 22:31:45,478 - [INFO] - 基本操作 - click_element - 点击元素('xpath', '//tbody/tr[2]/td[1]/div/label/span')
+2018-10-14 22:31:45,766 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//h2[text()='添加镜像']/../..//button[text()='确认']")
+2018-10-14 22:31:45,945 - [INFO] - 基本操作 - add_config - 添加配置: ('配置1', '1', '1')
+2018-10-14 22:31:48,002 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//label[text()='38KVM']/../../..//button[@data-bind='click: $root.addConfig']")
+2018-10-14 22:31:48,197 - [INFO] - 基本操作 - add_soft - 添加应用: tomcat
+2018-10-14 22:31:48,402 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//label[text()='38KVM']/../../..//a[text()='+添加应用']")
+2018-10-14 22:31:49,597 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//button[text()='搜索']")
+2018-10-14 22:31:50,122 - [INFO] - 基本操作 - click_element - 点击元素('xpath', '//tbody/tr[2]/td[1]/div/label/span')
+2018-10-14 22:31:50,462 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//h2[text()='添加应用']/../..//button[text()='确认']")
+2018-10-14 22:31:50,620 - [INFO] - 基本操作 - script - 执行js脚本：window.scrollTo(0, 300)
+2018-10-14 22:31:50,813 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//a[@href='#basic']")
+2018-10-14 22:32:01,456 - [ERROR] - 基本操作 - find_element - 定位('xpath', "//td[text()='38KVM']/..//select")时发生异常：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 61, in find_element
+    EC.visibility_of_element_located(loc))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-10-14 22:37:26,186 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-14 22:37:27,443 - [INFO] - 基本操作 - input_username - admin
+2018-10-14 22:37:27,735 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-14 22:37:28,063 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-14 22:37:28,214 - [INFO] - 基本操作 - click_element - 点击元素('name', 'submit')
+2018-10-14 22:37:31,747 - [INFO] - 登录 - login - 登录成功
+2018-10-14 22:37:32,719 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//ul[@id='menuListId']//span[text()='服务管理']")
+2018-10-14 22:37:33,251 - [INFO] - 基本操作 - enter_menu - 进入服务管理菜单
+2018-10-14 22:37:33,253 - [INFO] - 基本操作 - enter_create - 点击创建按钮
+2018-10-14 22:37:34,085 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//a[text()='创建服务 ']")
+2018-10-14 22:37:34,278 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务名称: 自动化创建云服务01-python
+2018-10-14 22:37:35,469 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务有效期: 永久
+2018-10-14 22:37:35,472 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：发布范围: 全局
+2018-10-14 22:37:35,644 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//span[text()='全局发布']")
+2018-10-14 22:37:35,850 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务图标: 这里输入图标路径
+2018-10-14 22:37:35,852 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务SLA登记: P3
+2018-10-14 22:37:35,854 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务介绍: 该云主机服务由python自动化脚本执行发布
+2018-10-14 22:37:36,554 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：计费规则: ['auto', '内存']
+2018-10-14 22:37:36,731 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//button[text()='绑定']")
+2018-10-14 22:37:37,748 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//td[@title='auto']/..//span")
+2018-10-14 22:37:38,287 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//td[@title='内存']/..//span")
+2018-10-14 22:37:38,842 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//h2[text()='绑定计费规则']/../..//button[text()='确认']")
+2018-10-14 22:37:39,099 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：可用分区: [{'可用分区名称': '38KVM', '镜像': ['cirros_xen'], '配置列表': [('配置1', '1', '1')], '应用列表': ['tomcat'], '磁盘服务': 'zhh云硬盘服务'}]
+2018-10-14 22:37:39,869 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//*[@id='resources']/h5/a/button")
+2018-10-14 22:37:41,562 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//button[text()='搜索']")
+2018-10-14 22:37:42,044 - [INFO] - 基本操作 - click_element - 点击元素('xpath', '//tbody/tr[2]/td[1]/div/label/span')
+2018-10-14 22:37:42,524 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//h2[text()='添加可用分区']/../..//button[text()='确认']")
+2018-10-14 22:37:42,818 - [INFO] - 基本操作 - add_iamge - 添加镜像: cirros_xen
+2018-10-14 22:37:43,039 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//label[text()='38KVM']/../../..//a[text()='+添加镜像 ']")
+2018-10-14 22:37:44,887 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//button[text()='搜索']")
+2018-10-14 22:37:45,416 - [INFO] - 基本操作 - click_element - 点击元素('xpath', '//tbody/tr[2]/td[1]/div/label/span')
+2018-10-14 22:37:45,906 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//h2[text()='添加镜像']/../..//button[text()='确认']")
+2018-10-14 22:37:46,121 - [INFO] - 基本操作 - add_config - 添加配置: ('配置1', '1', '1')
+2018-10-14 22:37:47,912 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//label[text()='38KVM']/../../..//button[@data-bind='click: $root.addConfig']")
+2018-10-14 22:37:48,090 - [INFO] - 基本操作 - add_soft - 添加应用: tomcat
+2018-10-14 22:37:48,302 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//label[text()='38KVM']/../../..//a[text()='+添加应用']")
+2018-10-14 22:37:49,738 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//button[text()='搜索']")
+2018-10-14 22:37:50,630 - [INFO] - 基本操作 - click_element - 点击元素('xpath', '//tbody/tr[2]/td[1]/div/label/span')
+2018-10-14 22:37:51,037 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//h2[text()='添加应用']/../..//button[text()='确认']")
+2018-10-14 22:37:51,272 - [INFO] - 基本操作 - script - 执行js脚本：window.scrollTo(0, 300)
+2018-10-14 22:37:51,607 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//a[@href='#basic']")
+2018-10-14 22:37:59,338 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//a[@href='#resources']")
+2018-10-14 22:37:59,706 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//div[3]/div[1]/button[text()='保存并发布']")
+2018-10-14 22:38:01,135 - [INFO] - 基本操作 - save_and_release - 发布服务成功！
+2018-10-14 22:38:01,278 - [INFO] - 基本操作 - click_element - 点击元素('xpath', "//button[text()='确定']")
+2018-10-14 22:42:48,070 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-14 22:42:49,604 - [INFO] - 基本操作 - input_username - admin
+2018-10-14 22:42:49,986 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-14 22:42:50,363 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-14 22:42:54,252 - [INFO] - 登录 - login - 登录成功
+2018-10-14 22:42:55,749 - [INFO] - 基本操作 - enter_menu - 进入服务管理菜单
+2018-10-14 22:42:55,751 - [INFO] - 基本操作 - enter_create - 点击创建按钮
+2018-10-14 22:42:56,838 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务名称: 自动化创建云服务01-python
+2018-10-14 22:42:57,999 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务有效期: 永久
+2018-10-14 22:42:58,001 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：发布范围: 全局
+2018-10-14 22:42:58,385 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务图标: 这里输入图标路径
+2018-10-14 22:42:58,388 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务SLA登记: P3
+2018-10-14 22:42:58,389 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务介绍: 该云主机服务由python自动化脚本执行发布
+2018-10-14 22:42:59,115 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：计费规则: ['auto', '内存']
+2018-10-14 22:43:01,680 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：可用分区: [{'可用分区名称': '38KVM', '镜像': ['cirros_xen'], '配置列表': [('配置1', '1', '1')], '应用列表': ['tomcat'], '磁盘服务': 'zhh云硬盘服务'}]
+2018-10-14 22:43:05,221 - [INFO] - 基本操作 - add_iamge - 添加镜像: cirros_xen
+2018-10-14 22:43:08,121 - [INFO] - 基本操作 - add_config - 添加配置: ('配置1', '1', '1')
+2018-10-14 22:43:10,090 - [INFO] - 基本操作 - add_soft - 添加应用: tomcat
+2018-10-14 22:43:13,292 - [INFO] - 基本操作 - script - 执行js脚本：window.scrollTo(0, 300)
+2018-10-14 22:53:24,110 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-14 22:53:25,381 - [INFO] - 基本操作 - input_username - admin
+2018-10-14 22:53:25,824 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-14 22:53:26,311 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-14 22:53:30,061 - [INFO] - 登录 - login - 登录成功
+2018-10-14 22:53:31,424 - [INFO] - 基本操作 - enter_menu - 进入服务管理菜单
+2018-10-14 22:53:31,426 - [INFO] - 基本操作 - enter_create - 点击创建按钮
+2018-10-14 22:53:32,552 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务名称: 自动化创建云服务02-python
+2018-10-14 22:53:33,791 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务有效期: 永久
+2018-10-14 22:53:33,793 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：发布范围: 全局
+2018-10-14 22:53:34,191 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务图标: 这里输入图标路径
+2018-10-14 22:53:34,196 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务SLA等级: P3
+2018-10-14 22:53:34,546 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务介绍: 该云主机服务由python自动化脚本执行发布
+2018-10-14 22:53:35,294 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：计费规则: ['auto', '内存']
+2018-10-14 22:53:37,621 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：可用分区: [{'可用分区名称': '38KVM', '镜像': ['cirros_xen'], '配置列表': [('配置1', '1', '1')], '应用列表': ['tomcat'], '磁盘服务': 'zhh云硬盘服务'}, {'可用分区名称': 'hmc', '镜像': ['AIX5_3'], '配置列表': [('配置1', '1', '1')], '磁盘服务': '云硬盘服务-wangzd'}]
+2018-10-14 22:53:41,062 - [INFO] - 基本操作 - add_iamge - 添加镜像: cirros_xen
+2018-10-14 22:53:44,474 - [INFO] - 基本操作 - add_config - 添加配置: ('配置1', '1', '1')
+2018-10-14 22:53:46,441 - [INFO] - 基本操作 - add_soft - 添加应用: tomcat
+2018-10-14 22:53:49,115 - [INFO] - 基本操作 - script - 执行js脚本：window.scrollTo(0, 300)
+2018-10-14 22:53:54,623 - [INFO] - 基本操作 - add_iamge - 添加镜像: AIX5_3
+2018-10-14 22:54:06,035 - [ERROR] - 基本操作 - find_element - 定位('xpath', "//span[text()='镜像名称']/../input")时发生异常：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 60, in find_element
+    EC.visibility_of_element_located(loc))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-10-15 10:09:08,889 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-15 10:09:10,080 - [INFO] - 基本操作 - input_username - admin
+2018-10-15 10:09:10,342 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-15 10:09:10,626 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-15 10:15:18,405 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.70:8099/csc/index.html
+2018-10-15 10:15:19,309 - [INFO] - 基本操作 - input_username - admin
+2018-10-15 10:15:19,562 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-15 10:15:19,846 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-15 10:15:22,647 - [INFO] - 基本操作 - assert_login - 登录成功
+2018-10-15 10:15:23,746 - [INFO] - 基本操作 - enter_menu - 进入服务管理菜单
+2018-10-15 10:15:23,749 - [INFO] - 基本操作 - enter_create - 点击创建按钮
+2018-10-15 10:15:24,914 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务名称: 自动化创建云服务03-python
+2018-10-15 10:15:25,770 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务有效期: 永久
+2018-10-15 10:15:25,772 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：发布范围: 全局
+2018-10-15 10:15:26,139 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务图标: 这里输入图标路径
+2018-10-15 10:15:26,141 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务SLA等级: P3
+2018-10-15 10:15:26,438 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：服务介绍: 该云主机服务由python自动化脚本执行发布
+2018-10-15 10:15:26,958 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：计费规则: ['auto', '内存']
+2018-10-15 10:15:28,936 - [INFO] - 基本操作 - create_vm_service - 对数据进行处理：可用分区: [{'可用分区名称': '38KVM', '镜像': ['cirros_xen'], '配置列表': [('配置1', '1', '1')], '应用列表': ['tomcat'], '磁盘服务': 'zhh云硬盘服务'}, {'可用分区名称': 'hmc', '镜像': ['AIX5_3'], '配置列表': [('配置1', '1', '1')], '磁盘服务': '云硬盘服务-wangzd'}]
+2018-10-15 10:15:32,028 - [INFO] - 基本操作 - add_iamge - 添加镜像: cirros_xen
+2018-10-15 10:15:34,670 - [INFO] - 基本操作 - add_config - 添加配置: ('配置1', '1', '1')
+2018-10-15 10:15:36,281 - [INFO] - 基本操作 - add_soft - 添加应用: tomcat
+2018-10-15 10:15:38,355 - [INFO] - 基本操作 - script - 执行js脚本：window.scrollTo(0, 300)
+2018-10-15 10:15:43,314 - [INFO] - 基本操作 - add_iamge - 添加镜像: AIX5_3
+2018-10-15 10:15:54,742 - [ERROR] - 基本操作 - find_element - 定位('xpath', "//span[text()='镜像名称']/../input")时发生异常：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 60, in find_element
+    EC.visibility_of_element_located(loc))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+

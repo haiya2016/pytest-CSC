@@ -7,7 +7,6 @@ Project:基础类BasePage，封装所有页面都公用的方法，
 在初始化方法中定义驱动driver，基本url，title
 WebDriverWait提供了显式等待方式。
 '''
-import time
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 # from selenium.common.exceptions import TimeoutException
@@ -83,9 +82,9 @@ class BasePage(object):
             self.log.exception(f'元素{loc}无法点击：{allerr}')
             raise Exception
         else:
-            self.log.info(f"点击元素{loc}")
+            # self.log.info(f"点击元素{loc}")
             self.find_element(*loc).click()
-            time.sleep(2)  # 点击元素后睡眠2秒等待界面加载
+            # time.sleep(2)  # 点击元素后睡眠2秒等待界面加载
 
 
     def switch_frame(self, *loc):
@@ -94,29 +93,6 @@ class BasePage(object):
         '''
         self.log.info(f'切换到ifram框架：{loc}')
         return self.driver.switch_to_frame(*loc)
-
-    def script(self, src):
-        '''
-        定义script方法，用于执行js脚本，范围执行结果
-        '''
-        self.log.info(f'执行js脚本：{src}')
-        self.driver.execute_script(src)
-
-    def scroll(self, *loc):
-        '''
-        element对象的“底端”与当前窗口的“底部”对齐
-        :param *loc:定位element对象
-        '''
-        element = self.find_element(*loc)
-        self.driver.execute_script('arguments[0].focus();', element)
-
-    def remove_disabled(self, *loc):
-        '''
-        通过js移除元素的disabled属性
-        '''
-        self.log.info('移除元素disabled属性，使元素可见')
-        element = self.find_element(*loc)
-        self.driver.execute_script("arguments[0].removeAttribute('disabled')", element)
 
     def assert_By_Text(self, text, *loc):
         '''
@@ -143,3 +119,41 @@ class BasePage(object):
         '''
         self.find_element(*loc).clear()
         self.find_element(*loc).send_keys(text)
+        
+
+    #################################   js脚本  #########################################
+
+    def script(self, src):
+        '''
+        定义script方法，用于执行js脚本，范围执行结果
+        '''
+        self.log.info(f'执行js脚本：{src}')
+        self.driver.execute_script(src)
+
+    def scroll(self, *loc):
+        '''
+        element对象的“底端”与当前窗口的“底部”对齐
+        :param *loc:定位element对象
+        '''
+        element = self.find_element(*loc)
+        self.driver.execute_script('arguments[0].focus();', element)
+
+    def remove_Attribute_by_js(self, attribute, *loc):
+        '''
+        通过js移除元素的attribute属性
+        :param attribute:元素的某个属性
+        :param *loc:定位因子
+        '''
+        self.log.info('移除元素disabled属性，使元素可见')
+        element = self.find_element(*loc)
+        self.driver.execute_script(f"arguments[0].removeAttribute('{attribute}')", element)
+
+    def set_value_by_js(self, value, *loc):
+        '''
+        通过js直接设置指定元素的值
+        :param value:需要设置的值
+        :param *loc:定位因子
+        '''
+        element = self.find_element(*loc)
+        self.driver.execute_script(f"arguments[0].value='{value}'", element)
+        self.log.info(f'通过js直接设置{*loc}的值:{value}')

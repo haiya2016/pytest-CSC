@@ -65,11 +65,13 @@ class LoginPage(BasePage):
         self.click_element(*self.usertype_ad_loc)
         # self.find_element(*self.usertype_ad_loc).click()
 
-    def show_userid(self, username):
+    def assert_login(self, username):
         '''
         登录成功页面判断用户id是否相同
         '''
-        return self.find_element(*self.userid_loc).text == username
+        self.assert_By_Text(username, *self.userid_loc)
+        self.log.info('登录成功')
+
 
     @classmethod
     def login(cls, driver, url=None, user=None):
@@ -87,8 +89,5 @@ class LoginPage(BasePage):
         if user['usertype'] != 'local':
             login.switch_usertype()
         login.click_submit()
-        if cls.show_userid(login, user['username']):
-            cls.log.info('登录成功')
-        else:
-            raise AssertionError
+        cls.assert_login(login, user['username'])
         return login.driver
