@@ -181,6 +181,8 @@ class ServicesPage(BasePage):
     def add_az(self, az_name):
         '''
         查找病添加可用分区
+        :Args:
+         - az_name：可用分区的名称
         '''
         self.set_value(az_name, *self.azNameSearch_loc)
         self.search_first_result()
@@ -189,6 +191,8 @@ class ServicesPage(BasePage):
     def add_iamge(self, image_name):
         '''
         查找并添加镜像
+        :Args:
+         - image_name：镜像名称
         '''
         self.log.info(f"添加镜像: {image_name}")
         # self.scroll(*self.add_image_loc)
@@ -200,6 +204,8 @@ class ServicesPage(BasePage):
     def add_config(self, config):
         '''
         添加配置
+        :Args:
+         - config：配置，格式为列表
         '''
         self.log.info(f"添加配置: {config}")
         self.set_value(config[0], *self.config_title_loc)
@@ -210,6 +216,8 @@ class ServicesPage(BasePage):
     def add_soft(self, soft):
         '''
         添加应用
+        :Args:
+         - soft：软件名称
         '''
         self.log.info(f"添加应用: {soft}")
         self.click_element(*self.add_soft_loc)
@@ -220,8 +228,9 @@ class ServicesPage(BasePage):
     def item_select(self, item_type, item_value):
         '''
         处理所有下拉框
-        :param item_type:下拉框的名称
-        :param item_value:下拉框的文本内容
+        :Args:
+         - item_type:下拉框的名称
+         - item_value:下拉框的文本内容
         '''
         if item_type == '服务SLA等级':
             self.select_by_text(item_value, *self.SLAselect_loc)
@@ -233,8 +242,9 @@ class ServicesPage(BasePage):
     def item_typing(self, item_type, item_value):
         '''
         处理所有输入框
-        :param item_type:输入框的名称
-        :param item_value:输入框的文本内容
+        :Args:
+         - item_type:输入框的名称
+         - item_value:输入框的文本内容
         '''
         if item_type == '服务名称':
             self.set_value(item_value, *self.serviceName_loc)
@@ -245,6 +255,8 @@ class ServicesPage(BasePage):
     def charge_process(self, charge_name):
         '''
         用于勾选计费规则
+        :Args:
+         - charge_name：计费规则名称
         '''
         self._uptdate_charge_loc(charge_name)
         self.click_element(*self.charging_name_loc)
@@ -255,4 +267,3 @@ class ServicesPage(BasePage):
         '''
         self.click_element(*self.searchButton_loc)
         self.click_element(*self.firstResult_loc)
-        
