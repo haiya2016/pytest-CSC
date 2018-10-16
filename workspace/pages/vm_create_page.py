@@ -4,7 +4,7 @@ Created on 2018-9-9
 @author: wjx
 Project:云主机创建页面
 '''
-import time
+
 from selenium.webdriver.common.by import By
 from workspace.pages.base_page import BasePage
 from workspace.config.logging_sys import Logger
@@ -95,18 +95,17 @@ class VmCreatePage(BasePage):
         '''
         self.click_element(*self.virtual_recourse_manage_loc)
         self.click_element(*self.recourse_instance_loc)
-        time.sleep(2)
         self.click_element(*self.create_button_lov)
-        time.sleep(2)
         self.vclog.info('进入云主机创建页面')
 
 
     def search_for(self, item_type, item_value):
         '''
         用于需要通过弹出窗口进行选择的控件,根据item_type和item_value调用不同的组件进行搜索
-        :param item_type: 组件类型
-        :param item_value: 组件值
-        :return
+        :Args:
+         - item_type: 组件类型
+         - item_value: 组件值
+
         '''
         self.vclog.info(f'{item_type}：{item_value}')
         if item_type == '归属服务':
@@ -146,14 +145,17 @@ class VmCreatePage(BasePage):
             self.click_element(*self.first_search_result_loc)    # 勾选第一个搜索结果
         except Exception as err:
             self.vclog.warning(f'搜索不到对应结果:{err}')
+            raise Exception
 
 
     def item_click(self, item_type, item_value):
         '''
         搜索之后点击确认
-        :param item_type: 组件类型
-        :param item_value: 组件值
-        :return
+
+        :Args:
+         - item_type: 组件类型
+         - item_value: 组件值
+
         '''
         self.search_for(item_type, item_value)
         if item_type == '归属服务':
@@ -177,10 +179,13 @@ class VmCreatePage(BasePage):
 
 
     def item_select(self, item_type, item_value):
-        '''下拉列表的处理
-        :param item_type: 组件类型
-        :param item_value: 组件值
-        :return'''
+        '''
+        下拉列表的处理
+        :Args:
+         - item_type: 组件类型
+         - item_value: 组件值
+
+        '''
         if item_type == '到期时间':
             self.select_by_text(item_value, *self.applytime_timefor_loc)
         elif item_type == '可用分区':
@@ -195,10 +200,13 @@ class VmCreatePage(BasePage):
 
 
     def input_item(self, item_type, item_value):
-        '''根据输入的类型和值进行填充
-        :param item_type: 组件类型
-        :param item_value: 组件值
-        :return'''
+        '''
+        根据输入的类型和值进行填充
+        :Args:
+         - item_type: 组件类型
+         - item_value: 组件值
+
+        '''
         self.vclog.info(f'{item_type}：{item_value}')
         if item_type == '云主机名称':
             self.set_value(item_value, *self.name_input_loc)
@@ -219,11 +227,9 @@ class VmCreatePage(BasePage):
                 self.item_select(item_type, item_value)
             else:
                 self.click_element(*self.applytime_date_loc)
-                self.find_element(*self.applytime_datefor_loc).clear()
                 self.set_value(item_value, *self.applytime_datefor_loc)
                 self.click_element(*self.textarea_input_loc)      # 用于取消日历控件
         elif item_type in ['可用分区', 'CPU', '内存', 'IP池']:     # 需要下拉选择的控件
             self.item_select(item_type, item_value)
         else:       # 需要搜索的控件
             self.item_click(item_type, item_value)
-        time.sleep(2)
