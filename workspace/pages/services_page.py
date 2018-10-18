@@ -1,11 +1,12 @@
 # coding=utf-8
 '''
-    Created on 2018-10-09
-    @author: wjx
-    Project:服务管理页面
+@Created on 2018-10-09
+@author: wjx
+@Project:服务管理页面
 '''
 import time
 from selenium.webdriver.common.by import By
+# from selenium.webdriver.common.keys import Keys
 from workspace.pages.base_page import BasePage
 from workspace.config.logging_sys import Logger
 
@@ -81,6 +82,8 @@ class ServicesPage(BasePage):
     sys_info_loc = (By.XPATH, "//h4[text()='系统信息']/../../div[2]")                #  系统消息
     comfirmButton_loc = (By.XPATH, "//button[text()='确定']")                        #  系统消息-确定按钮
 
+    a_loc = (By.XPATH, '//*[@id="page-content"]/div[3]/div[2]/div[1]/div[1]/div/form[1]/div[2]/div[2]/div/label/input')
+
     def _uptdate_charge_loc(self, charge_name):
         '''
         私有方法，用于根据计费规则名称更新对应计费规则的元素定位
@@ -92,6 +95,8 @@ class ServicesPage(BasePage):
     def _update_loc(self, az_name):
         '''
         私有方法，用于刷新可用分区相关的页面元素定位
+        :Args:
+         - az_name：可用分区的名称
         '''
         path = f"//label[text()='{az_name}']/../../..//"
         self.add_image_loc = (By.XPATH, f"{path}a[text()='+添加镜像 ']")                         #  云主机服务创建-添加镜像按钮
@@ -130,6 +135,9 @@ class ServicesPage(BasePage):
     def create_vm_service(self, item_type, item_value):
         '''
         创建云主机服务
+        :Args:
+         - item_type：参数类型
+         - item_value：参数值
         '''
         # TODO:服务截止日期暂时只能选择永久，无法选择具体日期，需要开发修改页面样式
         self.log.info(f"对数据进行处理：{item_type}: {item_value}")
@@ -137,6 +145,9 @@ class ServicesPage(BasePage):
             self.item_select(item_type, item_value)
         if item_type in ['服务名称', '服务介绍']:
             self.item_typing(item_type, item_value)
+        if item_type == '服务有效期':
+            self.move_and_click(*self.forever_loc)
+            time.sleep(5)
         if item_type == '发布范围':
             if item_value == '全局':
                 self.click_element(*self.overRelease_loc)
@@ -255,8 +266,10 @@ class ServicesPage(BasePage):
     def charge_process(self, charge_name):
         '''
         用于勾选计费规则
+
         :Args:
          - charge_name：计费规则名称
+
         '''
         self._uptdate_charge_loc(charge_name)
         self.click_element(*self.charging_name_loc)

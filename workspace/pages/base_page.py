@@ -1,11 +1,12 @@
 # coding=utf-8
 '''
-Created on 2018-9-9
+@Created on 2018-9-9
 @author: wjx
-Project:基础类BasePage，封装所有页面都公用的方法，定义open函数，重定义定位、点击、输入等函数。
+@Project:基础类BasePage，封装所有页面都公用的方法，定义open函数，重定义定位、点击、输入等函数。
 WebDriverWait提供了显式等待方式。
 '''
 from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support import expected_conditions as EC
 # from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import Select
@@ -26,7 +27,13 @@ class BasePage():
 
     def on_page(self, pagetitle):
         '''
-        使用title获取当前窗口title，检查输入的title是否在当前title中，返回比较结果（True 或 False）
+        使用title获取当前窗口title，检查输入的title是否在当前title中
+
+        :Args:
+         - pagetitle:页面的标题
+
+        Return:
+         - 返回比较结果（True 或 False）
         '''
         return pagetitle in self.driver.title
 
@@ -140,6 +147,43 @@ class BasePage():
         self.find_element(*loc).send_keys(value)
 
 
+    def move_and_click(self, *loc, xoffset=200, yoffset=0):
+        '''
+        移动到指定的元素的某个坐标并点击
+
+        :Args:
+         - xoffset:横坐标，默认200
+         - yoffset:纵坐标，默认0
+
+        '''
+        element = self.find_element(*loc)
+        ActionChains(self.driver).move_to_element_with_offset(element, xoffset, yoffset).perform()
+        ActionChains(self.driver).click().perform()
+
+    def get_element_count(self, *loc):
+        '''
+        获取指定元素的个数
+
+        :Args:
+         - *loc: 定位因子
+        :Return:
+         - len(element_list):指定元素的个数
+        '''
+        element_list = self.driver.find_elements(*loc)
+        return len(element_list)
+
+    def get_attribute(self, attribute, *loc):
+        '''
+        获取元素的attribute属性
+
+        :Args:
+         - attribute:元素的某个属性
+         - *loc:定位因子
+
+        '''
+        return self.find_element(*loc).get_attribute(attribute)
+
+
     #################################   js脚本  #########################################
 
     def script(self, src):
@@ -173,7 +217,7 @@ class BasePage():
          - *loc:定位因子
 
         '''
-        self.log.info('移除元素disabled属性，使元素可见')
+        self.log.info(f'移除元素{attribute}属性')
         element = self.find_element(*loc)
         self.driver.execute_script(f"arguments[0].removeAttribute('{attribute}')", element)
 
@@ -188,4 +232,19 @@ class BasePage():
         '''
         element = self.find_element(*loc)
         self.driver.execute_script(f"arguments[0].value='{value}'", element)
-        self.log.info(f'通过js直接设置{*loc}的值:{value}')
+        self.log.info(f'通过js直接设置{loc}的值:{value}')
+
+    def get_value_by_js(self, *loc):
+        '''
+        通过js获取指定元素的值
+
+        :Args:
+         - *loc:定位因子
+        :Return:
+         - value:通过js获取到的值
+
+        '''
+        element = self.find_element(*loc)
+        value = self.driver.execute_script("return arguments[0].value", element)
+        self.log.info(f'通过js获取到的值为:{value}')
+        return str(value)

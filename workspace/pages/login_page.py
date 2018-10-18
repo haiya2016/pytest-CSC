@@ -1,8 +1,8 @@
 # coding=utf-8
 '''
-Created on 2018-9-9
+@Created on 2018-9-9
 @author: wjx
-Project:页面基本操作方法：如input_username，input_password，click_submit
+@Project:页面基本操作方法：如input_username，input_password，click_submit
 '''
 from selenium.webdriver.common.by import By
 from workspace.pages.base_page import BasePage

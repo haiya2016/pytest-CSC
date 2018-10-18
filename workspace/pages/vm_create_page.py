@@ -1,8 +1,8 @@
 # coding=utf-8
 '''
-Created on 2018-9-9
+@Created on 2018-9-9
 @author: wjx
-Project:云主机创建页面
+@Project:云主机创建页面
 '''
 
 from selenium.webdriver.common.by import By

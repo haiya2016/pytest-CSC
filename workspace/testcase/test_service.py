@@ -1,8 +1,8 @@
 # coding=utf-8
 '''
-    Created on 2018-10-12
-    @author: wjx
-    Project: 服务管理模块的测试用例
+@Created on 2018-10-12
+@author: wjx
+@Project: 服务管理模块的测试用例
 '''
 
 import pytest
@@ -47,7 +47,7 @@ class TestService():
             }
         ]
         input_data = {
-            '服务名称': '自动化创建云服务03-python',
+            '服务名称': '自动化创建云服务04-python',
             '服务有效期': '永久',
             '发布范围': '全局',
             '服务图标': '这里输入图标路径',
