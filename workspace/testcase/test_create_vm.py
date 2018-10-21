@@ -31,21 +31,21 @@ class TestCreateVM():
         '''
         # 使用已登录的浏览器生成一个已登录的云主机创建页面的对象
         vm_page = VmCreatePage(self.login_driver)
-        vm_page.enter_menu()
+        vm_page.enter_vm_create()
         # 设置需要填写的值
         input_data = {
             '云主机名称': 'python01',
             'VM Name': 'python01',
             'Hostname': 'python01',
-            '归属服务': 'wpl',
-            '归属VDC': 'zhhvdca',
+            '归属服务': '云主机服务',
+            '归属VDC': 'wcgvdc',
             '归属用户': 'admin',
             '业务系统': '',
             '应用集群': '',
             '到期时间': '2019-01-01',
-            '备注': '自动化创建的云主机',
+            '备注': 'python自动化创建的云主机',
             '可用分区': 'AZ-Winserver 虚拟化:WinServer',
-            '镜像': 'win2012',
+            '镜像': 'wzd-redhat7.2',
             '宿主机': '192.168.206.76',
             '存储池': 'Local storage(192.168.206.76)',
             'CPU': '1',

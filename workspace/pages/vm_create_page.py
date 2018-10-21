@@ -18,9 +18,6 @@ class VmCreatePage(BasePage):
     # 创建日志
     vclog = Logger('云主机创建').getlog()
 
-    # 菜单入口
-    virtual_recourse_manage_loc = (By.XPATH, "//ul[@id='menuListId']//span[text()='虚拟化资源管理']")  # 虚拟化资源管理菜单
-    recourse_instance_loc = (By.XPATH, "//ul[@id='menuListId']//span[text()='资源实例']")   # 资源实例菜单
     create_button_lov = (By.XPATH, "//div[@id='partition_vms']//a[text()='创建 ']")        # 云主机创建按钮
 
     # 按钮
@@ -89,13 +86,13 @@ class VmCreatePage(BasePage):
     storage_pool_search_input_loc = (By.XPATH, "//span[text()='存储池名称']/../input")
     storage_pool_confirm_loc = (By.XPATH, "//button[text()='确认' and @data-bind='click:storagePoolSave']")
 
-    def enter_menu(self):
+    def enter_vm_create(self):
         '''
         进入云主机创建页面
         '''
-        self.click_element(*self.virtual_recourse_manage_loc)
-        self.click_element(*self.recourse_instance_loc)
+        self.enter_menu('资源实例')
         self.click_element(*self.create_button_lov)
+        self.assert_by_text('创建云主机', *self.breadcrumb_loc)
         self.vclog.info('进入云主机创建页面')
 
 
@@ -121,14 +118,10 @@ class VmCreatePage(BasePage):
             if item_value:             # 非必填，有传值才进行操作
                 self.click_element(*self.bussys_loc)
                 self.set_value(item_value, *self.bussys_search_input_loc)
-            else:
-                return True
         elif item_type == '应用集群':
             if item_value:             # 非必填，有传值才进行操作
                 self.click_element(*self.busitem_loc)
                 self.set_value(item_value, *self.busitem_search_input_loc)
-            else:
-                return True
         elif item_type == '镜像':
             self.click_element(*self.image_loc)
             self.set_value(item_value, *self.image_search_input_loc)
@@ -138,14 +131,12 @@ class VmCreatePage(BasePage):
         elif item_type == '存储池':
             self.click_element(*self.storage_pool_loc)
             self.set_value(item_value, *self.storage_pool_search_input_loc)
-        self.vclog.info('点击搜索按钮')
         self.click_element(*self.search_button_loc)         # 点击搜索按钮
-        self.vclog.info('勾选第一个搜索结果')
         try:
             self.click_element(*self.first_search_result_loc)    # 勾选第一个搜索结果
         except Exception as err:
             self.vclog.warning(f'搜索不到对应结果:{err}')
-            raise Exception
+            raise
 
 
     def item_click(self, item_type, item_value):
@@ -181,6 +172,7 @@ class VmCreatePage(BasePage):
     def item_select(self, item_type, item_value):
         '''
         下拉列表的处理
+
         :Args:
          - item_type: 组件类型
          - item_value: 组件值
@@ -202,6 +194,7 @@ class VmCreatePage(BasePage):
     def input_item(self, item_type, item_value):
         '''
         根据输入的类型和值进行填充
+
         :Args:
          - item_type: 组件类型
          - item_value: 组件值

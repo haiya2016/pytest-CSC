@@ -2362,3 +2362,219 @@ Traceback (most recent call last):
     raise TimeoutException(message, screen, stacktrace)
 selenium.common.exceptions.TimeoutException: Message: 
 
+2018-10-20 16:36:36,171 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-10-20 16:36:37,536 - [INFO] - 基本操作 - input_username - admin
+2018-10-20 16:36:37,879 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-20 16:36:38,235 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-20 16:38:04,706 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-10-20 16:38:05,808 - [INFO] - 基本操作 - input_username - admin
+2018-10-20 16:38:06,135 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-20 16:38:06,499 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-20 16:43:04,597 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-10-20 16:43:05,626 - [INFO] - 基本操作 - input_username - admin
+2018-10-20 16:43:05,892 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-20 16:43:06,193 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-20 16:43:08,194 - [INFO] - 基本操作 - assert_login - 登录成功
+2018-10-20 16:43:10,561 - [INFO] - 云主机创建 - enter_vm_create - 进入云主机创建页面
+2018-10-20 16:43:10,564 - [INFO] - 云主机创建 - input_item - 云主机名称：python01
+2018-10-20 16:43:11,464 - [INFO] - 云主机创建 - input_item - VM Name：python01
+2018-10-20 16:43:11,830 - [INFO] - 云主机创建 - input_item - Hostname：python01
+2018-10-20 16:43:12,291 - [INFO] - 云主机创建 - input_item - 归属服务：wpl
+2018-10-20 16:43:12,293 - [INFO] - 云主机创建 - search_for - 归属服务：wpl
+2018-10-20 16:43:13,812 - [INFO] - 云主机创建 - search_for - 点击搜索按钮
+2018-10-20 16:43:14,213 - [INFO] - 云主机创建 - search_for - 勾选第一个搜索结果
+2018-10-20 16:43:24,736 - [ERROR] - 基本操作 - find_element - 定位('xpath', '//table//tr[2]/td[1]//span')时发生异常：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 85, in find_element
+    EC.visibility_of_element_located(loc))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-10-20 16:43:24,741 - [WARNING] - 云主机创建 - search_for - 搜索不到对应结果:Message: 
+
+2018-10-20 17:07:34,204 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-10-20 17:07:35,262 - [INFO] - 基本操作 - input_username - admin
+2018-10-20 17:07:35,634 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-20 17:07:36,100 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-20 17:07:38,786 - [INFO] - 基本操作 - assert_login - 登录成功
+2018-10-20 17:07:40,821 - [ERROR] - 基本操作 - find_element - 定位(('xpath', "//ul[@id='menuListId']//span[text()='资源实例']/../.."),)时发生异常：Message: invalid argument: 'using' must be a string
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 91, in find_element
+    EC.visibility_of_element_located(loc))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 71, in until
+    value = method(self._driver)
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 128, in __call__
+    return _element_if_visible(_find_element(driver, self.locator))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 415, in _find_element
+    raise e
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 411, in _find_element
+    return driver.find_element(*by)
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: invalid argument: 'using' must be a string
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+
+2018-10-20 17:16:59,809 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-10-20 17:17:00,636 - [INFO] - 基本操作 - input_username - admin
+2018-10-20 17:17:00,934 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-20 17:17:01,217 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-20 17:17:03,254 - [INFO] - 基本操作 - assert_login - 登录成功
+2018-10-20 17:17:04,878 - [ERROR] - 基本操作 - find_element - 定位(('xpath', "//ul[@id='menuListId']//span[text()='资源实例']/../.."),)时发生异常：Message: invalid argument: 'using' must be a string
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 91, in find_element
+    EC.visibility_of_element_located(loc))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 71, in until
+    value = method(self._driver)
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 128, in __call__
+    return _element_if_visible(_find_element(driver, self.locator))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 415, in _find_element
+    raise e
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 411, in _find_element
+    return driver.find_element(*by)
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: invalid argument: 'using' must be a string
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+
+2018-10-20 17:20:59,693 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-10-20 17:21:00,608 - [INFO] - 基本操作 - input_username - admin
+2018-10-20 17:21:00,882 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-20 17:21:01,172 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-20 17:21:03,099 - [INFO] - 基本操作 - assert_login - 登录成功
+2018-10-20 17:21:04,822 - [ERROR] - 基本操作 - find_element - 定位(('xpath', "//ul[@class='breadcrumb']//li[@class='active']"),)时发生异常：Message: invalid argument: 'using' must be a string
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 91, in find_element
+    EC.visibility_of_element_located(loc))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 71, in until
+    value = method(self._driver)
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 128, in __call__
+    return _element_if_visible(_find_element(driver, self.locator))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 415, in _find_element
+    raise e
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 411, in _find_element
+    return driver.find_element(*by)
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: invalid argument: 'using' must be a string
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+
+2018-10-20 17:23:44,546 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-10-20 17:23:45,384 - [INFO] - 基本操作 - input_username - admin
+2018-10-20 17:23:45,657 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-20 17:23:45,932 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-20 17:23:47,981 - [INFO] - 基本操作 - assert_login - 登录成功
+2018-10-20 17:23:49,930 - [INFO] - 基本操作 - enter_menu - 进入资源实例菜单
+2018-10-20 17:23:50,456 - [INFO] - 云主机创建 - enter_vm_create - 进入云主机创建页面
+2018-10-20 17:23:50,458 - [INFO] - 云主机创建 - input_item - 云主机名称：python01
+2018-10-20 17:23:51,364 - [INFO] - 云主机创建 - input_item - VM Name：python01
+2018-10-20 17:23:51,773 - [INFO] - 云主机创建 - input_item - Hostname：python01
+2018-10-20 17:23:52,267 - [INFO] - 云主机创建 - input_item - 归属服务：云主机服务
+2018-10-20 17:23:52,269 - [INFO] - 云主机创建 - search_for - 归属服务：云主机服务
+2018-10-20 17:23:53,640 - [INFO] - 云主机创建 - search_for - 点击搜索按钮
+2018-10-20 17:23:54,099 - [INFO] - 云主机创建 - search_for - 勾选第一个搜索结果
+2018-10-20 17:23:55,559 - [INFO] - 云主机创建 - input_item - 归属VDC：wcgvdc
+2018-10-20 17:23:55,561 - [INFO] - 云主机创建 - search_for - 归属VDC：wcgvdc
+2018-10-20 17:24:05,839 - [ERROR] - 基本操作 - find_element - 定位('xpath', "//button[@data-bind='click: addVdc']")时发生异常：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 91, in find_element
+    EC.visibility_of_element_located(loc))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-10-21 15:39:45,310 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-10-21 15:39:46,313 - [INFO] - 基本操作 - input_username - admin
+2018-10-21 15:39:46,582 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-21 15:39:46,903 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-21 15:39:49,080 - [INFO] - 基本操作 - assert_login - 登录成功
+2018-10-21 15:44:06,274 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-10-21 15:44:07,129 - [INFO] - 基本操作 - input_username - admin
+2018-10-21 15:44:07,409 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-21 15:44:07,730 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-21 15:44:10,041 - [INFO] - 基本操作 - assert_login - 登录成功
+2018-10-21 15:44:12,345 - [INFO] - 基本操作 - enter_menu - 进入资源实例菜单
+2018-10-21 15:44:13,587 - [INFO] - 云主机创建 - enter_vm_create - 进入云主机创建页面
+2018-10-21 15:44:13,589 - [INFO] - 云主机创建 - input_item - 云主机名称：python01
+2018-10-21 15:44:14,149 - [INFO] - 云主机创建 - input_item - VM Name：python01
+2018-10-21 15:44:14,607 - [INFO] - 云主机创建 - input_item - Hostname：python01
+2018-10-21 15:44:15,050 - [INFO] - 云主机创建 - input_item - 归属服务：云主机服务
+2018-10-21 15:44:15,053 - [INFO] - 云主机创建 - search_for - 归属服务：云主机服务
+2018-10-21 15:44:18,504 - [INFO] - 云主机创建 - input_item - 归属VDC：wcgvdc
+2018-10-21 15:44:18,506 - [INFO] - 云主机创建 - search_for - 归属VDC：wcgvdc
+2018-10-21 15:44:28,682 - [ERROR] - 基本操作 - find_element - 定位('xpath', "//button[@data-bind='click: addVdc']")时发生异常：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 124, in find_element
+    EC.visibility_of_element_located(loc))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-10-21 16:05:26,907 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-10-21 16:05:28,031 - [INFO] - 基本操作 - input_username - admin
+2018-10-21 16:05:28,411 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-21 16:05:28,774 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-21 16:05:31,470 - [INFO] - 基本操作 - assert_login - 登录成功
+2018-10-21 16:05:34,752 - [INFO] - 基本操作 - enter_menu - 进入资源实例菜单
+2018-10-21 16:05:35,941 - [INFO] - 云主机创建 - enter_vm_create - 进入云主机创建页面
+2018-10-21 16:05:35,943 - [INFO] - 云主机创建 - input_item - 云主机名称：python01
+2018-10-21 16:05:36,607 - [INFO] - 云主机创建 - input_item - VM Name：python01
+2018-10-21 16:05:37,189 - [INFO] - 云主机创建 - input_item - Hostname：python01
+2018-10-21 16:05:37,715 - [INFO] - 云主机创建 - input_item - 归属服务：云主机服务
+2018-10-21 16:05:37,717 - [INFO] - 云主机创建 - search_for - 归属服务：云主机服务
+2018-10-21 16:05:41,250 - [INFO] - 云主机创建 - input_item - 归属VDC：wcgvdc
+2018-10-21 16:05:41,252 - [INFO] - 云主机创建 - search_for - 归属VDC：wcgvdc
+2018-10-21 16:05:51,463 - [ERROR] - 基本操作 - find_element - 定位('xpath', "//button[@data-bind='click: addVdc']")时发生异常：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 124, in find_element
+    EC.visibility_of_element_located(loc))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-10-21 17:47:07,724 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-10-21 17:47:08,859 - [INFO] - 基本操作 - input_username - admin
+2018-10-21 17:47:09,184 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-21 17:47:09,528 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-21 17:48:00,947 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-10-21 17:48:01,860 - [INFO] - 基本操作 - input_username - admin
+2018-10-21 17:48:02,130 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-21 17:48:02,416 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-21 18:18:40,422 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-10-21 18:21:45,051 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-10-21 18:21:46,516 - [INFO] - 基本操作 - input_username - admin
+2018-10-21 18:21:46,890 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-21 18:21:47,286 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-21 18:23:19,123 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-10-21 18:23:19,996 - [INFO] - 基本操作 - input_username - admin
+2018-10-21 18:23:20,274 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-21 18:23:20,562 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-21 18:24:18,714 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-10-21 18:24:19,608 - [INFO] - 基本操作 - input_username - admin
+2018-10-21 18:24:19,894 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-21 18:24:20,175 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-21 18:30:17,217 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-10-21 18:30:18,404 - [INFO] - 基本操作 - input_username - admin
+2018-10-21 18:30:18,683 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-21 18:30:18,977 - [INFO] - 基本操作 - click_submit - 点击登录按钮

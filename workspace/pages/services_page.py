@@ -90,8 +90,6 @@ class ServicesPage(BasePage):
         '''
         self.charging_name_loc = (By.XPATH, f"//td[@title='{charge_name}']/..//span")    #  计费规则名称
 
-
-
     def _update_loc(self, az_name):
         '''
         私有方法，用于刷新可用分区相关的页面元素定位
@@ -108,19 +106,14 @@ class ServicesPage(BasePage):
         self.ostype_search_loc = (By.XPATH, f"{path}span[text()='操作系统类型']/../input")       #  添加应用-操作系统类型搜索框
         self.diskservice_loc = (By.XPATH, f"//td[text()='{az_name}']/..//select")               #  磁盘服务下拉框
 
-    def enter_menu(self):
-        '''
-        进入服务管理菜单
-        '''
-        self.click_element(*self.serviceMenu_loc)
-        self.log.info('进入服务管理菜单')
 
     def enter_create(self):
         '''
         进入创建服务页面
         '''
-        self.log.info('点击创建按钮')
+        self.enter_menu('服务管理')
         self.click_element(*self.serviceCreate_loc)  # 点击创建按钮
+        self.log.info('点击创建按钮')
 
 
     def save_and_release(self):

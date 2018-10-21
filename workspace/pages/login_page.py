@@ -84,10 +84,10 @@ class LoginPage(BasePage):
             user = csc_config.USER_ADMIN
         login = cls(driver, url)    # 初始化
         login.open()
-        login.input_username(user['username'])
-        login.input_password(user['password'])
-        if user['usertype'] != 'local':
+        login.input_username(user['账号'])
+        login.input_password(user['密码'])
+        if user['类型'] != '本地':
             login.switch_usertype()
         login.click_submit()
-        cls.assert_login(login, user['username'])
+        cls.assert_login(login, user['昵称'])
         return login.driver

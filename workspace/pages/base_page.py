@@ -5,25 +5,36 @@
 @Project:基础类BasePage，封装所有页面都公用的方法，定义open函数，重定义定位、点击、输入等函数。
 WebDriverWait提供了显式等待方式。
 '''
-from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support import expected_conditions as EC
-# from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import Select
-from workspace.config.logging_sys import Logger
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.common.exceptions import NoSuchElementException
 from workspace.config import csc_config
+from workspace.config.logging_sys import Logger
 
 
 class BasePage():
     """
-    BasePage封装所有页面都公用的方法，例如driver, url ,FindElement等
+    BasePage封装所有页面都公用的方法
     初始化url为配置文件中的url
     """
+    menu_tree = csc_config.MEMU_TREE        #  菜单目录，在配置文件中配置
+    breadcrumb_loc = (By.XPATH, "//ul[@class='breadcrumb']//li[@class='active']")   #  面包屑地址
+    local_org_loc = (By.XPATH, "//span[@class='node_name' and text()='本地组织']")   #  用户选择，本地组织节点
+    ad_org_loc = (By.XPATH, "//span[@class='node_name' and text()='AD域组织']")     #  用户选择，AD域组织节点
+    userid_search_loc = (By.XPATH, "//span[text()='账号']/../input")                #  用户选择，账号搜索框
+    username_search_loc = (By.XPATH, "//span[text()='昵称']/../input")              #  用户选择，昵称搜索框
+    search_button_loc = (By.XPATH, "//button[text()='搜索']")                       #  搜索按钮
+    add_user_loc = (By.XPATH, "//button[@data-bind='click: saveUsers']")            #  用户选择，确认按钮
+
 
     def __init__(self, selenium_driver, base_url=csc_config.URL):
         self.driver = selenium_driver
         self.base_url = base_url
         self.log = Logger('基本操作').getlog()
+
 
     def on_page(self, pagetitle):
         '''
@@ -37,6 +48,7 @@ class BasePage():
         '''
         return pagetitle in self.driver.title
 
+
     def _open(self, url):
         '''
         打开页面，并校验页面链接是否加载正确
@@ -45,12 +57,54 @@ class BasePage():
         self.driver.get(url)
         # assert self.on_page(pagetitle), "打开开页面失败 %s" %url
 
+
     def open(self):
         '''
         定义open方法，调用_open()进行打开链接
         '''
         self.log.info(f'打开页面：{str(self.base_url)}')
         self._open(self.base_url)
+
+
+    def enter_menu(self, menu_name):
+        '''
+        进入指定的菜单
+
+        :Args:
+         - menu_name:菜单名称，可以为子菜单名称
+        '''
+        if menu_name in self.menu_tree:
+            self.click_element(By.XPATH, f"//ul[@id='menuListId']//span[text()='{menu_name}']")
+        else:
+            for menu in self.menu_tree:
+                if menu_name in self.menu_tree[menu]:
+                    self.click_element(By.XPATH, f"//ul[@id='menuListId']//span[text()='{menu}']")
+                    self.click_element(By.XPATH, f"//ul[@id='menuListId']//span[text()='{menu_name}']")
+        value = self.get_attribute('class', By.XPATH, f"//ul[@id='menuListId']//span[text()='{menu_name}']/../..")
+        assert value == 'highlight'  #  判断菜单是否高亮
+        if menu_name not in ('首页', '用户管理'):
+            self.assert_by_text(menu_name, *self.breadcrumb_loc)   #  判断面包屑地址(首页和用户管理没有面包屑地址)
+        self.log.info(f'进入{menu_name}菜单')
+
+    def select_user(self, usertype='本地', userid='admin'):
+        '''
+        通过用户名或者用户昵称选择用户
+
+        :Args:
+         - usertype:账号类型，'本地'或者'AD'
+         - userid:用户id
+         - username:用户昵称
+        '''
+        if usertype == '本地':
+            self.click_element(*self.local_org_loc)
+        else:
+            self.click_element(*self.ad_org_loc)
+        self.set_value(userid, *self.userid_search_loc)
+        self.click_element(*self.search_button_loc)
+        self.click_element(By.XPATH, f"//td[@title='{userid}']/..//span")  #  在搜索结果中进行勾选
+        self.click_element(*self.add_user_loc)
+
+
 
     def find_element(self, *loc):
         '''
@@ -78,6 +132,7 @@ class BasePage():
             # self.log.info(f'查找元素:{loc} 成功！')
         return self.driver.find_element(*loc)
 
+
     def click_element(self, *loc):
         '''
         重写元素点击方法，增加是否可点击的判断
@@ -98,17 +153,6 @@ class BasePage():
             # time.sleep(2)  # 点击元素后睡眠2秒等待界面加载
 
 
-    def switch_frame(self, *loc):
-        '''
-        重写switch_to_frame方法
-
-        :Args:
-         - *loc:定位因子，由定位方法和路径组成，因为是元组所以要加星号
-
-        '''
-        self.log.info(f'切换到ifram框架：{loc}')
-        return self.driver.switch_to_frame(*loc)
-
     def assert_by_text(self, text, *loc):
         '''
         判断获取的元素文本是否和预期一致
@@ -120,6 +164,7 @@ class BasePage():
         '''
         assert self.find_element(*loc).text == text
 
+
     def select_by_text(self, text, *loc):
         '''
         通过文本对下拉框进行选择
@@ -130,11 +175,15 @@ class BasePage():
 
         '''
         select = Select(self.find_element(*loc))
-        select.select_by_visible_text(text)
+        try:
+            select.select_by_visible_text(text)
+        except NoSuchElementException as errmsg:
+            self.log.exception(f'下拉列表中没有{text}选项：{errmsg}')
+
 
     def set_value(self, value, *loc, clear=True):
         '''
-        通过文本对下拉框进行选择
+        对文本框进行输入
 
         :Args:
          - value:用于输入的文本
@@ -180,6 +229,9 @@ class BasePage():
          - attribute:元素的某个属性
          - *loc:定位因子
 
+        :Returns:
+         - 返回元素的属性
+
         '''
         return self.find_element(*loc).get_attribute(attribute)
 
@@ -194,8 +246,8 @@ class BasePage():
          - src:js脚本，字符串格式
 
         '''
-        self.log.info(f'执行js脚本：{src}')
         self.driver.execute_script(src)
+        self.log.info(f'执行js脚本：{src}')
 
     def scroll(self, *loc):
         '''

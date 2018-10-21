@@ -29,7 +29,6 @@ class TestService():
         '''
         # 使用已登录的浏览器生成一个已登录的云主机创建页面的对象
         service_page = ServicesPage(self.login_driver)
-        service_page.enter_menu()
         service_page.enter_create()
         az_list = [
             {

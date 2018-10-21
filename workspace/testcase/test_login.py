@@ -41,7 +41,7 @@ class TestLoginCSC():
         login_page.click_submit()
 
         if login_page.on_page('WinCloud-CSC'):  # 判断登陆情况和tip信息
-            assert login_page.show_userid(asserts)
+            assert login_page.assert_login(asserts)
         else:
             assert login_page.show_msg() == asserts
 
