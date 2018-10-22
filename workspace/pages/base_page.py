@@ -5,6 +5,7 @@
 @Project:基础类BasePage，封装所有页面都公用的方法，定义open函数，重定义定位、点击、输入等函数。
 WebDriverWait提供了显式等待方式。
 '''
+import requests
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support import expected_conditions as EC
@@ -20,7 +21,6 @@ class BasePage():
     BasePage封装所有页面都公用的方法
     初始化url为配置文件中的url
     """
-    menu_tree = csc_config.MEMU_TREE        #  菜单目录，在配置文件中配置
     breadcrumb_loc = (By.XPATH, "//ul[@class='breadcrumb']//li[@class='active']")   #  面包屑地址
     local_org_loc = (By.XPATH, "//span[@class='node_name' and text()='本地组织']")   #  用户选择，本地组织节点
     ad_org_loc = (By.XPATH, "//span[@class='node_name' and text()='AD域组织']")     #  用户选择，AD域组织节点
@@ -66,25 +66,33 @@ class BasePage():
         self._open(self.base_url)
 
 
-    def enter_menu(self, menu_name):
+    def enter_menu(self, menu_name, role='系统管理员'):
         '''
         进入指定的菜单
 
         :Args:
          - menu_name:菜单名称，可以为子菜单名称
+         - role:角色，用于确认具体菜单内容，默认为系统管理员
         '''
-        if menu_name in self.menu_tree:
+        found = False
+        menu_tree = csc_config.MEMU_TREE[role]  #  从配置文件读取指定角色的菜单
+        if menu_name in menu_tree:  #  判断一级菜单
             self.click_element(By.XPATH, f"//ul[@id='menuListId']//span[text()='{menu_name}']")
+            found = True
         else:
-            for menu in self.menu_tree:
-                if menu_name in self.menu_tree[menu]:
+            for menu in menu_tree:
+                if menu_name in menu_tree[menu]:   #  判断二级菜单
                     self.click_element(By.XPATH, f"//ul[@id='menuListId']//span[text()='{menu}']")
                     self.click_element(By.XPATH, f"//ul[@id='menuListId']//span[text()='{menu_name}']")
-        value = self.get_attribute('class', By.XPATH, f"//ul[@id='menuListId']//span[text()='{menu_name}']/../..")
-        assert value == 'highlight'  #  判断菜单是否高亮
-        if menu_name not in ('首页', '用户管理'):
-            self.assert_by_text(menu_name, *self.breadcrumb_loc)   #  判断面包屑地址(首页和用户管理没有面包屑地址)
-        self.log.info(f'进入{menu_name}菜单')
+                    found = True
+        if found:   #  判断输入的菜单是否在配置中
+            value = self.get_attribute('class', By.XPATH, f"//ul[@id='menuListId']//span[text()='{menu_name}']/../..")
+            assert value == 'highlight'  #  判断菜单是否高亮
+            if menu_name not in ('首页', '用户管理'):
+                self.assert_by_text(menu_name, *self.breadcrumb_loc)   #  判断面包屑地址(首页和用户管理没有面包屑地址)
+            self.log.info(f'进入{menu_name}菜单')
+        else:
+            self.log.error(f"菜单名称{menu_name}不正确")
 
     def select_user(self, usertype='本地', userid='admin'):
         '''
@@ -234,6 +242,21 @@ class BasePage():
 
         '''
         return self.find_element(*loc).get_attribute(attribute)
+
+
+    def get_role(self):
+        '''
+        通过接口获取当前用户登陆的角色
+
+        :Returns:
+         - response.json()['roleName']，接口返回数据中的rolename字段
+        '''
+        cookie_items = self.driver.get_cookies()
+        cookies = {}   # 定义一个空的字典，存放cookies内容
+        for cookie_item in cookie_items:
+            cookies[cookie_item['name']] = cookie_item['value']
+        response = requests.get(url=csc_config.GET_USER_ROLE, cookies=cookies, verify=False)
+        return response.json()['roleName']
 
 
     #################################   js脚本  #########################################

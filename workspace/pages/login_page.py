@@ -67,10 +67,11 @@ class LoginPage(BasePage):
 
     def assert_login(self, username):
         '''
-        登录成功页面判断用户id是否相同
+        登录成功页面判断用户id是否相同，登录成功则保存cookie
         '''
         self.assert_by_text(username, *self.userid_loc)
         self.log.info('登录成功')
+        self.save_cookie()
 
 
     @classmethod
