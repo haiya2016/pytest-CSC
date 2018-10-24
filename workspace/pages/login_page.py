@@ -71,7 +71,6 @@ class LoginPage(BasePage):
         '''
         self.assert_by_text(username, *self.userid_loc)
         self.log.info('登录成功')
-        self.save_cookie()
 
 
     @classmethod

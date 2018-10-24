@@ -2638,3 +2638,30 @@ selenium.common.exceptions.TimeoutException: Message:
 2018-10-22 10:28:46,738 - [INFO] - 基本操作 - input_username - admin
 2018-10-22 10:28:47,002 - [INFO] - 基本操作 - input_password - 1234567890
 2018-10-22 10:28:47,298 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-23 18:00:17,048 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-10-23 18:00:17,885 - [INFO] - 基本操作 - input_username - admin
+2018-10-23 18:00:18,147 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-23 18:00:18,422 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-23 18:00:20,504 - [INFO] - 基本操作 - assert_login - 登录成功
+2018-10-23 18:02:04,255 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-10-23 18:02:05,159 - [INFO] - 基本操作 - input_username - admin
+2018-10-23 18:02:05,419 - [INFO] - 基本操作 - input_password - 1234567890
+2018-10-23 18:02:05,688 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-10-23 18:02:07,905 - [INFO] - 基本操作 - assert_login - 登录成功
+2018-10-23 18:02:10,004 - [INFO] - 基本操作 - enter_menu - 进入资源实例菜单
+2018-10-23 18:02:11,439 - [INFO] - 云主机创建 - enter_vm_create - 进入云主机创建页面
+2018-10-23 18:02:11,441 - [INFO] - 云主机创建 - input_item - 云主机名称：python01
+2018-10-23 18:02:11,983 - [INFO] - 云主机创建 - input_item - VM Name：python01
+2018-10-23 18:02:12,366 - [INFO] - 云主机创建 - input_item - Hostname：python01
+2018-10-23 18:02:12,778 - [INFO] - 云主机创建 - input_item - 归属服务：云主机服务
+2018-10-23 18:02:12,779 - [INFO] - 云主机创建 - search_for - 归属服务：云主机服务
+2018-10-23 18:02:15,808 - [INFO] - 云主机创建 - input_item - 归属VDC：wcgvdc
+2018-10-23 18:02:15,810 - [INFO] - 云主机创建 - search_for - 归属VDC：wcgvdc
+2018-10-23 18:02:25,996 - [ERROR] - 基本操作 - find_element - 定位('xpath', "//button[@data-bind='click: addVdc']")时发生异常：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 130, in find_element
+    EC.visibility_of_element_located(loc))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+

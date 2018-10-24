@@ -5,6 +5,7 @@
 @Project:基础类BasePage，封装所有页面都公用的方法，定义open函数，重定义定位、点击、输入等函数。
 WebDriverWait提供了显式等待方式。
 '''
+import time
 import requests
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
@@ -135,10 +136,19 @@ class BasePage():
             # self.log.error(f'定位{loc}超时：{errmsg}', exc_info=True)
         except Exception as errmsg:
             self.log.exception(f'定位{loc}时发生异常：{errmsg}')
+            self.save_png()
             raise
         # else:
             # self.log.info(f'查找元素:{loc} 成功！')
         return self.driver.find_element(*loc)
+
+
+    def save_png(self):
+        '''
+        保存截图
+        '''
+        ltime = time.strftime("%Y-%m-%d %H-%M-%S", time.localtime())
+        self.driver.save_screenshot(f'.\\workspace\\img\\{ltime}.png')
 
 
     def click_element(self, *loc):
