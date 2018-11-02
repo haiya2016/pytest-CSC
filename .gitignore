@@ -32,6 +32,7 @@
 *.err
 *.pyc
 *.png
+*.txt
 # OS generated files #
 .DS_Store
 .DS_Store? 
@@ -43,3 +44,4 @@ ehthumbs.db
 Thumbs.db
 workspace/testcase/test.py
 workspace/report/test.log
+

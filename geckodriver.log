@@ -1,0 +1,136 @@
+1541121314739	geckodriver	INFO	geckodriver 0.19.1
+1541121314772	geckodriver	INFO	Listening on 127.0.0.1:42096
+1541121318102	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\xin\\AppData\\Local\\Temp\\rust_mozprofile.tBeY2VC2f2us"
+1541121326163	Marionette	INFO	Listening on port 42122
+1541121326443	Marionette	WARN	TLS certificate errors will be ignored for this session
+1541121326510	Marionette	DEBUG	[6442450945] Frame script loaded
+1541121326515	Marionette	DEBUG	[6442450945] Frame script registered
+1541121326577	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1541121327498	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1541121328161	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://mail.163.com/
+1541121328281	Marionette	DEBUG	[6442450945] Received DOM event pageshow for https://mail.163.com/
+[Parent 43908, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 43908, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 43320, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 43320, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_c1541121522034	Marionette	INFO	Stopped listening on port 42122
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1541121538754	geckodriver	INFO	geckodriver 0.19.1
+1541121538774	geckodriver	INFO	Listening on 127.0.0.1:42671
+1541121541386	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\xin\\AppData\\Local\\Temp\\rust_mozprofile.X0SAUQGMe4QV"
+1541121546388	Marionette	INFO	Listening on port 42688
+1541121546628	Marionette	WARN	TLS certificate errors will be ignored for this session
+1541121546821	Marionette	DEBUG	[6442450945] Frame script loaded
+1541121546834	Marionette	DEBUG	[6442450945] Frame script registered
+1541121546916	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1541121547477	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1541121548090	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://mail.163.com/
+1541121548210	Marionette	DEBUG	[6442450945] Received DOM event pageshow for https://mail.163.com/
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+[Child 42360, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[[Child 43976, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 439761541121747802	Marionette	INFO	Stopped listening on port 42688
+[GPU 43164, Chrome_ChildThread] WARNING: pipe erro
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1541121796709	geckodriver	INFO	geckodriver 0.19.1
+1541121796750	geckodriver	INFO	Listening on 127.0.0.1:43394
+1541121800876	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\xin\\AppData\\Local\\Temp\\rust_mozprofile.f3hVWCIICfC9"
+1541121806941	Marionette	INFO	Listening on port 43416
+1541121807131	Marionette	WARN	TLS certificate errors will be ignored for this session
+1541121807208	Marionette	DEBUG	[6442450945] Frame script loaded
+1541121807217	Marionette	DEBUG	[6442450945] Frame script registered
+1541121807284	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1541121807883	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1541121808628	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://mail.163.com/
+1541121809493	Marionette	DEBUG	[6442450945] Received DOM event pageshow for https://mail.163.com/
+JavaScript error: jar:file:///C:/Program%20Files/Mozilla%20Firefox/omni.ja!/components/nsUrlClassifierListManager.js, line 589: TypeError: this.tablesData[table] is undefined
+[Parent 41424, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 41424, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 44284, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chro[Parent 41424, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 42556, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 42556, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/sr1541121837245	Marionette	INFO	Stopped listening on port 43416
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1541121852764	geckodriver	INFO	geckodriver 0.19.1
+1541121852793	geckodriver	INFO	Listening on 127.0.0.1:43580
+1541121855329	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\xin\\AppData\\Local\\Temp\\rust_mozprofile.afH3PNBKcrCz"
+1541121862283	Marionette	INFO	Listening on port 43595
+1541121862871	Marionette	WARN	TLS certificate errors will be ignored for this session
+1541121862977	Marionette	DEBUG	[6442450945] Frame script loaded
+1541121862984	Marionette	DEBUG	[6442450945] Frame script registered
+1541121863059	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1541121863578	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1541121864371	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://mail.163.com/
+1541121864441	Marionette	DEBUG	[6442450945] Received DOM event pageshow for https://mail.163.com/
+[Parent 44792, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 44792, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 44792, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 43592, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 43592, Chrome_ChildTh1541121931647	Marionette	INFO	Stopped listening on port 43595
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1541121945649	geckodriver	INFO	geckodriver 0.19.1
+1541121945673	geckodriver	INFO	Listening on 127.0.0.1:43881
+1541121949850	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\xin\\AppData\\Local\\Temp\\rust_mozprofile.HylXoksN1KsT"
+1541121955820	Marionette	INFO	Listening on port 43907
+1541121955904	Marionette	WARN	TLS certificate errors will be ignored for this session
+1541121956020	Marionette	DEBUG	[6442450945] Frame script loaded
+1541121956062	Marionette	DEBUG	[6442450945] Frame script registered
+1541121956245	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1541121956794	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1541121957449	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://mail.163.com/
+1541121957622	Marionette	DEBUG	[6442450945] Received DOM event pageshow for https://mail.163.com/
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+[Parent 43516, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 38764, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 38764, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 43516, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 44056, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 44056, C[Parent 43516, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1541122009368	Marionette	INFO	Stopped listening on port 43907
+[GPU 43656, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+

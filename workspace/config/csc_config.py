@@ -39,3 +39,5 @@ USER_ADMIN = {
 }
 
 LOGIN_COOKIE_PATH = ".\\workspace\\data\\cookie.txt"  # cookie文件保存位置
+
+
