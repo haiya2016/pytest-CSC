@@ -3,7 +3,7 @@
 """
 import pymysql
 
-IP = '192.168.219.227'
+IP = '192.168.208.110'
 
 URL = f"https://{IP}:8099/csc/index.html"
 

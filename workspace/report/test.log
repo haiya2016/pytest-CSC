@@ -2665,3 +2665,230 @@ Traceback (most recent call last):
     raise TimeoutException(message, screen, stacktrace)
 selenium.common.exceptions.TimeoutException: Message: 
 
+2018-11-08 11:10:36,841 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-11-08 11:10:38,291 - [INFO] - 基本操作 - input_username - 
+2018-11-08 11:10:38,556 - [INFO] - 基本操作 - input_password - password
+2018-11-08 11:10:38,899 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-11-08 11:10:39,360 - [INFO] - 基本操作 - show_msg - 提示信息：账号不能为空！
+2018-11-08 11:10:46,439 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-11-08 11:10:47,580 - [INFO] - 基本操作 - input_username - admin
+2018-11-08 11:10:47,876 - [INFO] - 基本操作 - input_password - 
+2018-11-08 11:10:48,143 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-11-08 11:10:48,603 - [INFO] - 基本操作 - show_msg - 提示信息：密码不能为空！
+2018-11-08 11:10:55,931 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-11-08 11:10:56,903 - [INFO] - 基本操作 - input_username - admin
+2018-11-08 11:10:57,177 - [INFO] - 基本操作 - input_password - 1234567890
+2018-11-08 11:10:57,472 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-11-08 11:11:09,076 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-11-08 11:11:10,318 - [INFO] - 基本操作 - input_username - wjx
+2018-11-08 11:11:10,580 - [INFO] - 基本操作 - input_password - Admin123
+2018-11-08 11:11:10,841 - [INFO] - 基本操作 - switch_usertype - 切换为AD用户登陆
+2018-11-08 11:11:11,069 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-11-08 11:11:11,821 - [INFO] - 基本操作 - show_msg - 提示信息：wjx：用户未授权！
+2018-11-08 11:46:48,447 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-11-08 11:46:49,738 - [INFO] - 基本操作 - input_username - 
+2018-11-08 11:46:49,996 - [INFO] - 基本操作 - input_password - password
+2018-11-08 11:46:50,343 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-11-08 11:46:50,788 - [INFO] - 基本操作 - show_msg - 提示信息：账号不能为空！
+2018-11-08 11:46:58,237 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-11-08 11:46:59,611 - [INFO] - 基本操作 - input_username - admin
+2018-11-08 11:46:59,926 - [INFO] - 基本操作 - input_password - 
+2018-11-08 11:47:00,225 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-11-08 11:47:00,687 - [INFO] - 基本操作 - show_msg - 提示信息：密码不能为空！
+2018-11-08 11:47:08,133 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-11-08 11:47:09,296 - [INFO] - 基本操作 - input_username - admin
+2018-11-08 11:47:09,572 - [INFO] - 基本操作 - input_password - 1234567890
+2018-11-08 11:47:09,889 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-11-08 11:47:22,091 - [ERROR] - 基本操作 - find_element - 定位('xpath', "//td[text()='昵称']/..//td[2]")时发生异常：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 132, in find_element
+    EC.visibility_of_element_located(loc))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-11-08 11:47:31,330 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-11-08 11:47:32,477 - [INFO] - 基本操作 - input_username - wjx
+2018-11-08 11:47:32,792 - [INFO] - 基本操作 - input_password - Admin123
+2018-11-08 11:47:33,114 - [INFO] - 基本操作 - switch_usertype - 切换为AD用户登陆
+2018-11-08 11:47:33,381 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-11-08 11:47:34,221 - [INFO] - 基本操作 - show_msg - 提示信息：wjx：用户未授权！
+2018-11-08 11:59:43,545 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.110:8099/csc/index.html
+2018-11-08 11:59:45,060 - [INFO] - 基本操作 - input_username - admin
+2018-11-08 11:59:45,341 - [INFO] - 基本操作 - input_password - 1234567890
+2018-11-08 11:59:45,650 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-11-08 12:00:00,946 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.110:8099/csc/index.html
+2018-11-08 12:00:02,598 - [INFO] - 基本操作 - input_username - wjx
+2018-11-08 12:00:02,948 - [INFO] - 基本操作 - input_password - Admin123
+2018-11-08 12:00:03,352 - [INFO] - 基本操作 - switch_usertype - 切换为AD用户登陆
+2018-11-08 12:00:03,658 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-11-08 12:00:09,424 - [ERROR] - 基本操作 - find_element - 定位('weijiaxin有一个超级长的名字',)时发生异常：Message: invalid argument: 'value' must be a string
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 132, in find_element
+    EC.visibility_of_element_located(loc))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 71, in until
+    value = method(self._driver)
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 128, in __call__
+    return _element_if_visible(_find_element(driver, self.locator))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 415, in _find_element
+    raise e
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 411, in _find_element
+    return driver.find_element(*by)
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: invalid argument: 'value' must be a string
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+
+2018-11-08 12:23:47,048 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.110:8099/csc/index.html
+2018-11-08 12:23:48,454 - [INFO] - 基本操作 - input_username - admin
+2018-11-08 12:23:58,997 - [ERROR] - 基本操作 - find_element - 定位('name', 'username')时发生异常：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 132, in find_element
+    EC.visibility_of_element_located(loc))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-11-08 12:24:07,806 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.110:8099/csc/index.html
+2018-11-08 12:24:09,180 - [INFO] - 基本操作 - input_username - wjx
+2018-11-08 12:24:19,723 - [ERROR] - 基本操作 - find_element - 定位('name', 'username')时发生异常：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 132, in find_element
+    EC.visibility_of_element_located(loc))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-11-08 12:41:54,857 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.110:8099/csc/index.html
+2018-11-08 12:41:56,251 - [INFO] - 基本操作 - input_username - admin
+2018-11-08 12:42:06,787 - [ERROR] - 基本操作 - find_element - 定位('name', 'username')时发生异常：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 132, in find_element
+    EC.visibility_of_element_located(loc))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-11-08 12:42:15,938 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.110:8099/csc/index.html
+2018-11-08 12:42:17,272 - [INFO] - 基本操作 - input_username - wjx
+2018-11-08 12:42:27,827 - [ERROR] - 基本操作 - find_element - 定位('name', 'username')时发生异常：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 132, in find_element
+    EC.visibility_of_element_located(loc))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-11-08 12:43:43,645 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.110:8099/csc/index.html
+2018-11-08 12:43:44,754 - [INFO] - 基本操作 - input_username - admin
+2018-11-08 12:43:45,153 - [INFO] - 基本操作 - input_password - 1234567890
+2018-11-08 12:43:45,502 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-11-08 12:43:49,984 - [INFO] - 基本操作 - assert_login - 登录成功
+2018-11-08 12:43:58,370 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.110:8099/csc/index.html
+2018-11-08 12:43:59,231 - [INFO] - 基本操作 - input_username - wjx
+2018-11-08 12:43:59,494 - [INFO] - 基本操作 - input_password - Admin123
+2018-11-08 12:43:59,733 - [INFO] - 基本操作 - switch_usertype - 切换为AD用户登陆
+2018-11-08 12:43:59,970 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-11-08 12:44:04,117 - [INFO] - 基本操作 - assert_login - 登录成功
+2018-11-08 13:42:34,513 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.110:8099/csc/index.html
+2018-11-08 13:42:36,157 - [INFO] - 基本操作 - input_username - admin
+2018-11-08 13:42:36,448 - [INFO] - 基本操作 - input_password - 1234567890
+2018-11-08 13:42:36,755 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-11-08 13:42:41,402 - [INFO] - 基本操作 - assert_login - 登录成功
+2018-11-08 13:42:50,054 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.110:8099/csc/index.html
+2018-11-08 13:42:51,142 - [INFO] - 基本操作 - input_username - wjx
+2018-11-08 13:42:51,472 - [INFO] - 基本操作 - input_password - Admin123
+2018-11-08 13:42:51,776 - [INFO] - 基本操作 - switch_usertype - 切换为AD用户登陆
+2018-11-08 13:42:52,038 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-11-08 13:42:56,179 - [INFO] - 基本操作 - assert_login - 登录成功
+2018-11-08 13:44:00,424 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.110:8099/csc/index.html
+2018-11-08 13:44:01,635 - [INFO] - 基本操作 - input_username - admin
+2018-11-08 13:44:01,928 - [INFO] - 基本操作 - input_password - 1234567890
+2018-11-08 13:44:02,216 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-11-08 13:44:06,315 - [INFO] - 基本操作 - assert_login - 登录成功
+2018-11-08 13:44:13,330 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.110:8099/csc/index.html
+2018-11-08 13:44:14,358 - [INFO] - 基本操作 - input_username - wjx
+2018-11-08 13:44:14,654 - [INFO] - 基本操作 - input_password - Admin123
+2018-11-08 13:44:14,950 - [INFO] - 基本操作 - switch_usertype - 切换为AD用户登陆
+2018-11-08 13:44:15,210 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-11-08 13:44:19,160 - [INFO] - 基本操作 - assert_login - 登录成功
+2018-11-08 17:00:08,107 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.110:8099/csc/index.html
+2018-11-08 17:00:09,535 - [INFO] - 基本操作 - input_username - admin
+2018-11-08 17:00:09,857 - [INFO] - 基本操作 - input_password - 1234567890
+2018-11-08 17:00:10,113 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-11-08 17:00:24,170 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.110:8099/csc/index.html
+2018-11-08 17:00:25,204 - [INFO] - 基本操作 - input_username - wjx
+2018-11-08 17:00:25,496 - [INFO] - 基本操作 - input_password - Admin123
+2018-11-08 17:00:25,853 - [INFO] - 基本操作 - switch_usertype - 切换为AD用户登陆
+2018-11-08 17:00:26,166 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-11-08 17:00:30,455 - [INFO] - 基本操作 - assert_login - 登录成功
+2018-11-08 17:03:18,849 - [INFO] - 登录 - input_username - admin
+2018-11-08 17:03:19,237 - [INFO] - 登录 - input_password - 1234567890
+2018-11-08 17:03:19,398 - [INFO] - 登录 - click_submit - 点击登录按钮
+2018-11-08 17:03:22,736 - [INFO] - 登录 - assert_login - 登录成功
+2018-11-08 17:03:31,077 - [INFO] - 登录 - input_username - wjx
+2018-11-08 17:03:31,222 - [INFO] - 登录 - input_password - Admin123
+2018-11-08 17:03:31,376 - [INFO] - 登录 - switch_usertype - 切换为AD用户登陆
+2018-11-08 17:03:31,504 - [INFO] - 登录 - click_submit - 点击登录按钮
+2018-11-08 17:03:34,537 - [INFO] - 登录 - assert_login - 登录成功
+2018-11-08 17:05:09,317 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.110:8099/csc/index.html
+2018-11-08 17:05:10,220 - [INFO] - 基本操作 - input_username - admin
+2018-11-08 17:05:10,486 - [INFO] - 基本操作 - input_password - 1234567890
+2018-11-08 17:05:10,747 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-11-08 17:05:14,878 - [INFO] - 基本操作 - assert_login - 登录成功
+2018-11-08 17:05:22,130 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.110:8099/csc/index.html
+2018-11-08 17:05:23,227 - [INFO] - 基本操作 - input_username - wjx
+2018-11-08 17:05:23,552 - [INFO] - 基本操作 - input_password - Admin123
+2018-11-08 17:05:23,848 - [INFO] - 基本操作 - switch_usertype - 切换为AD用户登陆
+2018-11-08 17:05:24,117 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-11-08 17:05:28,405 - [INFO] - 基本操作 - assert_login - 登录成功
+2018-11-08 17:06:21,292 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.110:8099/csc/index.html
+2018-11-08 17:06:22,260 - [INFO] - 基本操作 - input_username - admin
+2018-11-08 17:06:22,529 - [INFO] - 基本操作 - input_password - 1234567890
+2018-11-08 17:06:22,783 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-11-08 17:06:32,172 - [INFO] - 基本操作 - assert_login - 登录成功
+2018-11-08 17:06:39,686 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.110:8099/csc/index.html
+2018-11-08 17:06:40,786 - [INFO] - 基本操作 - input_username - wjx
+2018-11-08 17:06:41,054 - [INFO] - 基本操作 - input_password - Admin123
+2018-11-08 17:06:41,349 - [INFO] - 基本操作 - switch_usertype - 切换为AD用户登陆
+2018-11-08 17:06:41,618 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-11-08 17:06:54,556 - [ERROR] - 基本操作 - find_element - 定位('xpath', "//td[text()='昵称']/..//td[2]")时发生异常：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 132, in find_element
+    EC.visibility_of_element_located(loc))
+  File "E:\OneDrive\MYpy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-11-12 10:29:02,261 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.110:8099/csc/index.html
+2018-11-12 10:29:03,543 - [INFO] - 基本操作 - input_username - admin
+2018-11-12 10:29:03,864 - [INFO] - 基本操作 - input_password - 1234567890
+2018-11-12 10:29:04,110 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-11-12 10:29:16,722 - [ERROR] - 基本操作 - find_element - 定位('xpath', '//a[@data-bind="click:loadUserInfo"]/span')时发生异常：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 132, in find_element
+    EC.visibility_of_element_located(loc))
+  File "e:\onedrive\mypy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-11-12 10:29:25,810 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.110:8099/csc/index.html
+2018-11-12 10:29:26,596 - [INFO] - 基本操作 - input_username - wjx
+2018-11-12 10:29:26,809 - [INFO] - 基本操作 - input_password - Admin123
+2018-11-12 10:29:27,022 - [INFO] - 基本操作 - switch_usertype - 切换为AD用户登陆
+2018-11-12 10:29:27,213 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-11-12 10:29:39,443 - [ERROR] - 基本操作 - find_element - 定位('xpath', '//a[@data-bind="click:loadUserInfo"]/span')时发生异常：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 132, in find_element
+    EC.visibility_of_element_located(loc))
+  File "e:\onedrive\mypy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+

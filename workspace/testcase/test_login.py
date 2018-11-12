@@ -23,10 +23,10 @@ class TestLoginCSC():
 
 
     @pytest.mark.parametrize('casename, username, password, asserts',
-                             [("user_null", '', 'password', '账号不能为空！'),
-                              ("pwd_null", 'admin', '', '密码不能为空！'),
-                              ("local_login", 'admin', '1234567890', 'admin'),
-                              ("ad_login", 'wjx', 'Admin123', 'wjx')])
+                             [#("user_null", '', 'password', '账号不能为空！'),
+                              #("pwd_null", 'admin', '', '密码不能为空！'),
+                              ("local_login", 'admin', '1234567890', '系统管理员'),
+                              ("ad_login", 'wjx', 'Admin123', 'weijiaxin有一个超级长的名字')])
     def test_login_csc(self, casename, username, password, asserts):
         '''
             测试使用不同的账号密码组合进行登陆测试
@@ -41,7 +41,7 @@ class TestLoginCSC():
         login_page.click_submit()
 
         if login_page.on_page('WinCloud-CSC'):  # 判断登陆情况和tip信息
-            assert login_page.assert_login(asserts)
+            login_page.assert_login(asserts)
         else:
             assert login_page.show_msg() == asserts
 

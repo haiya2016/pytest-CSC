@@ -6,13 +6,15 @@
 WebDriverWait提供了显式等待方式。
 '''
 import time
+
 import requests
-from selenium.webdriver.common.by import By
+from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.wait import WebDriverWait
-from selenium.common.exceptions import NoSuchElementException
+
 from workspace.config import csc_config
 from workspace.config.logging_sys import Logger
 

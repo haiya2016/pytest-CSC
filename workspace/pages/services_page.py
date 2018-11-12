@@ -5,10 +5,12 @@
 @Project:服务管理页面
 '''
 import time
+
 from selenium.webdriver.common.by import By
+
+from workspace.config.logging_sys import Logger
 # from selenium.webdriver.common.keys import Keys
 from workspace.pages.base_page import BasePage
-from workspace.config.logging_sys import Logger
 
 
 class ServicesPage(BasePage):

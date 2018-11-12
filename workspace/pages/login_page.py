@@ -16,24 +16,25 @@ class LoginPage(BasePage):
     封装登录页面所需要使用的方法
     '''
     # 定位器，通过元素属性定位元素对象
-    username_loc = (By.NAME, 'username')
+    userid_loc = (By.NAME, 'username')
     password_loc = (By.NAME, 'password')
     submit_loc = (By.NAME, 'submit')
     usertype_local_loc = (By.XPATH, '//*[@id="userType"]/option[1]')
     usertype_ad_loc = (By.ID, 'adUser')
     msg_loc = (By.XPATH, '//*[@id="cas"]/div/div[1]/div/div[2]/div[2]/div[3]')
-    userid_loc = (By.XPATH, '//*[@id="header"]/div[2]/ul/li[5]/a/span')
+    userinfo_loc = (By.XPATH, '//a[@data-bind="click:loadUserInfo"]/span')
+    username_loc = (By.XPATH, "//td[text()='昵称']/..//td[2]")
 
     # 日志
     log = Logger('登录').getlog()
 
     # 操作
-    def input_username(self, username):
+    def input_username(self, userid):
         '''
-        输入用户名
+        输入用户id
         '''
-        self.log.info(f'{username}')
-        self.set_value(username, *self.username_loc)
+        self.log.info(f'{userid}')
+        self.set_value(userid, *self.userid_loc)
 
     def input_password(self, password):
         '''
@@ -63,13 +64,14 @@ class LoginPage(BasePage):
         '''
         self.log.info('切换为AD用户登陆')
         self.click_element(*self.usertype_ad_loc)
-        # self.find_element(*self.usertype_ad_loc).click()
 
     def assert_login(self, username):
         '''
         登录成功页面判断用户id是否相同，登录成功则保存cookie
         '''
-        self.assert_by_text(username, *self.userid_loc)
+        self.click_element(*self.userinfo_loc)
+        show_name = self.get_attribute('title', *self.username_loc)
+        assert username == show_name
         self.log.info('登录成功')
 
 

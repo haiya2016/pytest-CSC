@@ -8,7 +8,9 @@ def get_driver(driver_type='chrome'):
     返回一个浏览器，默认为chrome，否则为IE
     '''
     if driver_type == 'chrome':
-        driver = webdriver.Chrome()
+        option = webdriver.ChromeOptions()
+        option.add_argument('disable-infobars')   # 不显示Chrome正在受到自动软件的控制的信息
+        driver = webdriver.Chrome(options=option)
     else:
         driver = webdriver.Ie()
     driver.implicitly_wait(10)
