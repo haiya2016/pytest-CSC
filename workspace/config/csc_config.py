@@ -40,4 +40,11 @@ USER_ADMIN = {
 
 LOGIN_COOKIE_PATH = ".\\workspace\\data\\cookie.txt"  # cookie文件保存位置
 
+POWERVC = 'https://192.168.214.246/powervc/login.html'
+
+USER_PVC = {
+    '账号': 'root',
+    '密码': '1qaz@WSX3edc'
+}
+
 

@@ -54,4 +54,4 @@ class TestLoginCSC():
 
 
 if __name__ == '__main__':
-    pytest.main(['-q', './workspace/testcase/test_login.py'])
+    pytest.main(['./workspace/testcase/test_login.py'])

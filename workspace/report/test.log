@@ -2892,3 +2892,52 @@ Traceback (most recent call last):
     raise TimeoutException(message, screen, stacktrace)
 selenium.common.exceptions.TimeoutException: Message: 
 
+2018-11-12 10:33:36,858 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.110:8099/csc/index.html
+2018-11-12 10:33:38,108 - [INFO] - 基本操作 - input_username - admin
+2018-11-12 10:33:38,361 - [INFO] - 基本操作 - input_password - 1234567890
+2018-11-12 10:33:38,610 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-11-12 10:33:51,163 - [ERROR] - 基本操作 - find_element - 定位('xpath', '//a[@data-bind="click:loadUserInfo"]/span')时发生异常：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 132, in find_element
+    EC.visibility_of_element_located(loc))
+  File "e:\onedrive\mypy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-11-12 10:33:57,957 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.110:8099/csc/index.html
+2018-11-12 10:33:58,901 - [INFO] - 基本操作 - input_username - wjx
+2018-11-12 10:33:59,166 - [INFO] - 基本操作 - input_password - Admin123
+2018-11-12 10:33:59,404 - [INFO] - 基本操作 - switch_usertype - 切换为AD用户登陆
+2018-11-12 10:33:59,661 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-11-12 10:34:12,287 - [ERROR] - 基本操作 - find_element - 定位('xpath', '//a[@data-bind="click:loadUserInfo"]/span')时发生异常：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\autotest\workspace\pages\base_page.py", line 132, in find_element
+    EC.visibility_of_element_located(loc))
+  File "e:\onedrive\mypy\winhong\autotest\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-11-13 11:56:34,831 - [INFO] - 登录 - input_username - root
+2018-11-13 11:56:35,329 - [INFO] - 登录 - input_password - 1qaz@WSX3edc
+2018-11-13 11:56:35,555 - [INFO] - 登录 - click_submit - 点击登录按钮
+2018-11-13 11:56:38,549 - [INFO] - 登录 - assert_login - 登录成功
+2018-11-13 14:30:01,263 - [INFO] - powerVC - input_username - root
+2018-11-13 14:30:01,905 - [INFO] - powerVC - input_password - 1qaz@WSX3edc
+2018-11-13 14:30:02,269 - [INFO] - powerVC - click_submit - 点击登录按钮
+2018-11-13 14:30:04,996 - [INFO] - powerVC - assert_login - 登录成功
+2018-11-13 14:36:18,581 - [INFO] - powerVC - input_username - root
+2018-11-13 14:36:18,847 - [INFO] - powerVC - input_password - 1qaz@WSX3edc
+2018-11-13 14:36:19,083 - [INFO] - powerVC - click_submit - 点击登录按钮
+2018-11-13 14:36:23,236 - [INFO] - powerVC - assert_login - 登录成功
+2018-11-13 14:39:09,919 - [INFO] - powerVC - input_username - root
+2018-11-13 14:39:10,170 - [INFO] - powerVC - input_password - 1qaz@WSX3edc
+2018-11-13 14:39:10,382 - [INFO] - powerVC - click_submit - 点击登录按钮
+2018-11-13 14:39:13,036 - [INFO] - powerVC - assert_login - 登录成功
+2018-11-13 14:50:41,614 - [INFO] - powerVC - input_username - root
+2018-11-13 14:50:41,875 - [INFO] - powerVC - input_password - 1qaz@WSX3edc
+2018-11-13 14:50:42,096 - [INFO] - powerVC - click_submit - 点击登录按钮
+2018-11-13 14:50:45,001 - [INFO] - powerVC - assert_login - 登录成功
+2018-11-13 14:52:45,975 - [INFO] - powerVC - input_username - root
+2018-11-13 14:52:46,218 - [INFO] - powerVC - input_password - 1qaz@WSX3edc
+2018-11-13 14:52:46,407 - [INFO] - powerVC - click_submit - 点击登录按钮
+2018-11-13 14:53:12,805 - [INFO] - powerVC - assert_login - 登录成功
