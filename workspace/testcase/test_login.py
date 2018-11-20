@@ -15,11 +15,6 @@ class TestLoginCSC():
         登录CSC的测试用例
     """
 
-    # def setup_method(self):
-    #     """
-    #         初始化，在每个方法前运行
-    #     """
-    #     self.driver = get_driver()
     @pytest.fixture(scope='function')
     def init(self):
         '''
@@ -52,15 +47,6 @@ class TestLoginCSC():
             login_page.assert_login(asserts)
         else:
             assert login_page.show_msg() == asserts
-
-
-    # def teardown_method(self):
-    #     """
-    #         在每个测试用例结束后运行，关闭浏览器
-    #     """
-    #     self.driver.quit()
-    #     # pass
-
 
 if __name__ == '__main__':
     pytest.main(['./workspace/testcase/test_login.py'])
