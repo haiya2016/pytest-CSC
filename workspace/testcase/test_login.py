@@ -1,9 +1,12 @@
+'''
+@Description: 
+@Author: wjx
+@Date: 2018-09-23 17:06:51
+@LastEditors: wjx
+@LastEditTime: 2018-11-20 16:03:54
+'''
 # coding=utf-8
-'''
-Created on 2018-9-9
-@author: wjx
-Project: 登录模块的测试用例
-'''
+
 
 import pytest
 from workspace.pages.login_page import LoginPage

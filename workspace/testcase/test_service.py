@@ -1,9 +1,12 @@
+'''
+@Description: 
+@Author: wjx
+@Date: 2018-10-12 09:18:59
+@LastEditors: wjx
+@LastEditTime: 2018-11-20 16:03:42
+'''
 # coding=utf-8
-'''
-@Created on 2018-10-12
-@author: wjx
-@Project: 服务管理模块的测试用例
-'''
+
 
 import pytest
 
@@ -17,14 +20,17 @@ class TestService():
     服务管理case
     '''
 
-    def setup_method(self):
-        """
-            初始化，在每个方法前运行
-        """
+    @pytest.fixture(scope='function')
+    def init(self):
+        '''
+        获取和退出浏览器
+        '''
         self.driver = get_driver()
         self.login_driver = LoginPage.login(self.driver)  # 调用LoginPage的类方法，直接获取一个已登录的浏览器
+        yield
+        self.driver.quit()
 
-    def test_create_vm(self):
+    def test_create_vm(self, init):
         '''
         创建云主机服务
         '''
@@ -59,12 +65,6 @@ class TestService():
         for data in input_data:
             service_page.create_vm_service(data, input_data[data])
         service_page.save_and_release()
-
-    def teardown_method(self):
-        """
-            在每个测试用例结束后运行，关闭浏览器
-        """
-        self.driver.quit()
 
 
 if __name__ == '__main__':

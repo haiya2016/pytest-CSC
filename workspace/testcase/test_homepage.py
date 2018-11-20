@@ -15,14 +15,17 @@ class TestHomepageCSC():
     '''
         CSC首页case
     '''
-
-    def setup_method(self):
-        """
-            初始化，在每个方法前运行
-        """
+    @pytest.fixture(scope='function')
+    def init(self):
+        '''
+        获取和退出浏览器，数据库
+        '''
         self.driver = get_driver()
         self.login_driver = LoginPage.login(self.driver)
         self.database = csc_config.DB
+        yield
+        self.driver.quit()
+        self.database.close()
 
     def test_switch_dc(self):
         '''
@@ -33,12 +36,6 @@ class TestHomepageCSC():
         print(homepage.dc_check())
         print(homepage.db_check(self.database, 'opws'))
 
-    def teardown_method(self):
-        """
-            在每个测试用例结束后运行，关闭浏览器
-        """
-        self.driver.quit()
-        self.database.close()
 
 
 if __name__ == '__main__':

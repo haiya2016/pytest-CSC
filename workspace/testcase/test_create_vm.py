@@ -18,14 +18,18 @@ class TestCreateVM():
     创建云主机case
     '''
 
-    def setup_method(self):
-        """
-            初始化，在每个方法前运行
-        """
+    @pytest.fixture(scope='function')
+    def init(self):
+        '''
+        获取和退出浏览器
+        '''
         self.driver = get_driver()
         self.login_driver = LoginPage.login(self.driver)  # 调用LoginPage的类方法，直接获取一个已登录的浏览器
+        yield
+        self.driver.quit()
 
-    def test_create_vm(self):
+
+    def test_create_vm(self, init):
         '''
         创建云主机
         '''
@@ -57,12 +61,6 @@ class TestCreateVM():
             vm_page.input_item(data, input_data[data])
             # time.sleep(2)
         time.sleep(5)
-
-    def teardown_method(self):
-        """
-            在每个测试用例结束后运行，关闭浏览器
-        """
-        self.driver.quit()
 
 
 if __name__ == '__main__':

@@ -3061,3 +3061,9 @@ selenium.common.exceptions.TimeoutException: Message:
 2018-11-20 15:45:08,785 - [INFO] - 基本操作 - switch_usertype - 切换为AD用户登陆
 2018-11-20 15:45:09,011 - [INFO] - 基本操作 - click_submit - 点击登录按钮
 2018-11-20 15:45:13,138 - [INFO] - 基本操作 - assert_login - 登录成功
+2018-11-20 15:58:09,040 - [INFO] - 基本操作 - open - 打开页面：https://192.168.208.110:8099/csc/index.html
+2018-11-20 15:58:10,096 - [INFO] - 基本操作 - input_username - admin
+2018-11-20 15:58:10,393 - [INFO] - 基本操作 - input_password - 1234567890
+2018-11-20 15:58:10,718 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-11-20 15:58:15,335 - [INFO] - 基本操作 - assert_login - 登录成功
+2018-11-20 15:58:16,697 - [INFO] - 基本操作 - enter_menu - 进入资源实例菜单
